@@ -1,0 +1,6 @@
+interface:
+  display_name: "Interview Me"
+  short_description: "One question until the ask is sharp"
+
+policy:
+  allow_implicit_invocation: false

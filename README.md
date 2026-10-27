@@ -228,6 +228,10 @@ Skills I use daily for code work.
 - **[wayfinder](./skills/engineering/wayfinder/SKILL.md)**: Plan a huge chunk of work, more than one agent session can hold, as a shared map of decision tickets on the issue tracker, and resolve them one at a time until the way to the destination is clear.
 - **[retro](./skills/engineering/retro/SKILL.md)**: Suggest improvements to the coding agent's environment (navigation, automated checks, coding standards, steering files, tooling) after a session, most severe first.
 
+- **[interview-me](./skills/engineering/interview-me/SKILL.md)**: One question at a time until an underspecified ask is sharp. The house interview is grill-with-docs or grill-me.
+- **[test-driven-development](./skills/engineering/test-driven-development/SKILL.md)**: Vendored red-green loop: stack discovery, the test pyramid, DAMP tests, and the prove-it bug pattern. The daily loop is tdd.
+- **[using-agent-skills](./skills/engineering/using-agent-skills/SKILL.md)**: Phase map for the vendored engineering lifecycle. The house router is ask-matt. You type this yourself.
+
 **Model-invoked**
 
 - **[prototype](./skills/engineering/prototype/SKILL.md)**: Build a throwaway prototype to answer a design question, either a single shareable HTML file for state/logic questions, or several radically different UI variations toggleable from one route.
@@ -240,6 +244,29 @@ Skills I use daily for code work.
 - **[code-review](./skills/engineering/code-review/SKILL.md)**: Two-axis review of the diff since a fixed point: **Standards** (does it follow the repo's coding standards, plus a Fowler smell baseline?) and **Spec** (does it faithfully implement the originating issue/spec?), run as parallel sub-agents so neither pollutes the other.
 - **[pr](./skills/engineering/pr/SKILL.md)**: The shape a pull request body should take: a summary as the smallest visual that makes the change clear, before/after evidence that it works, and a merge-danger call (one-way or two-way door, plus blast radius).
 - **[wizard](./skills/engineering/wizard/SKILL.md)**: Generate an interactive bash wizard that walks a human through steps only they can perform: provisioning infrastructure, setting up credentials or CI secrets, walking an unfamiliar third-party dashboard, or running a one-off migration or cutover.
+
+- **[api-and-interface-design](./skills/engineering/api-and-interface-design/SKILL.md)**: Design the contract callers may rely on: resources, errors, compatibility, and the line between frontend and backend.
+- **[browser-testing-with-devtools](./skills/engineering/browser-testing-with-devtools/SKILL.md)**: Check UI in a real browser through Chrome DevTools: DOM, console, network, performance, and a screenshot.
+- **[ci-cd-and-automation](./skills/engineering/ci-cd-and-automation/SKILL.md)**: Put quality gates and a deploy strategy in the pipeline so a red check can block a ship.
+- **[code-review-and-quality](./skills/engineering/code-review-and-quality/SKILL.md)**: Five-axis quality pass on a change: correctness, readability, architecture, security, and performance. Standards-and-spec review of a diff stays code-review.
+- **[code-simplification](./skills/engineering/code-simplification/SKILL.md)**: Local clarity refactor that preserves behavior. A codebase-wide deepening survey stays improve-codebase-architecture.
+- **[constraint-driven-development](./skills/engineering/constraint-driven-development/SKILL.md)**: Interview a quality bar into CONSTRAINTS.md and reject a diff that quietly lowers it.
+- **[context-engineering](./skills/engineering/context-engineering/SKILL.md)**: Pack the context for the task in front of you. It does not run at the start of every session. Post-session environment fixes stay retro.
+- **[debugging-and-error-recovery](./skills/engineering/debugging-and-error-recovery/SKILL.md)**: Stop-the-line checklist for a fresh break: reproduce, bisect, reduce, fix the root cause, guard, and verify. A tight diagnosis loop stays diagnosing-bugs.
+- **[deprecation-and-migration](./skills/engineering/deprecation-and-migration/SKILL.md)**: Sunset an API or migrate a schema by expanding first and contracting only after callers have moved.
+- **[documentation-and-adrs](./skills/engineering/documentation-and-adrs/SKILL.md)**: Write an ADR or API docs for a decision that should outlive the session. Glossary work stays domain-modeling.
+- **[doubt-driven-development](./skills/engineering/doubt-driven-development/SKILL.md)**: Fresh-context adversarial review that tries to disprove a decision before it stands. The reviewer does not see your reasoning.
+- **[frontend-ui-engineering](./skills/engineering/frontend-ui-engineering/SKILL.md)**: Build accessible, responsive UI that belongs to the product, including keyboard, contrast, and a layout that is not a generic template.
+- **[git-workflow-and-versioning](./skills/engineering/git-workflow-and-versioning/SKILL.md)**: Atomic commits, branching, conflict splits, and semantic versioning. The pull request body stays pr.
+- **[idea-refine](./skills/engineering/idea-refine/SKILL.md)**: Diverge, then converge a vague product idea into a one-pager under docs/ideas/. The house interview stays grill-with-docs or grill-me.
+- **[incremental-implementation](./skills/engineering/incremental-implementation/SKILL.md)**: Slice a change so each step stays compilable and verifiable, including feature flags. Driving a ticket stays implement.
+- **[observability-and-instrumentation](./skills/engineering/observability-and-instrumentation/SKILL.md)**: Write the on-call question first, then add the log, metric, trace, or alert that can answer it.
+- **[performance-optimization](./skills/engineering/performance-optimization/SKILL.md)**: Measure a bottleneck, fix it, and leave a guard. One known performance regression stays diagnosing-bugs.
+- **[planning-and-task-breakdown](./skills/engineering/planning-and-task-breakdown/SKILL.md)**: Turn a spec into a plan document with a dependency graph and vertical slices. Tracer-bullet tickets stay to-tickets.
+- **[security-and-hardening](./skills/engineering/security-and-hardening/SKILL.md)**: Harden a feature while you build it: trust boundaries, OWASP, and an always/ask/never list. A full audit report stays security-audit.
+- **[shipping-and-launch](./skills/engineering/shipping-and-launch/SKILL.md)**: Pre-launch checklist, feature flags, staged rollout, and a rollback. The pull request body stays pr.
+- **[source-driven-development](./skills/engineering/source-driven-development/SKILL.md)**: Implement from the official docs and cite the page. A cited note that does not change code stays research.
+- **[spec-driven-development](./skills/engineering/spec-driven-development/SKILL.md)**: Write a gated spec from a vague idea, including a capability map, before any code. Synthesizing an existing thread stays to-spec.
 
 ### Productivity
 

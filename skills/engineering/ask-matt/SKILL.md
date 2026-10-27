@@ -93,6 +93,31 @@ Off the main flow entirely.
 - **`/teach`**: learn a concept over multiple sessions, using the current directory as a stateful workspace.
 - **`/writing-for-agents`** is the reference for writing documents agents consume: skills, AGENTS.md, pointed-at docs.
 
+## Vendored lifecycle
+
+A second engineering set is vendored from [agent-skills](https://github.com/addyosmani/agent-skills) (MIT). `/ask-matt` stays the router. `/using-agent-skills` is that set's phase list, and only the human runs it. It does not run at session start.
+
+When two skills could fire, use the house skill. Use the vendored skill when the user asked for it, or when the house set has no twin.
+
+- Daily red-green loop: `/tdd`. `/test-driven-development` is the vendored variant (stack discovery, pyramid, DAMP) and only the human invokes it.
+- Interview: `/grill-with-docs` in a repo, `/grill-me` outside one. `/interview-me` is a one-question interview for an underspecified ask. It is user-invoked, and it does not answer to "grill me".
+- Diff review against standards and spec: `/code-review`. `/code-review-and-quality` is a five-axis quality pass (correctness, readability, architecture, security, performance).
+- One hard bug or performance regression: `/diagnosing-bugs`. `/debugging-and-error-recovery` is the stop-the-line checklist for a fresh break. `/performance-optimization` measures a bottleneck (Core Web Vitals, N+1, bundles) and guards the fix.
+- Spec from a thread you already had, with no second interview: `/to-spec`. `/spec-driven-development` writes a gated spec from a vague idea, including a capability map.
+- Tracer-bullet tickets with blocking edges: `/to-tickets`. `/planning-and-task-breakdown` writes a plan document and a dependency graph.
+- Drive a ticket through `/tdd` and `/code-review`: `/implement`. `/incremental-implementation` is the slicing discipline (keep each step compilable, feature flags).
+- Glossary and domain ADRs: `/domain-modeling`. `/documentation-and-adrs` writes a general ADR or API docs.
+- Cited reading that does not change code: `/research`. `/source-driven-development` implements from official docs and cites them.
+- Full audit report, no edits to the target: `/security-audit`. `/security-and-hardening` hardens code while you build it.
+- Deepening survey of a codebase: `/improve-codebase-architecture`. `/code-simplification` is a local clarity refactor with no behavior change.
+- Post-session environment fixes: `/retro`. `/context-engineering` packs the context for the task in front of you. It does not run at session start.
+- Product ideation into a one-pager: `/idea-refine`. The house interview is still grill.
+- Pull request body: `/pr`. `/shipping-and-launch` is the pre-launch checklist, flags, staged rollout, and rollback. `/git-workflow-and-versioning` is commits, branches, and semver.
+
+The rest have no house twin. Call the Skill tool with the name, one skill per call: `api-and-interface-design`, `browser-testing-with-devtools`, `ci-cd-and-automation`, `constraint-driven-development`, `deprecation-and-migration`, `doubt-driven-development`, `frontend-ui-engineering`, `observability-and-instrumentation`.
+
+`using-agent-skills`, `interview-me`, and `test-driven-development` are user-invoked. Tell the user to run them. Do not call the Skill tool for them.
+
 ## Precondition
 
 **`/setup-matt-pocock-skills`**: run before your first engineering flow to configure the issue tracker, triage labels, and doc layout the other skills assume. Custom issue trackers also work.
