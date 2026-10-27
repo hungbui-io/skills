@@ -16,6 +16,7 @@ Type `/code-review`, or the agent reaches for it automatically when you ask to r
 | A whole spec needs building, review included | [implement](https://aihero.dev/skills-implement), which calls this skill itself |
 | The whole codebase has drifted, not one diff | [improve-codebase-architecture](https://aihero.dev/skills-improve-codebase-architecture) |
 | Something is broken and you do not know why | [diagnosing-bugs](https://aihero.dev/skills-diagnosing-bugs) |
+| A security review of the codebase or a change, not standards and spec | [security-audit](https://aihero.dev/skills-security-audit) |
 
 You must supply the fixed point. If you do not, the skill asks for one rather than guessing. Before it spawns anything, it checks that the ref resolves and that the diff is not empty, so a mistyped branch name fails in front of you instead of inside two sub-agents.
 
@@ -97,5 +98,6 @@ No. It diffs `<fixed-point>...HEAD`. The three-dot form measures from the merge-
 - [pr](https://aihero.dev/skills-pr) writes the pull request body once the reviewed work goes up.
 - [to-spec](https://aihero.dev/skills-to-spec) and [to-tickets](https://aihero.dev/skills-to-tickets) produce the document the Spec axis checks against, so a vague spec makes that axis vague.
 - [improve-codebase-architecture](https://aihero.dev/skills-improve-codebase-architecture) is the whole-codebase counterpart, because this skill only looks at one diff.
+- [security-audit](https://aihero.dev/skills-security-audit) is the security review. This skill checks standards and spec. It does not hunt trust-boundary failures.
 
 [ask-matt](https://aihero.dev/skills-ask-matt) routes across the whole set when you are unsure which skill the situation wants.
