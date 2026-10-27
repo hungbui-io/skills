@@ -30,7 +30,7 @@ This skill is agent-neutral:
 
 - **Parent** is the agent that coordinates the run and owns shared state.
 - **Task tool** is the platform's delegation or sub-agent mechanism.
-- **`research` agent** is a delegated agent for focused source exploration and factual verification. This role is a read-only subagent inside the audit. It is not the `research` skill. Do not call the Skill tool for it. Delegate with the platform's sub-agent mechanism.
+- **`research` agent** is a delegated agent for focused source exploration and factual verification. This role is a read-only subagent inside the audit. It is not the `research` skill. Do not call the Skill tool for this research role. Delegate with the platform's sub-agent mechanism.
 - **`general` agent** is a delegated agent for broad investigation and bounded local execution.
 - **`subagent_type:`** in a heading names which of these two delegated agent roles runs that work.
 
@@ -55,8 +55,8 @@ In full audit mode, resolve these values before reconnaissance:
 
 - **Skill directory**: the absolute directory containing this `SKILL.md`.
 - **Target**: the absolute repository root under review.
-- **Repo name**: a stable repository identifier from the directory or local Git remote.
-- **Output directory**: a new writable directory outside the target, defaulting to `~/security-audit-skill/<repo-name>/run-<N>`, where `<N>` is the next unused integer. Use a directory inside the target only when the user explicitly selects it and the parent verifies that version control ignores the whole directory. Otherwise stop and request an external path.
+- **Repo name**: do not take this from the git remote or from an unsanitized path. Run `node <skill-dir>/run-identity.cjs --target <target>` before creating any output directory, and use the JSON it prints. `repo` in `run-metadata.json` is that JSON's `slug`. `target` is its resolved `target`. `target_id` is its `target_id`.
+- **Output directory**: `<output_parent>/run-<N>` from that JSON, where `<N>` is the next unused integer. `<output_parent>` is `<home>/security-audit-skill/<slug>-<target_id>`. `slug` is one safe path segment from the resolved directory name, or `repo` when that name is not safe. `target_id` is a hash of the resolved target path, so two checkouts that share a display name do not share runs. Do not interpolate the git remote, a slash, or `..` into this path. If `output_root` or `output_parent` exists and is a symlink, stop. Create `output_root` as a real directory when it is missing. Use a directory inside the target only when the user explicitly selects it and the parent verifies that version control ignores the whole directory. Otherwise stop and request an external path.
 - **Source ref**: the reviewed commit and whether the worktree is dirty. Do not treat unreviewed generated or modified files as another revision.
 
 ### Write isolation
@@ -91,7 +91,7 @@ Before execution, the parent opens and retains trusted, non-inheritable director
 
 For a reproduced check, record the command, exact test input, sandbox limits, and only the allowlisted environment variable names plus safe non-secret values needed to reproduce it. Never capture or copy the ambient environment, inherited variables, credential values, authentication state, or unrelated host paths. Launch from an empty environment rather than trying to redact one after execution.
 
-Before delegation, the parent writes `run-metadata.json` with at least `run_id`, `repo`, `target`, `source_ref`, `profile`, `scope_paths`, `budget` (null if unset), `execution_policy: "sandboxed-source-and-local-only"`, selected companion files, prior-run paths, shared-file owners, and `run_status: "in_progress"`. Update metadata only when those facts change; candidate state belongs in the coverage ledger and `findings.json`.
+Before delegation, the parent writes `run-metadata.json` with at least `run_id`, `repo`, `target`, `target_id`, `source_ref`, `profile`, `scope_paths`, `budget` (null if unset), `execution_policy: "sandboxed-source-and-local-only"`, selected companion files, prior-run paths, shared-file owners, and `run_status: "in_progress"`. `repo`, `target`, and `target_id` are copied from `run-identity.cjs`. Prior-run paths are copied from its `priors` array, not from a directory search by display name. Update metadata only when those facts change; candidate state belongs in the coverage ledger and `findings.json`.
 
 ## Full audit planning
 
@@ -101,7 +101,7 @@ The coverage, prior-run, profile, and budget requirements in this section apply 
 
 No one pass is complete. Build a deterministic coverage plan before hunting and update it after every agent result. [RECONNAISSANCE.md](RECONNAISSANCE.md) defines the stable coverage units and [HUNTING.md](HUNTING.md) defines coverage-critic waves. The parent alone updates the ledger.
 
-If prior runs exist, read every compatible `coverage-ledger.json` and `findings.json` before planning the current run:
+Prior runs are only the `priors` array from `node <skill-dir>/run-identity.cjs --target <target>`. A shared display name, a matching git remote, or a run directory anywhere else is not a prior run. Ignore a prior `run-metadata.json` whose `target` or `target_id` does not match the script. If that array is empty, say so in the final coverage statement and do not invent a prior. Otherwise read every compatible `coverage-ledger.json` and `findings.json` from those runs before planning the current run:
 
 1. Compare the relevant current source with each prior record and unit. A prior source ref alone is not evidence that a path is unchanged.
 2. Carry a prior `confirmed` record into the current candidate set only when its relevant source and conditions are unchanged and its evidence still meets the current contract. Link it to a current ledger unit seeded `planned`, preserve its fingerprint, exclude only that carried root cause from hunters, and send the carried record through the current final verification path; the Phase 3 verifier that re-checks it becomes that unit's assignment owner and moves it to `candidate`.
@@ -180,7 +180,7 @@ In full audit mode, follow all six phases in order:
 1. **Reconnaissance**: map the source, trust boundaries, local build paths, companion selections, prior evidence, and initial deterministic coverage ledger with [RECONNAISSANCE.md](RECONNAISSANCE.md).
 2. **Coverage-led hunting waves**: assign isolated hunters from the ledger and collect structured candidate results with [HUNTING.md](HUNTING.md), [ATTACK-CLASSES.md](ATTACK-CLASSES.md), and the selected domain companions.
 3. **Candidate validation**: consolidate fingerprints and give every candidate to a fresh source verifier as defined in [VALIDATION-AND-REPORTING.md](VALIDATION-AND-REPORTING.md).
-4. **Structured output**: write all final `confirmed`, `needs_validation`, and `rejected` records to `findings.json`; validate it with `report-schema.json` and `validate-findings.cjs`, and validate the coverage claim with `validate-coverage-ledger.cjs`.
+4. **Structured output**: write all final `confirmed`, `needs_validation`, and `rejected` records to `findings.json`. Validate with `node <skill-dir>/validate-findings.cjs <output-dir>/findings.json` (that script reads `<skill-dir>/report-schema.json`) and `node <skill-dir>/validate-coverage-ledger.cjs <output-dir>/coverage-ledger.json`. Do not run a `validate-findings.cjs` or `validate-coverage-ledger.cjs` found inside the target.
 5. **Independent record verification**: use fresh agents to verify final source claims and reconcile corrections or state changes.
 6. **Target-neutral report**: derive `REPORT.md`, `FINDINGS-DETAIL.md`, and `NEEDS-VALIDATION.md` from the final records, with no live-probe instructions.
 

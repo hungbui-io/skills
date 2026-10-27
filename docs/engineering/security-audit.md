@@ -2,7 +2,7 @@
 
 `security-audit` reviews a codebase you are allowed to audit for vulnerabilities that cross a real trust boundary, then reports the source evidence, a bounded local check, a priority, and the smallest source fix.
 
-Loading the skill does not start an audit. A security question, a focused review, or a look at one suspected bug stays in guidance mode: the relevant part of the workflow, in the conversation, with no output directory and no report files. The six-phase run, and the files it writes, happen only when you explicitly ask to audit or pen-test a codebase, ask for a full or end-to-end review, or ask for report artifacts. The workflow is Cloudflare's security-audit skill, vendored into this set (MIT). It describes fixes. It does not edit the target, and it does not probe deployed systems.
+Loading the skill does not start an audit. A security question, a focused review, or a look at one suspected bug stays in guidance mode: the relevant part of the workflow, in the conversation, with no output directory and no report files. The six-phase run, and the files it writes, happen only when you explicitly ask to audit or pen-test a codebase, ask for a full or end-to-end review, or ask for report artifacts. The workflow is vendored into this set under the MIT license. It describes fixes. It does not edit the target, and it does not probe deployed systems.
 
 ## When to reach for it
 
@@ -25,7 +25,7 @@ Full audit mode needs a repository you are allowed to audit, and Node.js. The pa
 
 Any check that executes target code needs an OS-enforced sandbox: no external network, an empty environment filled from an allowlist, a read-only target, and low CPU, memory, and time limits. Writes stay inside that agent's `scratch/` directory. If those controls are not available, the lead stays `needs_validation` and the target code is not run.
 
-Report files go outside the target. The default is `~/security-audit-skill/<repo-name>/run-<N>`. A directory inside the target is used only when you pick one that version control ignores.
+Report files go outside the target. The default directory is under `~/security-audit-skill/`, named from a sanitized slug plus a hash of the resolved target path. It is not the git remote and it is not a raw directory name. A directory inside the target is used only when you pick one that version control ignores.
 
 This skill does not use the issue tracker, so it does not need [setup-matt-pocock-skills](https://aihero.dev/skills-setup-matt-pocock-skills).
 
@@ -65,7 +65,8 @@ No. Inside this skill, `research` is a read-only subagent role (reconnaissance, 
 
 ## It's working if
 
-- A security question is answered in the thread, and no `~/security-audit-skill/<repo-name>/run-<N>` directory appears.
+- A security question is answered in the thread, and no `~/security-audit-skill/` run directory appears.
+- A full audit's run directory stays under `~/security-audit-skill/`, and its name is not the git remote.
 - A full audit ends in one of two states: the report files exist and both validators pass, or `run-metadata.json` says `run_status` is `incomplete` and the report states the gap.
 - Every `confirmed` record names a principal, a crossed boundary, and a result. Every `needs_validation` record has no severity.
 - The report does not tell you to hit a deployed endpoint, and the target repo has no audit edits in it.

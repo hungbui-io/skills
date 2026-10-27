@@ -4,7 +4,7 @@
 
 The parent initializes `run-metadata.json`, applies the strict pre-reconnaissance budget gate in `SKILL.md`, then creates agent scratch roots and the shared ledger before hunting. If the gate fails, record the incomplete status in metadata and launch no reconnaissance agent. Reconnaissance reads the target and locally available build/configuration state only. It does not contact deployed endpoints, external identity providers, registries, brokers, cloud APIs, or other shared services.
 
-Launch several `research` agents in parallel. They return structured facts to the parent and do not write files.
+Launch several `research` agents in parallel. They return structured facts to the parent and do not write files. This `research` role is a read-only subagent inside the audit, not the `research` skill. Do not call the Skill tool for this research role.
 
 **Agent 1a: Product, stack, and local operation**
 
@@ -58,7 +58,7 @@ Add focused reconnaissance agents for materially distinct deployment modes or su
 
 ## Prior-run input
 
-Before selecting work, the parent reads every available prior `coverage-ledger.json` and `findings.json` for the same repo:
+Before selecting work, the parent reads prior `coverage-ledger.json` and `findings.json` only from the `priors` array printed by `node <skill-dir>/run-identity.cjs --target <target>`. Do not open runs that share a display name or git remote but are absent from that array:
 
 - Compare the source locations, controls, conditions, and source-derived identity for every prior record and unit against the current source.
 - Carry an unchanged prior `confirmed` record into the current candidate set, with the same fingerprint, only when its relevant source, conditions, and qualifying evidence still apply. Link it to a current `planned` unit with `prior_status: "prior_confirmed_same_source"` and put only that root cause on the hunter exclusion list. The Phase 3 verifier that re-verifies the carried record becomes that unit's assignment owner; its source re-check is the unit's first check and moves the unit to `candidate` with the carried fingerprint.
