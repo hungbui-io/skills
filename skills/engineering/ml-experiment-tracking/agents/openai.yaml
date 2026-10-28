@@ -1,0 +1,3 @@
+interface:
+  display_name: "ML Experiment Tracking"
+  short_description: "Compare training runs"

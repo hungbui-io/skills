@@ -1,0 +1,3 @@
+interface:
+  display_name: "Model Drift Detection"
+  short_description: "Detect drift and trigger retrain"

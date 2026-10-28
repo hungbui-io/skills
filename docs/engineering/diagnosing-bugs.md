@@ -21,7 +21,6 @@ Reach for it on the hard ones: a bug you can't solve at first look, an intermitt
 | Asking what would have prevented the bug, once it is fixed | [retro](https://aihero.dev/skills-retro), run in the same session |
 | No good seam exists to lock the bug down | [improve-codebase-architecture](https://aihero.dev/skills-improve-codebase-architecture), which you start yourself |
 | A security review of a codebase, with no single known bug | [security-audit](https://aihero.dev/skills-security-audit) |
-| A fresh red build, before you have a minimised repro | [debugging-and-error-recovery](https://aihero.dev/skills-debugging-and-error-recovery) |
 
 ## The tight loop is the skill
 

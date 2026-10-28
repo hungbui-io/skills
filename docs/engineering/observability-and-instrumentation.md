@@ -21,6 +21,6 @@ The leading words are **question first**. An alert pages on a symptom (errors, l
 
 This is a **reach-for-it-anytime standalone** when a feature is about to run in production.
 
-Its neighbour is [shipping-and-launch](https://aihero.dev/skills-shipping-and-launch), because a staged rollout needs a signal that can stop it.
+Its neighbour is [shipping-and-launch](https://aihero.dev/skills-shipping-and-launch), because a staged rollout needs a signal that can stop it. Deployed model health is [model-monitoring](https://aihero.dev/skills-model-monitoring). Prediction explanations are [model-observability](https://aihero.dev/skills-model-observability). Token use and latency for an LLM are [llm-observability](https://aihero.dev/skills-llm-observability).
 
 When you are unsure which skill fits, [ask-matt](https://aihero.dev/skills-ask-matt) routes you.

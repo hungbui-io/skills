@@ -1,0 +1,3 @@
+interface:
+  display_name: "Modal"
+  short_description: "Modal is a serverless cloud platform for running Python on"

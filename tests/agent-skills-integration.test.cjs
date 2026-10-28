@@ -84,13 +84,13 @@ test("the vendored lifecycle is promoted once and the reference folder is not a 
     }
   }
   assert.deepEqual(plugin.skills.slice().sort(), promoted.sort());
-  assert.equal(plugin.skills.length, 43);
+  assert.equal(plugin.skills.length, 65);
   for (const name of vendored) {
     assert.equal(plugin.skills.filter((entry) => entry === `./skills/engineering/${name}`).length, 1, name);
   }
   assert.equal(plugin.skills.includes("./skills/engineering/agent-skills-references"), false);
   assert.equal(fs.existsSync(path.join(referencesDir, "SKILL.md")), false);
-  assert.match(read(".agents/install-block.md"), /exactly the promoted set \(43 skills\)/);
+  assert.match(read(".agents/install-block.md"), /exactly the promoted set \(65 skills\)/);
   assert.match(plugin.description, /vendored engineering lifecycle/);
 });
 
@@ -172,13 +172,13 @@ test("vendored prose has no em-dash or en-dash and relative links resolve", () =
   }
   assert.equal(dash.test(read(".changeset/agent-skills-lifecycle.md")), false);
   const router = read("skills/engineering/ask-matt/SKILL.md");
-  const section = sliceBetween(router, "## Vendored lifecycle", "## Precondition");
+  const section = sliceBetween(router, "## Vendored lifecycle", "## ML and LLM lifecycle");
   assert.equal(dash.test(section), false);
 });
 
 test("ask-matt names the house skill when a vendored twin exists", () => {
   const router = read("skills/engineering/ask-matt/SKILL.md");
-  const section = sliceBetween(router, "## Vendored lifecycle", "## Precondition");
+  const section = sliceBetween(router, "## Vendored lifecycle", "## ML and LLM lifecycle");
   for (const pair of [
     ["/diagnosing-bugs", "/performance-optimization"],
     ["/research", "/source-driven-development"],

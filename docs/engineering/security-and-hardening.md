@@ -32,6 +32,6 @@ The leading words are **while you build**. Name the boundary, treat input as hos
 
 This is a **reach-for-it-anytime standalone** on the security branch of a build.
 
-Its neighbour is [security-audit](https://aihero.dev/skills-security-audit), because both start from the word security and they do different jobs.
+Its neighbour is [security-audit](https://aihero.dev/skills-security-audit), because both start from the word security and they do different jobs. Model threats, privacy, and the ML supply chain are [ml-security](https://aihero.dev/skills-ml-security). Filters on LLM inputs and outputs are [llm-guardrails](https://aihero.dev/skills-llm-guardrails).
 
 When you are unsure which skill fits, [ask-matt](https://aihero.dev/skills-ask-matt) routes you.

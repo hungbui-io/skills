@@ -1,0 +1,3 @@
+interface:
+  display_name: "scikit-learn"
+  short_description: "Supports machine learning in Python with scikit-learn"

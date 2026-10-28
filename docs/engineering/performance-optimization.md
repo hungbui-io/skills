@@ -32,6 +32,6 @@ The leading word is **measure**. Capture a baseline, change one thing, and show 
 
 This is a **reach-for-it-anytime standalone** when the work is a bottleneck.
 
-Its neighbour is [diagnosing-bugs](https://aihero.dev/skills-diagnosing-bugs), because a slow endpoint can be either a known regression or a hunt for the hot spot.
+Its neighbour is [diagnosing-bugs](https://aihero.dev/skills-diagnosing-bugs), because a slow endpoint can be either a known regression or a hunt for the hot spot. GPU and infrastructure cost for training and serving is [ml-cost-optimization](https://aihero.dev/skills-ml-cost-optimization). Token, routing, and cache cost for LLM calls is [llm-cost-optimization](https://aihero.dev/skills-llm-cost-optimization).
 
 When you are unsure which skill fits, [ask-matt](https://aihero.dev/skills-ask-matt) routes you.

@@ -32,6 +32,6 @@ The leading word is **reversible**. The flag can turn the change off. The first 
 
 This is a **reach-for-it-anytime standalone** at the end of the vendored lifecycle.
 
-Its neighbours are [pr](https://aihero.dev/skills-pr) and [observability-and-instrumentation](https://aihero.dev/skills-observability-and-instrumentation). The body explains the change. The launch needs a signal.
+Its neighbours are [pr](https://aihero.dev/skills-pr) and [observability-and-instrumentation](https://aihero.dev/skills-observability-and-instrumentation). The body explains the change. The launch needs a signal. Serving a model or an LLM runtime is [model-serving](https://aihero.dev/skills-model-serving).
 
 When you are unsure which skill fits, [ask-matt](https://aihero.dev/skills-ask-matt) routes you.

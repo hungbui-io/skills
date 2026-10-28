@@ -50,3 +50,25 @@ Model- or user-reachable (rich trigger phrasing so the model can reach for them)
 - **[security-and-hardening](./security-and-hardening/SKILL.md)**: Harden a feature while you build it: trust boundaries, OWASP, and an always/ask/never list. A full audit report stays security-audit.
 - **[shipping-and-launch](./shipping-and-launch/SKILL.md)**: Pre-launch checklist, feature flags, staged rollout, and a rollback. The pull request body stays pr.
 - **[source-driven-development](./source-driven-development/SKILL.md)**: Implement from the official docs and cite the page. A cited note that does not change code stays research.
+- **[llm-agent-orchestration](./llm-agent-orchestration/SKILL.md)**: Build a product agent with tools, a graph, and a stop condition. The router for this repo stays ask-matt.
+- **[llm-cost-optimization](./llm-cost-optimization/SKILL.md)**: Cut token, routing, and cache cost for LLM calls. Measuring an application bottleneck stays performance-optimization.
+- **[llm-data-preparation](./llm-data-preparation/SKILL.md)**: Clean, dedupe, and split a text corpus for fine-tuning or retrieval.
+- **[llm-distillation](./llm-distillation/SKILL.md)**: Train a smaller student model to match a larger teacher's outputs on a fixed eval set.
+- **[llm-evaluation](./llm-evaluation/SKILL.md)**: Score LLM outputs with a fixed set, retrieval metrics, and a judge. Application red-green stays tdd.
+- **[llm-fine-tuning](./llm-fine-tuning/SKILL.md)**: Fine-tune an LLM from a config, an eval set, and a checkpoint policy.
+- **[llm-guardrails](./llm-guardrails/SKILL.md)**: Filter LLM inputs and outputs for private data, toxicity, and jailbreaks. Hardening an application feature stays security-and-hardening.
+- **[llm-observability](./llm-observability/SKILL.md)**: Track token use, latency, and feedback on LLM calls. Application logs, metrics, and traces stay observability-and-instrumentation.
+- **[llm-prompt-engineering](./llm-prompt-engineering/SKILL.md)**: Design and version the prompts an LLM product sends. Documents that agents read stay writing-for-agents.
+- **[llm-rag](./llm-rag/SKILL.md)**: Retrieve grounded passages and cite the ones the answer used.
+- **[ml-cost-optimization](./ml-cost-optimization/SKILL.md)**: Cut GPU and infrastructure cost for training and serving. Measuring an application bottleneck stays performance-optimization.
+- **[ml-experiment-tracking](./ml-experiment-tracking/SKILL.md)**: Record params, metrics, and artifacts so two training runs can be compared.
+- **[ml-pipeline-orchestration](./ml-pipeline-orchestration/SKILL.md)**: Schedule train, validate, and promote as one pipeline with retries and a failure alert.
+- **[ml-security](./ml-security/SKILL.md)**: Threat-model a model: adversarial inputs, poisoning, privacy, and the ML supply chain. A source-first audit report stays security-audit.
+- **[ml-solution-design](./ml-solution-design/SKILL.md)**: Turn an ML problem into requirements and a reference architecture. A spec from an existing thread stays to-spec.
+- **[ml-testing](./ml-testing/SKILL.md)**: Test data, features, and model behavior, then gate promotion on them. The daily red-green loop stays tdd.
+- **[model-drift-detection](./model-drift-detection/SKILL.md)**: Detect input or prediction drift and send a retrain trigger back to training.
+- **[model-monitoring](./model-monitoring/SKILL.md)**: Alert when a deployed model's performance or traffic leaves its band. Application telemetry stays observability-and-instrumentation.
+- **[model-observability](./model-observability/SKILL.md)**: Explain a prediction and log the features that produced it. Application telemetry stays observability-and-instrumentation.
+- **[model-registry](./model-registry/SKILL.md)**: Register a versioned model artifact and the contract a server needs to load it.
+- **[model-serving](./model-serving/SKILL.md)**: Serve a model behind an API with a health check and a rollback. An application launch checklist stays shipping-and-launch.
+- **[model-training](./model-training/SKILL.md)**: Train a model from a pinned config, split, and seed, and package the artifact for the registry.
