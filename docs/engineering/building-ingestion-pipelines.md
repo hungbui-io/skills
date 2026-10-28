@@ -10,6 +10,8 @@ Type `/building-ingestion-pipelines`, or the [agent](https://www.aihero.dev/ai-c
 
 Reach for this when data has to enter the platform. Database change capture is [implementing-cdc-with-debezium](https://aihero.dev/skills-implementing-cdc-with-debezium). A stream is [processing-streaming-data](https://aihero.dev/skills-processing-streaming-data).
 
+Training-set ingest is part of this skill.
+
 ## The watermark
 
 The leading word is **watermark**. Store the cursor (a timestamp, an id, or a page token) with the batch. The next run starts there. Pagination and late rows have an explicit rule.

@@ -8,7 +8,7 @@ A notebook that writes a path nobody else can govern will not survive the next w
 
 Type `/engineering-databricks-pipelines`, or the [agent](https://www.aihero.dev/ai-coding-dictionary/agent) reaches for it when a task fits.
 
-Reach for this on Databricks. Spark performance inside the job is [optimizing-pyspark-jobs](https://aihero.dev/skills-optimizing-pyspark-jobs). The medallion layout is [designing-medallion-architecture](https://aihero.dev/skills-designing-medallion-architecture).
+Reach for this on Databricks. Spark performance inside the job is [optimizing-pyspark-jobs](https://aihero.dev/skills-optimizing-sql-queries). The medallion layout is [designing-medallion-architecture](https://aihero.dev/skills-designing-medallion-architecture).
 
 ## The catalog
 
@@ -23,6 +23,6 @@ The leading word is **catalog**. Unity Catalog is where the table lives. Auto Lo
 
 This is a **chain step** when the platform is Databricks.
 
-Its neighbour is [optimizing-pyspark-jobs](https://aihero.dev/skills-optimizing-pyspark-jobs).
+Its neighbour is [optimizing-pyspark-jobs](https://aihero.dev/skills-optimizing-sql-queries).
 
 When you are unsure which skill fits, [ask-matt](https://aihero.dev/skills-ask-matt) routes you.

@@ -1,3 +1,5 @@
+> **Archived.** Removed in the duplicate-skill pass. The replacement is [processing-streaming-data](https://aihero.dev/skills-processing-streaming-data).
+
 ## What it does
 
 `building-kafka-consumers` writes consumers and producers that commit offsets only after the write succeeds.

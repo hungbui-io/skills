@@ -1,3 +1,5 @@
+> **Archived.** Removed in the duplicate-skill pass. The replacement is [optimizing-sql-queries](https://aihero.dev/skills-optimizing-sql-queries).
+
 ## What it does
 
 `optimizing-pyspark-jobs` reduces spills, skew, and shuffles in a Spark job.

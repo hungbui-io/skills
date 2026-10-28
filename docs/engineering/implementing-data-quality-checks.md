@@ -8,7 +8,9 @@ A check that only warns, and still lets consumers read the table, is a log line.
 
 Type `/implementing-data-quality-checks`, or the [agent](https://www.aihero.dev/ai-coding-dictionary/agent) reaches for it when a task fits.
 
-Reach for this when a dataset needs a pass or fail before consumers. dbt tests are [testing-dbt-projects](https://aihero.dev/skills-testing-dbt-projects). The daily red-green loop for application logic is [tdd](https://aihero.dev/skills-tdd).
+Reach for this when a dataset needs a pass or fail before consumers. dbt tests are [testing-dbt-projects](https://aihero.dev/skills-implementing-data-quality-checks). The daily red-green loop for application logic is [tdd](https://aihero.dev/skills-tdd).
+
+dbt tests, source freshness, and model-input checks are part of this skill.
 
 ## The gate
 

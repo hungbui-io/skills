@@ -1,6 +1,6 @@
 ---
 name: building-feature-pipelines
-description: "Build ML feature pipelines and feature stores: point-in-time-correct joins to avoid label leakage, offline/online parity, feature freshness and backfills, and materialization with tools like Feast. Use when engineering features for ML, preventing train/serve skew or data leakage, building a feature store, or backfilling historical features for training."
+description: "Column transforms and online or offline feature stores are part of this skill. Build ML feature pipelines and feature stores: point-in-time-correct joins to avoid label leakage, offline/online parity, feature freshness and backfills, and materialization with tools like Feast. Use when engineering features for ML, preventing train/serve skew or data leakage, building a feature store, or backfilling historical features for training."
 metadata:
   credits:
     skill: building-feature-pipelines
@@ -12,6 +12,17 @@ metadata:
 # Building Feature Pipelines
 
 Vendored from [awesome-data-engineering-skills](https://github.com/Unknown-333/awesome-data-engineering-skills) (Apache-2.0). See [CREDITS.md](CREDITS.md). Upstream commit `1a9bde3c514e107cfd790cc82b77be1f53f42b50`.
+
+## Which procedure
+
+Transforms and feature stores are part of this skill. The default is a warehouse point-in-time table.
+
+| Request | Procedure |
+| --- | --- |
+| Warehouse point-in-time feature table | This file, from the overview downward |
+| Column transforms for a model | [feature-engineering](absorbed/feature-engineering/SKILL.md) |
+| Online and offline feature store | [feature-store](absorbed/feature-store/SKILL.md) |
+
 
 ## When to use
 

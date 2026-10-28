@@ -8,7 +8,7 @@ Random rows with a new seed every run cannot fail a test the same way twice. The
 
 Type `/generating-synthetic-test-data`, or the [agent](https://www.aihero.dev/ai-coding-dictionary/agent) reaches for it when a task fits.
 
-Reach for this when a pipeline test needs data you can commit. The assertions on a dbt model are [testing-dbt-projects](https://aihero.dev/skills-testing-dbt-projects).
+Reach for this when a pipeline test needs data you can commit. The assertions on a dbt model are [testing-dbt-projects](https://aihero.dev/skills-implementing-data-quality-checks).
 
 ## The seed
 
@@ -23,6 +23,6 @@ The leading word is **seed**. Same seed, same rows. Include the null, the late r
 
 This is a **reach-for-it-anytime standalone** when tests need rows.
 
-Its neighbour is [testing-dbt-projects](https://aihero.dev/skills-testing-dbt-projects).
+Its neighbour is [testing-dbt-projects](https://aihero.dev/skills-implementing-data-quality-checks).
 
 When you are unsure which skill fits, [ask-matt](https://aihero.dev/skills-ask-matt) routes you.

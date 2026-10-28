@@ -8,7 +8,9 @@ A stream that assumes every event arrives once, in order, on time, will double-c
 
 Type `/processing-streaming-data`, or the [agent](https://www.aihero.dev/ai-coding-dictionary/agent) reaches for it when a task fits.
 
-Reach for this for Kafka, Spark, or Flink streaming logic. The consumer loop itself is [building-kafka-consumers](https://aihero.dev/skills-building-kafka-consumers).
+Reach for this for Kafka, Spark, or Flink streaming logic. The consumer loop itself is [building-kafka-consumers](https://aihero.dev/skills-processing-streaming-data).
+
+Kafka producers and consumers are part of this skill.
 
 ## The window
 
@@ -23,6 +25,6 @@ The leading word is **window**. Say whether delivery is at-least-once and how th
 
 This is a **chain step** when the pipeline is a stream.
 
-Its neighbour is [building-kafka-consumers](https://aihero.dev/skills-building-kafka-consumers).
+Its neighbour is [building-kafka-consumers](https://aihero.dev/skills-processing-streaming-data).
 
 When you are unsure which skill fits, [ask-matt](https://aihero.dev/skills-ask-matt) routes you.

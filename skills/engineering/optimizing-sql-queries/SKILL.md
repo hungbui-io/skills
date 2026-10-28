@@ -1,6 +1,6 @@
 ---
 name: optimizing-sql-queries
-description: "Optimize slow analytical SQL by reading query/EXPLAIN plans, cutting scanned data, fixing join strategy, and using partitioning, clustering, and indexes across Postgres, Snowflake, BigQuery, Databricks/Spark SQL, and Redshift. Use when a query is slow, times out, costs too much, scans too many rows/bytes, or spills to disk. House boundary: one known application performance regression is diagnosing-bugs. This skill reads a SQL plan and cuts the scan."
+description: "Snowflake, BigQuery, and Spark cost work are part of this skill. Optimize slow analytical SQL by reading query/EXPLAIN plans, cutting scanned data, fixing join strategy, and using partitioning, clustering, and indexes across Postgres, Snowflake, BigQuery, Databricks/Spark SQL, and Redshift. Use when a query is slow, times out, costs too much, scans too many rows/bytes, or spills to disk. House boundary: one known application performance regression is diagnosing-bugs. This skill reads a SQL plan and cuts the scan."
 metadata:
   credits:
     skill: optimizing-sql-queries
@@ -14,6 +14,18 @@ metadata:
 Vendored from [awesome-data-engineering-skills](https://github.com/Unknown-333/awesome-data-engineering-skills) (Apache-2.0). See [CREDITS.md](CREDITS.md). Upstream commit `1a9bde3c514e107cfd790cc82b77be1f53f42b50`.
 
 House boundary: one known application performance regression is diagnosing-bugs. This skill reads a SQL plan and cuts the scan.
+
+## Which procedure
+
+Engine-specific cost work is part of this skill.
+
+| Request | Procedure |
+| --- | --- |
+| A SQL plan on Postgres, Redshift, or a shared engine | This file, from the overview downward |
+| Snowflake credits and warehouses | [optimizing-snowflake-workloads](absorbed/optimizing-snowflake-workloads/SKILL.md) |
+| BigQuery bytes billed | [optimizing-bigquery-queries](absorbed/optimizing-bigquery-queries/SKILL.md) |
+| Spark spills, skew, and shuffles | [optimizing-pyspark-jobs](absorbed/optimizing-pyspark-jobs/SKILL.md) |
+
 
 ## When to use
 

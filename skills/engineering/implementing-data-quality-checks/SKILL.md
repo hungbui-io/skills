@@ -1,6 +1,6 @@
 ---
 name: implementing-data-quality-checks
-description: "Add data quality checks to pipelines (freshness, volume/row-count anomalies, schema drift, null/uniqueness/referential integrity, and value distributions) using dbt tests, Great Expectations, or Soda, and deciding warn vs block. Use when adding data quality validation, catching bad data before it reaches consumers, setting up freshness/volume checks, or defining expectations. House boundary: the daily red-green loop for application logic is tdd. This skill checks freshness, volume, schema, and integrity of a dataset."
+description: "dbt tests and model-input checks are part of this skill. Add data quality checks to pipelines (freshness, volume/row-count anomalies, schema drift, null/uniqueness/referential integrity, and value distributions) using dbt tests, Great Expectations, or Soda, and deciding warn vs block. Use when adding data quality validation, catching bad data before it reaches consumers, setting up freshness/volume checks, or defining expectations. House boundary: the daily red-green loop for application logic is tdd. This skill checks freshness, volume, schema, and integrity of a dataset."
 metadata:
   credits:
     skill: implementing-data-quality-checks
@@ -14,6 +14,17 @@ metadata:
 Vendored from [awesome-data-engineering-skills](https://github.com/Unknown-333/awesome-data-engineering-skills) (Apache-2.0). See [CREDITS.md](CREDITS.md). Upstream commit `1a9bde3c514e107cfd790cc82b77be1f53f42b50`.
 
 House boundary: the daily red-green loop for application logic is tdd. This skill checks freshness, volume, schema, and integrity of a dataset.
+
+## Which procedure
+
+Warehouse checks and model-input checks are one skill, including dbt tests.
+
+| Request | Procedure |
+| --- | --- |
+| Freshness, volume, schema, and dbt tests | This file, from the overview downward |
+| dbt generic tests, unit tests, and source freshness | [testing-dbt-projects](absorbed/testing-dbt-projects/SKILL.md) |
+| Frame checks for model inputs | [data-validation](absorbed/data-validation/SKILL.md) |
+
 
 ## When to use
 

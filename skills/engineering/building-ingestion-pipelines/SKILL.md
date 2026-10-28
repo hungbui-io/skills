@@ -1,6 +1,6 @@
 ---
 name: building-ingestion-pipelines
-description: "Build batch and incremental data ingestion (extract-load) pipelines: full vs incremental extraction, change data capture (CDC), watermarks and high-water marks, API pagination and rate limits, and choosing managed EL tools (Fivetran, Airbyte) vs custom code. Use when ingesting data from databases, APIs, files, or SaaS into a warehouse/lake, or designing incremental extraction and CDC."
+description: "Training-set batch and stream ingest are part of this skill. Build batch and incremental data ingestion (extract-load) pipelines: full vs incremental extraction, change data capture (CDC), watermarks and high-water marks, API pagination and rate limits, and choosing managed EL tools (Fivetran, Airbyte) vs custom code. Use when ingesting data from databases, APIs, files, or SaaS into a warehouse/lake, or designing incremental extraction and CDC."
 metadata:
   credits:
     skill: building-ingestion-pipelines
@@ -12,6 +12,16 @@ metadata:
 # Building Ingestion Pipelines
 
 Vendored from [awesome-data-engineering-skills](https://github.com/Unknown-333/awesome-data-engineering-skills) (Apache-2.0). See [CREDITS.md](CREDITS.md). Upstream commit `1a9bde3c514e107cfd790cc82b77be1f53f42b50`.
+
+## Which procedure
+
+Batch, incremental, and training-set ingestion are one skill.
+
+| Request | Procedure |
+| --- | --- |
+| Warehouse extract and load | This file, from the overview downward |
+| Training-set batch or stream ingest | [training-set ingest](absorbed/training-ingest/SKILL.md) |
+
 
 ## When to use
 

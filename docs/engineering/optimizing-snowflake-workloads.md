@@ -1,3 +1,5 @@
+> **Archived.** Removed in the duplicate-skill pass. The replacement is [optimizing-sql-queries](https://aihero.dev/skills-optimizing-sql-queries).
+
 ## What it does
 
 `optimizing-snowflake-workloads` right-sizes warehouses and stops needless scans.

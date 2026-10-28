@@ -8,7 +8,7 @@ An incremental model without a unique key duplicates rows the second time it run
 
 Type `/building-dbt-models`, or the [agent](https://www.aihero.dev/ai-coding-dictionary/agent) reaches for it when a task fits.
 
-Reach for this when you are adding or refactoring a dbt model. Tests on that model are [testing-dbt-projects](https://aihero.dev/skills-testing-dbt-projects). A failed run is [debugging-dbt-runs](https://aihero.dev/skills-debugging-dbt-runs).
+Reach for this when you are adding or refactoring a dbt model. Tests on that model are [testing-dbt-projects](https://aihero.dev/skills-implementing-data-quality-checks). A failed run is [debugging-dbt-runs](https://aihero.dev/skills-debugging-dbt-runs).
 
 ## The grain
 
@@ -23,6 +23,6 @@ The leading word is **grain**. Name the row the model outputs, pick view, table,
 
 This is a **chain step** when the transform is dbt.
 
-Its neighbours are [writing-idempotent-transformations](https://aihero.dev/skills-writing-idempotent-transformations) and [testing-dbt-projects](https://aihero.dev/skills-testing-dbt-projects).
+Its neighbours are [writing-idempotent-transformations](https://aihero.dev/skills-writing-idempotent-transformations) and [testing-dbt-projects](https://aihero.dev/skills-implementing-data-quality-checks).
 
 When you are unsure which skill fits, [ask-matt](https://aihero.dev/skills-ask-matt) routes you.

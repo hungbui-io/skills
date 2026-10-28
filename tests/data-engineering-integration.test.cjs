@@ -16,7 +16,6 @@ const NAMES = [
   "building-feature-pipelines",
   "building-iceberg-tables",
   "building-ingestion-pipelines",
-  "building-kafka-consumers",
   "debugging-airflow-pipelines",
   "debugging-data-pipelines",
   "debugging-dbt-runs",
@@ -35,16 +34,12 @@ const NAMES = [
   "masking-pii-data",
   "migrating-legacy-etl",
   "modeling-dimensional-data",
-  "optimizing-bigquery-queries",
   "optimizing-parquet-storage",
-  "optimizing-pyspark-jobs",
-  "optimizing-snowflake-workloads",
   "optimizing-sql-queries",
   "orchestrating-prefect-flows",
   "processing-streaming-data",
   "reviewing-data-pipeline-code",
   "terraform-for-data-infra",
-  "testing-dbt-projects",
   "writing-idempotent-transformations",
 ];
 
@@ -54,11 +49,7 @@ const COLLISIONS = {
   "debugging-airflow-pipelines": "diagnosing-bugs",
   "debugging-dbt-runs": "diagnosing-bugs",
   "optimizing-sql-queries": "diagnosing-bugs",
-  "optimizing-snowflake-workloads": "diagnosing-bugs",
-  "optimizing-bigquery-queries": "diagnosing-bugs",
-  "optimizing-pyspark-jobs": "diagnosing-bugs",
   "optimizing-parquet-storage": "diagnosing-bugs",
-  "testing-dbt-projects": "tdd",
   "implementing-data-quality-checks": "tdd",
   "masking-pii-data": "security-audit",
   "modeling-dimensional-data": "domain-modeling",
@@ -120,7 +111,7 @@ test("the data engineering set is promoted once and stays off the other lifecycl
   const plugin = JSON.parse(read(".claude-plugin/plugin.json"));
   const listed = plugin.skills.slice().sort();
   assert.deepEqual(listed, promotedSkillDirs());
-  assert.equal(plugin.skills.length, 64);
+  assert.equal(plugin.skills.length, 59);
   assert.equal(plugin.keywords.includes("data-engineering"), true);
   assert.match(plugin.description, /data engineering set/);
 
@@ -162,10 +153,10 @@ test("the data engineering set is promoted once and stays off the other lifecycl
   const cdc = read("skills/engineering/implementing-cdc-with-debezium/agents/openai.yaml");
   assert.match(cdc, /display_name:\s*"Implementing CDC with Debezium"/);
 
-  assert.match(read(".agents/install-block.md"), /exactly the promoted set \(64 skills\)/);
+  assert.match(read(".agents/install-block.md"), /exactly the promoted set \(59 skills\)/);
   assert.match(read(".claude-plugin/marketplace.json"), /data engineering set/);
   const changeset = read(".changeset/data-engineering-skills.md");
-  assert.match(changeset, /36 skills/);
+  assert.match(changeset, /31 skills/);
   assert.match(changeset, /does not include any other vendored lifecycle/);
   assert.equal(dash.test(changeset), false);
 });
@@ -198,8 +189,7 @@ test("ask-matt routes data work separately from application work", () => {
   assert.match(section, /\/code-review/);
   assert.match(section, /\/reviewing-data-pipeline-code/);
   assert.match(section, /\/tdd/);
-  assert.match(section, /\/testing-dbt-projects/);
-  assert.match(section, /\/diagnosing-bugs/);
+    assert.match(section, /\/diagnosing-bugs/);
   assert.match(section, /\/debugging-data-pipelines/);
   assert.match(section, /\/security-audit/);
   assert.match(section, /\/masking-pii-data/);
@@ -210,7 +200,7 @@ test("ask-matt routes data work separately from application work", () => {
   const docs = read("docs/engineering/ask-matt.md");
   assert.match(docs, /There are six kinds of route/);
   assert.match(docs, /The data engineering set/);
-  assert.match(docs, /Sixteen of the plugin's sixty-four skills/);
+  assert.match(docs, /Sixteen of the plugin's fifty-nine skills/);
   assert.match(docs, /skills-modeling-dimensional-data/);
   assert.match(docs, /skills-designing-medallion-architecture/);
   for (const phrase of ["MLOps", "mlops"]) {
@@ -276,8 +266,7 @@ test("skill markdown links resolve and the vendored prose has no dash", () => {
 test("neighbour pages point at the data skill and leave application work alone", () => {
   assert.match(read("docs/engineering/code-review.md"), /skills-reviewing-data-pipeline-code/);
   assert.match(read("docs/engineering/diagnosing-bugs.md"), /skills-debugging-data-pipelines/);
-  assert.match(read("docs/engineering/tdd.md"), /skills-testing-dbt-projects/);
-  assert.match(read("docs/engineering/tdd.md"), /skills-implementing-data-quality-checks/);
+    assert.match(read("docs/engineering/tdd.md"), /skills-implementing-data-quality-checks/);
   assert.match(read("docs/engineering/security-audit.md"), /skills-masking-pii-data/);
   assert.match(read("docs/engineering/domain-modeling.md"), /skills-modeling-dimensional-data/);
   assert.match(read("docs/engineering/wizard.md"), /skills-terraform-for-data-infra/);

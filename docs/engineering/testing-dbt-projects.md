@@ -1,3 +1,5 @@
+> **Archived.** Removed in the duplicate-skill pass. The replacement is [implementing-data-quality-checks](https://aihero.dev/skills-implementing-data-quality-checks).
+
 ## What it does
 
 `testing-dbt-projects` adds dbt tests and source freshness so a bad model fails before it is published.

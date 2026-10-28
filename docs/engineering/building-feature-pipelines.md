@@ -10,6 +10,8 @@ Type `/building-feature-pipelines`, or the [agent](https://www.aihero.dev/ai-cod
 
 Reach for this when an analytics or training table needs features built in the warehouse. The table design around it is [modeling-dimensional-data](https://aihero.dev/skills-modeling-dimensional-data).
 
+Column transforms and a feature store are part of this skill. The table stays point-in-time correct.
+
 ## Point in time
 
 The leading word is **point-in-time**. Each training row asks for feature values that existed when the label was known. The online read uses the same definition and cannot see a later update.

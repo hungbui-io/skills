@@ -1,6 +1,6 @@
 ---
 name: implementing-data-cicd
-description: "Set up CI/CD for data pipelines: SQL/dbt linting (SQLFluff), compilation and test gates, dbt Slim CI with state:modified and deferral, environment promotion (dev/staging/prod), and running only changed models on pull requests. Use when adding CI checks to a dbt or SQL project, automating pipeline tests on PRs, speeding up CI, or promoting changes across environments."
+description: "Model train-on-pull-request and promotion are part of this skill. Set up CI/CD for data pipelines: SQL/dbt linting (SQLFluff), compilation and test gates, dbt Slim CI with state:modified and deferral, environment promotion (dev/staging/prod), and running only changed models on pull requests. Use when adding CI checks to a dbt or SQL project, automating pipeline tests on PRs, speeding up CI, or promoting changes across environments."
 metadata:
   credits:
     skill: implementing-data-cicd
@@ -12,6 +12,16 @@ metadata:
 # Implementing Data CI/CD
 
 Vendored from [awesome-data-engineering-skills](https://github.com/Unknown-333/awesome-data-engineering-skills) (Apache-2.0). See [CREDITS.md](CREDITS.md). Upstream commit `1a9bde3c514e107cfd790cc82b77be1f53f42b50`.
+
+## Which procedure
+
+Dataset CI and model-promotion CI are one skill.
+
+| Request | Procedure |
+| --- | --- |
+| dbt Slim CI and environment promotion | This file, from the overview downward |
+| Train on a pull request, then promote the model | [ml-cicd](absorbed/ml-cicd/SKILL.md) |
+
 
 ## When to use
 

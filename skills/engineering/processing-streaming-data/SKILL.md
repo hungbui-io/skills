@@ -1,6 +1,6 @@
 ---
 name: processing-streaming-data
-description: "Build reliable streaming data pipelines with Kafka, Spark Structured Streaming, or Flink: delivery semantics (at-least-once vs exactly-once), idempotent consumers, event-time windowing and watermarks, handling late/out-of-order data, and checkpointing. Use when building or debugging streaming pipelines, configuring consumer groups, choosing delivery guarantees, or handling late events."
+description: "Kafka producers and consumers are part of this skill. Build reliable streaming data pipelines with Kafka, Spark Structured Streaming, or Flink: delivery semantics (at-least-once vs exactly-once), idempotent consumers, event-time windowing and watermarks, handling late/out-of-order data, and checkpointing. Use when building or debugging streaming pipelines, configuring consumer groups, choosing delivery guarantees, or handling late events."
 metadata:
   credits:
     skill: processing-streaming-data
@@ -12,6 +12,16 @@ metadata:
 # Processing Streaming Data
 
 Vendored from [awesome-data-engineering-skills](https://github.com/Unknown-333/awesome-data-engineering-skills) (Apache-2.0). See [CREDITS.md](CREDITS.md). Upstream commit `1a9bde3c514e107cfd790cc82b77be1f53f42b50`.
+
+## Which procedure
+
+Kafka clients are part of this streaming skill.
+
+| Request | Procedure |
+| --- | --- |
+| Event time, watermarks, and delivery | This file, from the overview downward |
+| Kafka producers and consumers | [building-kafka-consumers](absorbed/building-kafka-consumers/SKILL.md) |
+
 
 ## When to use
 

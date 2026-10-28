@@ -8,7 +8,9 @@ One known performance regression in application code is a different skill. This 
 
 Type `/optimizing-sql-queries`, or the [agent](https://www.aihero.dev/ai-coding-dictionary/agent) reaches for it when a task fits.
 
-Reach for this when analytical SQL is slow or expensive across engines. Snowflake specifics are [optimizing-snowflake-workloads](https://aihero.dev/skills-optimizing-snowflake-workloads). BigQuery specifics are [optimizing-bigquery-queries](https://aihero.dev/skills-optimizing-bigquery-queries). One known application performance regression is [diagnosing-bugs](https://aihero.dev/skills-diagnosing-bugs).
+Reach for this when analytical SQL is slow or expensive across engines. Snowflake specifics are [optimizing-snowflake-workloads](https://aihero.dev/skills-optimizing-sql-queries). BigQuery specifics are [optimizing-bigquery-queries](https://aihero.dev/skills-optimizing-sql-queries). One known application performance regression is [diagnosing-bugs](https://aihero.dev/skills-diagnosing-bugs).
+
+Snowflake, BigQuery, and Spark cost work are part of this skill.
 
 ## The plan
 

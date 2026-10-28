@@ -8,7 +8,7 @@ A rewrite that does not reconcile the old output to the new one is a new pipelin
 
 Type `/migrating-legacy-etl`, or the [agent](https://www.aihero.dev/ai-coding-dictionary/agent) reaches for it when a task fits.
 
-Reach for this when SSIS, Informatica, stored procedures, or an on-prem warehouse must move. The new models are [building-dbt-models](https://aihero.dev/skills-building-dbt-models) or [optimizing-pyspark-jobs](https://aihero.dev/skills-optimizing-pyspark-jobs).
+Reach for this when SSIS, Informatica, stored procedures, or an on-prem warehouse must move. The new models are [building-dbt-models](https://aihero.dev/skills-building-dbt-models) or [optimizing-pyspark-jobs](https://aihero.dev/skills-optimizing-sql-queries).
 
 ## The reconciliation
 

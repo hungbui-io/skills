@@ -1,0 +1,3 @@
+interface:
+  display_name: "Feature Store"
+  short_description: "One feature definition, two reads"

@@ -246,7 +246,6 @@ Skills I use daily for code work.
 - **[building-feature-pipelines](./skills/engineering/building-feature-pipelines/SKILL.md)**: Build warehouse feature tables with point-in-time joins and one definition for offline and online reads.
 - **[building-iceberg-tables](./skills/engineering/building-iceberg-tables/SKILL.md)**: Create and maintain Iceberg tables: partitioning, compaction, and time travel.
 - **[building-ingestion-pipelines](./skills/engineering/building-ingestion-pipelines/SKILL.md)**: Extract from databases, APIs, and files with incremental loads, watermarks, and pagination.
-- **[building-kafka-consumers](./skills/engineering/building-kafka-consumers/SKILL.md)**: Write Kafka consumers and producers with offsets, consumer groups, and a dead-letter path.
 - **[debugging-airflow-pipelines](./skills/engineering/debugging-airflow-pipelines/SKILL.md)**: Diagnose a failed or stuck Airflow task. One known application bug stays diagnosing-bugs.
 - **[debugging-data-pipelines](./skills/engineering/debugging-data-pipelines/SKILL.md)**: Trace wrong, missing, or duplicated data to the first bad stage, then plan a safe backfill. One known application bug stays diagnosing-bugs.
 - **[debugging-dbt-runs](./skills/engineering/debugging-dbt-runs/SKILL.md)**: Diagnose a failing or stale dbt run. One known application bug stays diagnosing-bugs.
@@ -265,16 +264,12 @@ Skills I use daily for code work.
 - **[masking-pii-data](./skills/engineering/masking-pii-data/SKILL.md)**: Classify PII and choose masking, hashing, tokenization, or encryption. A source-first audit report stays security-audit.
 - **[migrating-legacy-etl](./skills/engineering/migrating-legacy-etl/SKILL.md)**: Move legacy ETL or an on-prem warehouse onto dbt, Spark, or a cloud warehouse.
 - **[modeling-dimensional-data](./skills/engineering/modeling-dimensional-data/SKILL.md)**: Design a star schema, declare the grain, and track history. Glossary work stays domain-modeling.
-- **[optimizing-bigquery-queries](./skills/engineering/optimizing-bigquery-queries/SKILL.md)**: Cut BigQuery bytes billed by partitioning, clustering, and stopping full scans. An application performance regression stays diagnosing-bugs.
 - **[optimizing-parquet-storage](./skills/engineering/optimizing-parquet-storage/SKILL.md)**: Fix small files, row-group size, and compression so scans stay cheap. An application performance regression stays diagnosing-bugs.
-- **[optimizing-pyspark-jobs](./skills/engineering/optimizing-pyspark-jobs/SKILL.md)**: Reduce Spark spills, skew, and shuffles. An application performance regression stays diagnosing-bugs.
-- **[optimizing-snowflake-workloads](./skills/engineering/optimizing-snowflake-workloads/SKILL.md)**: Right-size Snowflake warehouses and stop needless scans. An application performance regression stays diagnosing-bugs.
 - **[optimizing-sql-queries](./skills/engineering/optimizing-sql-queries/SKILL.md)**: Read the query plan and cut the scan. An application performance regression stays diagnosing-bugs.
 - **[orchestrating-prefect-flows](./skills/engineering/orchestrating-prefect-flows/SKILL.md)**: Write Prefect flows with retries, caching, and a schedule.
 - **[processing-streaming-data](./skills/engineering/processing-streaming-data/SKILL.md)**: Handle delivery semantics, windows, and late data in a stream.
 - **[reviewing-data-pipeline-code](./skills/engineering/reviewing-data-pipeline-code/SKILL.md)**: Review a data change for grain, idempotency, cost, tests, and PII. Standards-and-spec review of an application diff stays code-review.
 - **[terraform-for-data-infra](./skills/engineering/terraform-for-data-infra/SKILL.md)**: Provision warehouses, buckets, and orchestration with Terraform. Steps only a human can click stay wizard.
-- **[testing-dbt-projects](./skills/engineering/testing-dbt-projects/SKILL.md)**: Add dbt tests and source freshness so a bad model fails in CI. Application red-green stays tdd.
 - **[writing-idempotent-transformations](./skills/engineering/writing-idempotent-transformations/SKILL.md)**: Write loads that produce the same rows when they run again.
 
 ### Productivity

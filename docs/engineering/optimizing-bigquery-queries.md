@@ -1,3 +1,5 @@
+> **Archived.** Removed in the duplicate-skill pass. The replacement is [optimizing-sql-queries](https://aihero.dev/skills-optimizing-sql-queries).
+
 ## What it does
 
 `optimizing-bigquery-queries` reduces bytes billed and stops full scans.
