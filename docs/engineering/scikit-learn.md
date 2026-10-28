@@ -1,3 +1,5 @@
+> **Archived.** Removed in the duplicate-skill pass. The replacement is [model-training](https://aihero.dev/skills-model-training).
+
 ## What it does
 
 `scikit-learn` supports machine learning in Python with scikit-learn

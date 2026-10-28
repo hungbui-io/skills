@@ -1,6 +1,6 @@
 ---
 name: rdkit
-description: "Cheminformatics toolkit for fine-grained molecular control. SMILES/SDF parsing, descriptors (MW, LogP, TPSA), fingerprints, substructure search, 2D/3D generation, similarity, reactions. For standard workflows with simpler interface, use datamol (wrapper around RDKit). Use rdkit for advanced control, custom sanitization, specialized algorithms."
+description: "Standard drug-discovery workflows and Molfeat featurization are part of this skill, together with fine-grained RDKit control. Cheminformatics toolkit for fine-grained molecular control. SMILES/SDF parsing, descriptors (MW, LogP, TPSA), fingerprints, substructure search, 2D/3D generation, similarity, reactions. For standard workflows with simpler interface, use datamol (wrapper around RDKit). Use rdkit for advanced control, custom sanitization, specialized algorithms."
 license: "BSD-3-Clause license"
 compatibility: "Tested with RDKit 2026.03.6 on Python 3.13; bundled scripts require the rdkit package. No credentials or network are needed after installation. Use conda-forge for the broadest binary support or PyPI package `rdkit` for supported platform wheels; `rdkit-pypi` is the legacy PyPI name."
 allowed-tools: "Read Write Edit Bash"
@@ -19,6 +19,17 @@ metadata:
 # RDKit Cheminformatics Toolkit
 
 Vendored from [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) (MIT). See [CREDITS.md](CREDITS.md). Upstream commit `5f2bc0341354fd5590aef76a533ada1e1e5b4e62`.
+
+## Which procedure
+
+Datamol and Molfeat are part of this skill.
+
+| Request | Procedure |
+| --- | --- |
+| Fine-grained RDKit control | This file, from the overview downward |
+| Standard drug-discovery workflows | [datamol](absorbed/datamol/SKILL.md) |
+| Featurization for QSAR or similarity models | [molfeat](absorbed/molfeat/SKILL.md) |
+
 
 ## Overview
 

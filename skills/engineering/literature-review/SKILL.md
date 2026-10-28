@@ -1,6 +1,6 @@
 ---
 name: literature-review
-description: "Conducts systematic, scoping, and narrative literature reviews using PubMed, arXiv, bioRxiv, Semantic Scholar, and other appropriate sources. Use for research synthesis, reproducible literature searches, screening, citation checking, or preparing Markdown and PDF reviews. Tracks search coverage, records versus studies, and evidence limitations; supports meta-analysis planning but does not supply a meta-analysis engine. House boundary: a primary-source note for a software or API question is research. This skill runs a scientific literature review."
+description: "Runs scientific literature search, scholarly API lookup, citation and BibTeX checks, claim-level evidence, and manuscript evidence packets. Conducts systematic, scoping, and narrative literature reviews using PubMed, arXiv, bioRxiv, Semantic Scholar, and other appropriate sources. Use for research synthesis, reproducible literature searches, screening, citation checking, or preparing Markdown and PDF reviews. Tracks search coverage, records versus studies, and evidence limitations; supports meta-analysis planning but does not supply a meta-analysis engine. House boundary: a primary-source note for a software or API question is research. This skill runs a scientific literature review."
 license: "MIT license"
 compatibility: "Python 3.10+ with requests; network for DOI checks and searches. Optional parallel-cli requires Parallel authentication. PDF export needs Pandoc and XeLaTeX; AI schematics need OPENROUTER_API_KEY."
 allowed-tools: "Read Write Edit Bash"
@@ -26,6 +26,21 @@ metadata:
 Vendored from [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) (MIT). See [CREDITS.md](CREDITS.md). Upstream commit `5f2bc0341354fd5590aef76a533ada1e1e5b4e62`.
 
 House boundary: a primary-source note for a software or API question is research. This skill runs a scientific literature review.
+
+## Which procedure
+
+These lookups used to be separate skills. One literature skill owns them now. Follow the matching procedure.
+
+| Request | Procedure |
+| --- | --- |
+| Systematic, scoping, or narrative review | This file, from Overview downward |
+| DOI, PMID, preprint, or scholarly API lookup | [paper-lookup](absorbed/paper-lookup/SKILL.md) |
+| BibTeX, citation checks, and reference metadata | [citation-management](absorbed/citation-management/SKILL.md) |
+| Manuscript evidence packet | [research-lookup](absorbed/research-lookup/SKILL.md) |
+| Claim-level evidence from full text | [bgpt-paper-search](absorbed/bgpt-paper-search/SKILL.md) |
+
+Exa, Paperclip, Paperzilla, and open-web Parallel monitoring stay separate skills, and only when the user names that product.
+
 
 ## Overview
 

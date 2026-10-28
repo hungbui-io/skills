@@ -1,6 +1,6 @@
 ---
 name: scientific-visualization
-description: "Creates and audits truthful, accessible, publication-ready scientific figures with Matplotlib, Seaborn, or Plotly. Use it for figure design, multi-panel layouts, uncertainty and missing-data displays, color/contrast review, image metadata validation, and journal export planning."
+description: "Matplotlib artists and Seaborn statistical plots are part of this skill. Creates and audits truthful, accessible, publication-ready scientific figures with Matplotlib, Seaborn, or Plotly. Use it for figure design, multi-panel layouts, uncertainty and missing-data displays, color/contrast review, image metadata validation, and journal export planning."
 license: "MIT"
 compatibility: "Requires Python 3.11+ and uv for pinned examples. Bundled CLIs are network-free and load Matplotlib, Pillow, or pypdf only when needed. Plotly static export with Kaleido v1 requires a compatible Chrome/Chromium installation."
 allowed-tools: "Read Write Edit Bash Glob Grep"
@@ -18,6 +18,17 @@ metadata:
 # Scientific Visualization
 
 Vendored from [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) (MIT). See [CREDITS.md](CREDITS.md). Upstream commit `5f2bc0341354fd5590aef76a533ada1e1e5b4e62`.
+
+## Which procedure
+
+Matplotlib and Seaborn are part of this skill.
+
+| Request | Procedure |
+| --- | --- |
+| Figure design, uncertainty, color, and publication checks | This file, from the overview downward |
+| Fine-grained Matplotlib artists | [matplotlib](absorbed/matplotlib/SKILL.md) |
+| Seaborn statistical plots | [seaborn](absorbed/seaborn/SKILL.md) |
+
 
 Build figures that preserve scientific meaning before optimizing appearance. Separate universal principles from dated publisher rules, preserve raw data and transformations, use color redundantly, and inspect delivered files rather than trusting plotting defaults.
 

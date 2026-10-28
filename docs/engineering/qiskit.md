@@ -10,6 +10,8 @@ Type `/qiskit`, or the [agent](https://www.aihero.dev/ai-coding-dictionary/agent
 
 Use for Qiskit 2.x circuits and operators, V2 Sampler or Estimator primitives, target-aware transpilation, local or noisy simulation, IBM QPU execution, Runtime sessions or batches, error mitigation, and Qiskit ecosystem packages.
 
+Cirq and PennyLane are part of this skill. Open quantum-system dynamics stay with qutip.
+
 ## Qiskit
 
 The leading word is **Qiskit**. Stay on that workflow, and write down the input that the result depends on.

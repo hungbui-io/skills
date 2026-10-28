@@ -1,3 +1,5 @@
+> **Archived.** Removed in the duplicate-skill pass. The replacement is [model-observability](https://aihero.dev/skills-model-observability).
+
 ## What it does
 
 `shap` explain and audit machine-learning predictions with SHAP

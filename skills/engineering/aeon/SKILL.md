@@ -1,6 +1,6 @@
 ---
 name: aeon
-description: "This skill should be used for time series machine learning tasks including classification, regression, clustering, forecasting, anomaly detection, segmentation, and similarity search. Use when working with temporal data, sequential patterns, or time-indexed observations requiring specialized algorithms beyond standard ML approaches. Particularly suited for univariate and multivariate time series analysis with scikit-learn compatible APIs."
+description: "TimesFM zero-shot forecasting is part of this skill. This skill should be used for time series machine learning tasks including classification, regression, clustering, forecasting, anomaly detection, segmentation, and similarity search. Use when working with temporal data, sequential patterns, or time-indexed observations requiring specialized algorithms beyond standard ML approaches. Particularly suited for univariate and multivariate time series analysis with scikit-learn compatible APIs."
 license: "BSD-3-Clause license"
 compatibility: "Requires Python 3.11-3.14 and aeon 1.6.0. Optional stumpy for matrix profiles, TensorFlow for deep learning. Network needed only for installation and remote datasets/results."
 allowed-tools: "Read Write Edit Bash"
@@ -18,6 +18,18 @@ metadata:
 # Aeon Time Series Machine Learning
 
 Vendored from [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) (MIT). See [CREDITS.md](CREDITS.md). Upstream commit `5f2bc0341354fd5590aef76a533ada1e1e5b4e62`.
+
+## Which procedure
+
+TimesFM zero-shot forecasting is part of this skill.
+
+| Request | Procedure |
+| --- | --- |
+| Classification, clustering, classical forecasting, anomaly detection | This file, from the overview downward |
+| TimesFM zero-shot forecasts | [timesfm-forecasting](absorbed/timesfm-forecasting/SKILL.md) |
+
+Coefficient-level ARIMA and other statistical models stay with statsmodels.
+
 
 ## Overview
 

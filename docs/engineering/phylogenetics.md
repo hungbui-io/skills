@@ -10,6 +10,8 @@ Type `/phylogenetics`, or the [agent](https://www.aihero.dev/ai-coding-dictionar
 
 Applies to homologous nucleotide or protein sequences, microbial gene trees, protein families, and cautiously interpreted dated phylogenies.
 
+ETE tree comparison and drawing are part of this skill. Diversity metrics stay with scikit-bio.
+
 ## Phylogenetics
 
 The leading word is **Phylogenetics**. Stay on that workflow, and write down the input that the result depends on.

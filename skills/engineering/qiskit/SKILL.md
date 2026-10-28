@@ -1,6 +1,6 @@
 ---
 name: qiskit
-description: "Builds, simulates, transpiles, and executes quantum circuits with Qiskit and IBM Quantum Runtime. Use for Qiskit 2.x circuits and operators, V2 Sampler or Estimator primitives, target-aware transpilation, local or noisy simulation, IBM QPU execution, Runtime sessions or batches, error mitigation, and Qiskit ecosystem packages."
+description: "Cirq and PennyLane circuits are part of this skill, together with Qiskit. Builds, simulates, transpiles, and executes quantum circuits with Qiskit and IBM Quantum Runtime. Use for Qiskit 2.x circuits and operators, V2 Sampler or Estimator primitives, target-aware transpilation, local or noisy simulation, IBM QPU execution, Runtime sessions or batches, error mitigation, and Qiskit ecosystem packages."
 license: "Apache-2.0"
 compatibility: "Python 3.10+ on a supported 64-bit platform. Local SDK workflows need qiskit; noisy simulation needs qiskit-aer; IBM QPU access needs qiskit-ibm-runtime, network access, an IBM Quantum Platform account, and an API key."
 metadata:
@@ -17,6 +17,17 @@ metadata:
 # Qiskit
 
 Vendored from [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) (MIT). See [CREDITS.md](CREDITS.md). Upstream commit `5f2bc0341354fd5590aef76a533ada1e1e5b4e62`.
+
+## Which procedure
+
+Cirq and PennyLane are part of this skill. QuTiP stays separate: it simulates open quantum systems, not a circuit SDK.
+
+| Request | Procedure |
+| --- | --- |
+| Qiskit circuits, primitives, and IBM Runtime | This file, from the overview downward |
+| Cirq, Google hardware, and noise | [cirq](absorbed/cirq/SKILL.md) |
+| PennyLane, gradients, VQE, and QAOA | [pennylane](absorbed/pennylane/SKILL.md) |
+
 
 Use current Qiskit 2.x APIs to build circuits, prepare hardware-compatible instruction set architecture (ISA) circuits, and execute them through V2 primitives.
 

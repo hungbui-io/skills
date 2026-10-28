@@ -1,6 +1,6 @@
 ---
 name: parallel-web
-description: "Uses Parallel CLI for web search, URL extraction, deep research, structured data enrichment, entity discovery, and recurring web monitoring. Best for requests that explicitly need current web evidence, academic-source discovery, repeated entity lookups, exhaustive reports, or ongoing change tracking. House boundary: a primary-source note for a software or API question is research. This skill gathers current web evidence for a scientific question."
+description: "Use this when the user names Parallel for open-web search, extraction, or monitoring. A literature review is literature-review. Uses Parallel CLI for web search, URL extraction, deep research, structured data enrichment, entity discovery, and recurring web monitoring. Best for requests that explicitly need current web evidence, academic-source discovery, repeated entity lookups, exhaustive reports, or ongoing change tracking. House boundary: a primary-source note for a software or API question is research. This skill gathers current web evidence for a scientific question."
 license: "MIT"
 compatibility: "Requires parallel-cli 0.9.3, internet access, and a Parallel API key or CLI login. Python package installation requires Python 3.10+."
 metadata:

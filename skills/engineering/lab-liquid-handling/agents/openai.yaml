@@ -1,0 +1,3 @@
+interface:
+  display_name: "Lab Liquid Handling"
+  short_description: "Opentrons protocols and PyLabRobot liquid-handling plans."

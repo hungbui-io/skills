@@ -1,3 +1,5 @@
+> **Archived.** Removed in the duplicate-skill pass. The replacement is [scientific-visualization](https://aihero.dev/skills-scientific-visualization).
+
 ## What it does
 
 `matplotlib` creates and customizes scientific plots with Matplotlib

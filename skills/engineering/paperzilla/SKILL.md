@@ -1,6 +1,6 @@
 ---
 name: paperzilla
-description: "Reads projects, searches project feeds, and retrieves recommendations and canonical papers in Paperzilla through the pz CLI. Supports recent recommendations, paper details, markdown-based summaries, recommendation feedback, JSON export, and Atom feed URLs. House boundary: a primary-source note for a software or API question is research. This skill reads a Paperzilla project feed and its canonical papers."
+description: "Use this only when the user names Paperzilla. A literature review is literature-review. Reads projects, searches project feeds, and retrieves recommendations and canonical papers in Paperzilla through the pz CLI. Supports recent recommendations, paper details, markdown-based summaries, recommendation feedback, JSON export, and Atom feed URLs. House boundary: a primary-source note for a software or API question is research. This skill reads a Paperzilla project feed and its canonical papers."
 license: "MIT"
 compatibility: "Requires the pz CLI, network access, and a Paperzilla account with CLI access. Source builds require Go 1.23 or later."
 metadata:

@@ -1,3 +1,0 @@
-interface:
-  display_name: "SHAP"
-  short_description: "Explain and audit machine-learning predictions with SHAP"

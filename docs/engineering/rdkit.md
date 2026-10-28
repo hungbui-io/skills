@@ -10,6 +10,8 @@ Type `/rdkit`, or the [agent](https://www.aihero.dev/ai-coding-dictionary/agent)
 
 Reach for this when the task matches the workflow above.
 
+Standard Datamol workflows and Molfeat featurization are part of this skill.
+
 ## RDKit
 
 The leading word is **RDKit**. Stay on that workflow, and write down the input that the result depends on.

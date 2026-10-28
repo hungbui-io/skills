@@ -1,6 +1,6 @@
 ---
 name: phylogenetics
-description: "Builds and analyzes phylogenetic trees using MAFFT multiple sequence alignment, IQ-TREE maximum likelihood with ModelFinder and branch support, and FastTree approximate inference. Uses ETE3 for tree summaries and visualization. Applies to homologous nucleotide or protein sequences, microbial gene trees, protein families, and cautiously interpreted dated phylogenies."
+description: "ETE tree comparison and drawing are part of this skill. Builds and analyzes phylogenetic trees using MAFFT multiple sequence alignment, IQ-TREE maximum likelihood with ModelFinder and branch support, and FastTree approximate inference. Uses ETE3 for tree summaries and visualization. Applies to homologous nucleotide or protein sequences, microbial gene trees, protein families, and cautiously interpreted dated phylogenies."
 license: "Unknown"
 compatibility: "Requires MAFFT and IQ-TREE 3 or FastTree executables. Optional tree summaries use Python 3.12 and ete3 3.1.3; rendering also needs PyQt5. Optional trimming needs trimAl. Network access is required for installation, not local inference."
 metadata:
@@ -17,6 +17,16 @@ metadata:
 # Phylogenetics
 
 Vendored from [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) (MIT). See [CREDITS.md](CREDITS.md). Upstream commit `5f2bc0341354fd5590aef76a533ada1e1e5b4e62`.
+
+## Which procedure
+
+ETE tree comparison and drawing are part of this skill. Diversity metrics and ordination stay with scikit-bio.
+
+| Request | Procedure |
+| --- | --- |
+| Alignment and maximum-likelihood trees | This file, from the overview downward |
+| Tree edits, comparisons, and drawings | [etetoolkit](absorbed/etetoolkit/SKILL.md) |
+
 
 ## When to use
 

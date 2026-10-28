@@ -10,6 +10,8 @@ Type `/scientific-visualization`, or the [agent](https://www.aihero.dev/ai-codin
 
 Reach for this when the task matches the workflow above.
 
+Fine-grained Matplotlib artists and Seaborn statistical plots are part of this skill.
+
 ## Scientific Visualization
 
 The leading word is **Scientific Visualization**. Stay on that workflow, and write down the input that the result depends on.

@@ -1,3 +1,5 @@
+> **Archived.** Removed in the duplicate-skill pass. The replacement is [qiskit](https://aihero.dev/skills-qiskit).
+
 ## What it does
 
 `cirq` google quantum computing framework

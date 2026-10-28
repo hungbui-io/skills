@@ -10,6 +10,8 @@ Type `/literature-review`, or the [agent](https://www.aihero.dev/ai-coding-dicti
 
 Use for research synthesis, reproducible literature searches, screening, citation checking, or preparing Markdown and PDF reviews. Tracks search coverage, records versus studies, and evidence limitations; supports meta-analysis planning but does not supply a meta-analysis engine.
 
+DOI lookup, BibTeX, claim-level evidence, and manuscript evidence packets are part of this skill. Exa, Paperclip, Paperzilla, and open-web Parallel monitoring stay separate, and only when the user names that product.
+
 ## Literature Review
 
 The leading word is **Literature Review**. Stay on that workflow, and write down the input that the result depends on.

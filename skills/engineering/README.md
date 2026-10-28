@@ -43,7 +43,6 @@ Model- or user-reachable (rich trigger phrasing so the model can reach for them)
 - **[astropy](./astropy/SKILL.md)**: Core Python library for astronomy and astrophysics workflows that need Astropy APIs, including units/quantities, coordinates, FITS I/O, tables, time systems, WCS, and cosmology.
 - **[autoskill](./autoskill/SKILL.md)**: Analyzes user-requested Screenpipe history windows to detect repeated research workflows, match existing scientific skills, and stage new skill drafts or composition recipes for review.
 - **[benchling-integration](./benchling-integration/SKILL.md)**: Benchling Python SDK and REST API integration for registry entities, inventory, ELN entries, workflows, Benchling Apps, and Data Warehouse queries.
-- **[bgpt-paper-search](./bgpt-paper-search/SKILL.md)**: Searches BGPT scientific papers by topic or DOI and retrieves claim-level evidence extracted from full text, including experiments, reported statistics, scope, limitations, and provenance.
 - **[bids](./bids/SKILL.md)**: Organizes, queries, validates, and converts Brain Imaging Data Structure (BIDS) datasets.
 - **[biopython](./biopython/SKILL.md)**: Provides Biopython workflows for sequence manipulation, file parsing (FASTA/GenBank/PDB), phylogenetics, and programmatic NCBI/PubMed access (Bio.Entrez).
 - **[bioservices](./bioservices/SKILL.md)**: Provides a Python interface to bioinformatics services including UniProt, KEGG, ChEMBL, Reactome, QuickGO, and UniChem.
@@ -51,8 +50,6 @@ Model- or user-reachable (rich trigger phrasing so the model can reach for them)
 - **[cantera](./cantera/SKILL.md)**: Runs Cantera homogeneous chemical reactors and evaluates ignition delay with mechanism provenance, conservation checks, and numerical refinement.
 - **[cellprofiler](./cellprofiler/SKILL.md)**: Runs reproducible CellProfiler microscopy pipelines for nuclear segmentation, cell counts, and per-object fluorescence measurements.
 - **[cellxgene-census](./cellxgene-census/SKILL.md)**: Queries the CZ CELLxGENE Census programmatically for versioned public single-cell and spatial transcriptomics data.
-- **[cirq](./cirq/SKILL.md)**: Google quantum computing framework.
-- **[citation-management](./citation-management/SKILL.md)**: Comprehensive citation management for academic research.
 - **[clinical-decision-support](./clinical-decision-support/SKILL.md)**: Prepares and validates research-only clinical decision-support evaluation, evidence-profile, cohort, survival, biomarker/model, privacy, and governance artifacts.
 - **[clinical-reports](./clinical-reports/SKILL.md)**: Creates safety-bounded draft structures and runs local deterministic checks for clinical case, diagnostic, trial, safety, and aggregate research reports.
 - **[cobrapy](./cobrapy/SKILL.md)**: Performs constraint-based metabolic modeling with COBRApy, including FBA, pFBA, FVA, gene knockouts, flux sampling, growth media, production envelopes, gap filling, and SBML model
@@ -60,7 +57,6 @@ Model- or user-reachable (rich trigger phrasing so the model can reach for them)
 - **[dask](./dask/SKILL.md)**: Scales pandas, NumPy, and custom Python research workflows beyond memory or across clusters with Dask.
 - **[database-lookup](./database-lookup/SKILL.md)**: Queries documented public database APIs with explicit endpoints, filters, pagination, and provenance.
 - **[datalad](./datalad/SKILL.md)**: Retrieves, versions, and publishes scientific datasets with DataLad and git-annex, and captures computational provenance with datalad run, rerun, and containers-run.
-- **[datamol](./datamol/SKILL.md)**: Pythonic wrapper around RDKit with simplified interface and sensible defaults.
 - **[deepchem](./deepchem/SKILL.md)**: Builds molecular property prediction and MoleculeNet workflows with DeepChem, including SMILES featurization, scaffold or grouped holdouts, masked labels, graph models and
 - **[deeptools](./deeptools/SKILL.md)**: NGS analysis toolkit.
 - **[depmap](./depmap/SKILL.md)**: Retrieves and analyzes Cancer Dependency Map (DepMap) release data, including CRISPR Chronos gene effects, cancer model annotations, omics biomarkers, and PRISM drug sensitivity.
@@ -68,7 +64,6 @@ Model- or user-reachable (rich trigger phrasing so the model can reach for them)
 - **[diffdock](./diffdock/SKILL.md)**: Predicts protein-small-molecule binding poses with DiffDock and DiffDock-L from PDB or sequence plus SMILES/SDF/MOL2.
 - **[dnanexus-integration](./dnanexus-integration/SKILL.md)**: Builds and operates reproducible genomics workloads on DNAnexus with the dx CLI, dxpy, apps/applets, native workflows, dxCompiler, and Nextflow.
 - **[esm](./esm/SKILL.md)**: Uses the Biohub esm Python SDK for ESM3 protein generation, ESMC embeddings, and ESMFold2 all-atom folding.
-- **[etetoolkit](./etetoolkit/SKILL.md)**: Analyzes, manipulates, compares, annotates, and visualizes phylogenetic or other hierarchical trees with ETE 4.
 - **[exa-search](./exa-search/SKILL.md)**: Searches scientific and technical web content with Exa and extracts page or PDF text from URLs in batches.
 - **[experimental-design](./experimental-design/SKILL.md)**: Designs experiments and studies BEFORE data is collected: choosing a design, randomizing, blocking, and laying out treatment combinations so results are interpretable.
 - **[exploratory-data-analysis](./exploratory-data-analysis/SKILL.md)**: Performs bounded, local exploratory analysis of explicitly supported scientific files.
@@ -96,6 +91,7 @@ Model- or user-reachable (rich trigger phrasing so the model can reach for them)
 - **[iso-standards-readiness](./iso-standards-readiness/SKILL.md)**: Prepares and structurally reviews readiness evidence for ISO management-system and laboratory-competence standards - ISO 13485 medical device QMS, ISO 14971 device risk
 - **[lab-hardware-cad](./lab-hardware-cad/SKILL.md)**: Designs custom laboratory hardware as parametric build123d models and exports fabrication artifacts as STEP, STL, and DXF files - microfluidic chips and molds, optomechanical
 - **[labarchive-integration](./labarchive-integration/SKILL.md)**: Integrates with the official LabArchives ELN REST-like API and Inventory API v1.
+- **[lab-liquid-handling](./lab-liquid-handling/SKILL.md)**: Authors Opentrons and PyLabRobot liquid-handling protocols, and keeps a physical robot run behind the operator.
 - **[lamindb](./lamindb/SKILL.md)**: Manages biological datasets and models with LaminDB, including artifact registration, lineage tracking, schema validation, Bionty ontology annotation, query/search, collections,
 - **[latchbio-integration](./latchbio-integration/SKILL.md)**: Builds, registers, debugs, and operates bioinformatics workflows on Latch using the Python SDK, CLI, Latch Data and Registry, Nextflow, Snakemake, programmatic execution, and Latch MCP.
 - **[latex-posters](./latex-posters/SKILL.md)**: Creates research posters in LaTeX using beamerposter, tikzposter, or baposter.
@@ -108,11 +104,8 @@ Model- or user-reachable (rich trigger phrasing so the model can reach for them)
 - **[markitdown](./markitdown/SKILL.md)**: Converts heterogeneous documents and selected URIs to Markdown with Microsoft MarkItDown for text analysis, search, and LLM/RAG ingestion.
 - **[matchms](./matchms/SKILL.md)**: Processes, cleans, compares, and searches tandem mass spectra with matchms.
 - **[matlab](./matlab/SKILL.md)**: Builds, reviews, migrates, and plans MATLAB or GNU Octave numerical workflows.
-- **[matplotlib](./matplotlib/SKILL.md)**: Creates and customizes scientific plots with Matplotlib.
 - **[medchem](./medchem/SKILL.md)**: Applies medicinal chemistry filters for compound triage, using drug-likeness rules (Lipinski, Veber, CNS), structural alert catalogs (PAINS, NIBR, ChEMBL), complexity metrics, and
-- **[modal](./modal/SKILL.md)**: Modal is a serverless cloud platform for running Python on demand, including on-demand GPUs.
 - **[molecular-dynamics](./molecular-dynamics/SKILL.md)**: Runs and analyzes molecular dynamics simulations with OpenMM and MDAnalysis.
-- **[molfeat](./molfeat/SKILL.md)**: Featurizes small molecules with Molfeat for QSAR/QSPR, chemical similarity, virtual screening, and molecular ML.
 - **[ncats-arax](./ncats-arax/SKILL.md)**: Queries the NCATS Translator ARAX production API for bounded, typed, provenance-rich one-hop and endpoint-pinned two-hop biomedical knowledge-graph relationships.
 - **[networkx](./networkx/SKILL.md)**: Creates, analyzes, and visualizes complex networks and graphs in Python with NetworkX.
 - **[neurokit2](./neurokit2/SKILL.md)**: Builds and audits reproducible NeuroKit2 research workflows for physiological time-series preprocessing, event/interval analysis, multimodal alignment, variability, and complexity.
@@ -125,10 +118,8 @@ Model- or user-reachable (rich trigger phrasing so the model can reach for them)
 - **[ontology-term-resolution](./ontology-term-resolution/SKILL.md)**: Resolves free-text scientific labels to ontology term IDs and validates existing CURIEs against the EBI Ontology Lookup Service (OLS4).
 - **[open-notebook](./open-notebook/SKILL.md)**: Organizes research with the self-hosted Open Notebook alternative to NotebookLM.
 - **[openpiv](./openpiv/SKILL.md)**: Performs Particle Image Velocimetry (PIV) analysis with OpenPIV.
-- **[opentrons-integration](./opentrons-integration/SKILL.md)**: Authors, reviews, migrates, simulates, and troubleshoots official Opentrons Python Protocol API v2 protocols for Flex and OT-2 robots.
 - **[optimize-for-gpu](./optimize-for-gpu/SKILL.md)**: GPU-accelerates scientific Python on NVIDIA hardware and verifies that the result is correct and faster.
 - **[pacsomatic](./pacsomatic/SKILL.md)**: Prepares and launches nf-core/pacsomatic matched tumor-normal PacBio HiFi genomics workflows from unaligned BAM inputs.
-- **[paper-lookup](./paper-lookup/SKILL.md)**: Searches 18 scholarly APIs for papers, preprints, citations, open-access full text, repository records, and journal OA status, and returns results with reproducible provenance.
 - **[paperclip](./paperclip/SKILL.md)**: Searches and reads biomedical papers, FDA/PMDA/EMA documents, clinical trials, and protein records with the GXL Paperclip CLI and Python SDK.
 - **[paperzilla](./paperzilla/SKILL.md)**: Reads projects, searches project feeds, and retrieves recommendations and canonical papers in Paperzilla through the pz CLI.
 - **[parallel-web](./parallel-web/SKILL.md)**: Uses Parallel CLI for web search, URL extraction, deep research, structured data enrichment, entity discovery, and recurring web monitoring.
@@ -136,7 +127,6 @@ Model- or user-reachable (rich trigger phrasing so the model can reach for them)
 - **[pathogen-variant-surveillance](./pathogen-variant-surveillance/SKILL.md)**: Queries public GenSpectrum LAPIS data for pathogen genomic surveillance, current lineage nomenclature, weekly sequence proportions, reporting delays, and descriptive mutation frequencies.
 - **[pathway-enrichment](./pathway-enrichment/SKILL.md)**: Performs pathway and gene-set enrichment analysis on gene lists or ranked gene data and interprets the results.
 - **[peer-review](./peer-review/SKILL.md)**: Prepares evidence-bounded, constructive peer-review drafts and structured manuscript assessments.
-- **[pennylane](./pennylane/SKILL.md)**: Builds and differentiates PennyLane quantum circuits, hybrid PyTorch or JAX models, molecular VQE and QAOA workflows.
 - **[phylogenetics](./phylogenetics/SKILL.md)**: Builds and analyzes phylogenetic trees using MAFFT multiple sequence alignment, IQ-TREE maximum likelihood with ModelFinder and branch support, and FastTree approximate inference.
 - **[pi-agent](./pi-agent/SKILL.md)**: Builds with and operates Pi, the minimal terminal coding harness.
 - **[pkpd-modeling](./pkpd-modeling/SKILL.md)**: Pharmacokinetic and pharmacodynamic modelling and simulation - non-compartmental analysis, compartmental and population PK, PK/PD and exposure-response, TMDD, PBPK orientation,
@@ -152,14 +142,12 @@ Model- or user-reachable (rich trigger phrasing so the model can reach for them)
 - **[pydeseq2](./pydeseq2/SKILL.md)**: Performs bulk RNA-seq differential expression analysis with PyDESeq2, including count validation, formula designs, explicit contrasts, Wald tests, FDR correction,
 - **[pydicom](./pydicom/SKILL.md)**: Reads, inspects, writes, transforms, and preflights local DICOM datasets and pixel data.
 - **[pyhealth](./pyhealth/SKILL.md)**: Builds and validates PyHealth clinical machine-learning pipelines for EHR, signals, imaging, and medical codes.
-- **[pylabrobot](./pylabrobot/SKILL.md)**: Develops and reviews PyLabRobot lab-automation resources, liquid-handling plans, offline simulations, and supported-device integrations.
 - **[pymatgen](./pymatgen/SKILL.md)**: Analyzes, validates, converts, and transforms materials structures and computed materials data with pymatgen.
 - **[pymc](./pymc/SKILL.md)**: Builds and checks Bayesian models with PyMC, including hierarchical models, NUTS MCMC, variational inference, mutable-data predictions, posterior predictive checks, diagnostics,
 - **[pymoo](./pymoo/SKILL.md)**: Solves and validates single-, multi-, and many-objective optimization with pymoo, including NSGA-II, NSGA-III, MOEA/D, constraints, Pareto approximations, reference directions,
 - **[pyopenms](./pyopenms/SKILL.md)**: Processes mass spectrometry data with pyOpenMS.
 - **[pysam](./pysam/SKILL.md)**: Provides Python/HTSlib workflows for genomic files.
 - **[pytdc](./pytdc/SKILL.md)**: Provides Therapeutics Data Commons workflows through PyTDC for registry discovery, dataset access, task-aware splits, evaluator metrics, benchmark groups, and bounded molecular-oracle scoring.
-- **[pytorch-lightning](./pytorch-lightning/SKILL.md)**: Deep learning framework (PyTorch Lightning / lightning package).
 - **[pyzotero](./pyzotero/SKILL.md)**: Manages Zotero reference libraries using the pyzotero Python client: retrieves, creates, updates, and deletes items, collections, tags, and attachments via the Zotero Web API v3 or local API.
 - **[qiime2-amplicon](./qiime2-amplicon/SKILL.md)**: Processes paired-end 16S amplicon reads into QIIME 2 ASVs and taxonomy with retained artifact provenance.
 - **[qiskit](./qiskit/SKILL.md)**: Builds, simulates, transpiles, and executes quantum circuits with Qiskit and IBM Quantum Runtime.
@@ -168,7 +156,6 @@ Model- or user-reachable (rich trigger phrasing so the model can reach for them)
 - **[relion](./relion/SKILL.md)**: Validates and executes RELION single-particle cryo-EM refinement and half-map postprocessing.
 - **[relsa-severity-assessment](./relsa-severity-assessment/SKILL.md)**: Supports multivariate severity assessment and exploratory endpoint-time score forecasting for laboratory animal studies using the RELSA (RELative Severity Assessment) score and
 - **[research-grants](./research-grants/SKILL.md)**: Supports research proposal preparation and review for NSF, NIH, DOE, DARPA, and Taiwan NSTC, including opportunity-specific requirements, aims, review criteria, budgets, broader
-- **[research-lookup](./research-lookup/SKILL.md)**: Compiles current scholarly evidence for a scientific manuscript or research brief when the user explicitly asks to gather literature, references, background evidence, competing
 - **[rowan](./rowan/SKILL.md)**: Rowan is a cloud-native molecular modeling and medicinal-chemistry workflow platform with a Python API.
 - **[scanpy](./scanpy/SKILL.md)**: Performs Scanpy single-cell RNA-seq QC, normalization, HVG selection, PCA/UMAP/t-SNE, clustering, exploratory marker ranking, pseudobulk preparation, visualization, and Seurat or
 - **[scholar-evaluation](./scholar-evaluation/SKILL.md)**: Provides qualitative-first, evidence-traceable developmental review of scholarly works and audit low-stakes research-assessment rubrics with optional local quality controls.
@@ -179,12 +166,9 @@ Model- or user-reachable (rich trigger phrasing so the model can reach for them)
 - **[scientific-visualization](./scientific-visualization/SKILL.md)**: Creates and audits truthful, accessible, publication-ready scientific figures with Matplotlib, Seaborn, or Plotly.
 - **[scientific-writing](./scientific-writing/SKILL.md)**: Drafts, revises, and audits scientific manuscripts or reports with explicit evidence provenance, reporting-guideline coverage, authorship accountability, confidentiality controls,
 - **[scikit-bio](./scikit-bio/SKILL.md)**: Biological data toolkit.
-- **[scikit-learn](./scikit-learn/SKILL.md)**: Supports machine learning in Python with scikit-learn.
 - **[scikit-survival](./scikit-survival/SKILL.md)**: Builds, evaluates, and audits right-censored or competing-risk survival workflows with scikit-survival, including leakage-safe preprocessing, model selection, probability
 - **[scvelo](./scvelo/SKILL.md)**: Performs RNA velocity analysis with scVelo from spliced and unspliced single-cell RNA counts.
 - **[scvi-tools](./scvi-tools/SKILL.md)**: Fits probabilistic models for single-cell omics, including scVI batch integration, scANVI annotation, totalVI CITE-seq, MultiVI RNA/ATAC integration, and posterior differential expression.
-- **[seaborn](./seaborn/SKILL.md)**: Creates Seaborn statistical visualizations with pandas integration for distributions, relationships, categorical comparisons, regression displays, pair plots, and heatmaps.
-- **[shap](./shap/SKILL.md)**: Explain and audit machine-learning predictions with SHAP.
 - **[simpy](./simpy/SKILL.md)**: Builds, inspects, tests, and analyzes bounded process-based discrete-event simulations with SimPy.
 - **[stable-baselines3](./stable-baselines3/SKILL.md)**: Trains and evaluates single-agent reinforcement learning with Stable Baselines3 (PPO, SAC, DQN, TD3, DDPG, A2C), Gymnasium custom environments, vectorized rollouts, callbacks, and
 - **[statistical-analysis](./statistical-analysis/SKILL.md)**: Guided statistical analysis for research data - test selection, assumption checking, effect sizes, power analysis, Bayesian alternatives, and APA-formatted reporting.
@@ -194,10 +178,8 @@ Model- or user-reachable (rich trigger phrasing so the model can reach for them)
 - **[tamarind](./tamarind/SKILL.md)**: Provides access to a collection of open-source molecular design and structural biology tools on the Tamarind Bio platform, via its REST API or MCP server: no local GPUs required.
 - **[tellurium](./tellurium/SKILL.md)**: Simulates biochemical kinetic models from SBML or Antimony with Tellurium and libRoadRunner, checks model units, compares deterministic parameter perturbations, and exports and
 - **[tiledbvcf](./tiledbvcf/SKILL.md)**: Stores and retrieves genomic variant calls with TileDB-VCF.
-- **[timesfm-forecasting](./timesfm-forecasting/SKILL.md)**: Performs zero-shot time-series forecasting with Google's TimesFM, including regular-grid CSV preparation, quantile forecasts, XReg covariates, and held-out evaluation.
 - **[torch-geometric](./torch-geometric/SKILL.md)**: Supports PyTorch Geometric (PyG) graph neural networks: node/link/graph classification, message passing (GCN, GAT, GraphSAGE, GIN), heterogeneous graphs, neighbor sampling, and custom datasets.
 - **[torchdrug](./torchdrug/SKILL.md)**: Builds and troubleshoots TorchDrug 0.2.1 workflows for molecular graphs, property prediction, self-supervised pretraining, molecule generation, retrosynthesis, protein
-- **[transformers](./transformers/SKILL.md)**: Hugging Face Transformers for loading Hub models, running pipeline inference, text generation, and Trainer fine-tuning on NLP, vision, audio, and multimodal tasks.
 - **[treatment-plans](./treatment-plans/SKILL.md)**: Formats and structurally validates local treatment-plan documentation after clinical decisions have already been supplied and verified by authorized licensed professionals.
 - **[umap-learn](./umap-learn/SKILL.md)**: Applies UMAP-learn to nonlinear dimensionality reduction, 2D/3D embeddings, clustering preprocessing, supervised or semi-supervised UMAP, DensMAP, AlignedUMAP, and Parametric UMAP workflows.
 - **[uncertainty-and-units](./uncertainty-and-units/SKILL.md)**: Tracks physical units and propagates measurement uncertainty in scientific calculations using pint and uncertainties.

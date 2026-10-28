@@ -12,10 +12,6 @@ const excluded = ["adaptyv", "ginkgo-cloud-lab", "what-if-oracle", "deepspot-m"]
 
 const COLLISIONS = {
   "literature-review": "research",
-  "research-lookup": "research",
-  "paper-lookup": "research",
-  "citation-management": "research",
-  "bgpt-paper-search": "research",
   "scholar-evaluation": "research",
   "exa-search": "research",
   "parallel-web": "research",
@@ -87,10 +83,10 @@ function scientificSection(router) {
 
 test("the scientific set is promoted once and leaves out the excluded skills", () => {
   const names = scientificNames();
-  assert.equal(names.length, 173);
+  assert.equal(names.length, 155);
   const plugin = JSON.parse(read(".claude-plugin/plugin.json"));
   assert.deepEqual(plugin.skills.slice().sort(), promotedSkillDirs());
-  assert.equal(plugin.skills.length, 201);
+  assert.equal(plugin.skills.length, 183);
   assert.equal(plugin.keywords.includes("science"), true);
   assert.match(plugin.description, /scientific skill set/);
 
@@ -125,10 +121,10 @@ test("the scientific set is promoted once and leaves out the excluded skills", (
     if (COLLISIONS[name]) assert.match(skill, /House boundary:/);
   }
 
-  assert.match(read(".agents/install-block.md"), /exactly the promoted set \(201 skills\)/);
+  assert.match(read(".agents/install-block.md"), /exactly the promoted set \(183 skills\)/);
   assert.match(read(".claude-plugin/marketplace.json"), /scientific skill set/);
   const changeset = read(".changeset/scientific-agent-skills.md");
-  assert.match(changeset, /173 skills/);
+  assert.match(changeset, /155 skills/);
   assert.match(changeset, /nucleic acid synthesis and protein expression is not included/);
   assert.match(changeset, /noncommercial/);
   assert.equal(dash.test(changeset), false);
@@ -172,7 +168,7 @@ test("ask-matt routes scientific work separately from application work", () => {
   const docs = read("docs/engineering/ask-matt.md");
   assert.match(docs, /There are six kinds of route/);
   assert.match(docs, /The scientific set/);
-  assert.match(docs, /Sixteen of the plugin's two-hundred-one skills/);
+  assert.match(docs, /Sixteen of the plugin's one-hundred-eighty-three skills/);
   assert.equal(docs.includes("MLOps") || docs.includes("mlops"), false);
 });
 

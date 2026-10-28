@@ -1,3 +1,5 @@
+> **Archived.** Removed in the duplicate-skill pass. The replacement is [literature-review](https://aihero.dev/skills-literature-review).
+
 ## What it does
 
 `bgpt-paper-search` searches BGPT scientific papers by topic or DOI and retrieves claim-level evidence extracted from full text, including experiments, reported statistics, scope, limitations, and provenance

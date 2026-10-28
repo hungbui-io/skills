@@ -1,3 +1,5 @@
+> **Archived.** Removed in the duplicate-skill pass. The replacement is [model-serving](https://aihero.dev/skills-model-serving).
+
 ## What it does
 
 `modal` modal is a serverless cloud platform for running Python on demand, including on-demand GPUs

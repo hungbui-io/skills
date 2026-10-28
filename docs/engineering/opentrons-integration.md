@@ -1,3 +1,5 @@
+> **Archived.** Removed in the duplicate-skill pass. The replacement is [lab-liquid-handling](https://aihero.dev/skills-lab-liquid-handling).
+
 ## What it does
 
 `opentrons-integration` authors, reviews, migrates, simulates, and troubleshoots official Opentrons Python Protocol API v2 protocols for Flex and OT-2 robots
