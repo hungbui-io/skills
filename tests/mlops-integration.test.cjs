@@ -235,6 +235,6 @@ test("each ML skill has a docs page on the published-page contract", () => {
       assert.match(link, /^https:\/\//, `${name} docs link is not absolute: ${link}`);
     }
     assert.match(doc, /https:\/\/aihero\.dev\/skills-ask-matt/);
-    assert.match(doc, /Type `\/${name}`/);
+    assert.match(doc, new RegExp("Type `/" + name + "`"));
   }
 });
