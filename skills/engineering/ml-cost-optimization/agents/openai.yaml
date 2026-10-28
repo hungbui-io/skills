@@ -1,0 +1,3 @@
+interface:
+  display_name: "ML Cost Optimization"
+  short_description: "GPU and infra cost for ML"

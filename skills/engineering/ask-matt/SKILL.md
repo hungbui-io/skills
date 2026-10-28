@@ -118,6 +118,27 @@ The rest have no house twin. Call the Skill tool with the name, one skill per ca
 
 `using-agent-skills`, `interview-me`, and `test-driven-development` are user-invoked. Tell the user to run them. Do not call the Skill tool for them.
 
+
+## ML and LLM lifecycle
+
+A third engineering set is vendored from [MLOps-agent-skills](https://github.com/timwukp/MLOps-agent-skills) (Apache-2.0). `/ask-matt` stays the router. These skills are model-invoked. Call the Skill tool with one name per call.
+
+ML delivery, in order: `/ml-solution-design`, `/data-ingestion`, `/data-validation`, `/feature-engineering`, `/feature-store`, `/model-training` with `/ml-experiment-tracking`, `/model-registry`, `/ml-cicd`, `/model-serving`, `/model-monitoring`, `/model-drift-detection` (a drift trigger goes back to `/model-training`). Cross-cutting: `/ml-testing`, `/ml-security`, `/ml-cost-optimization`, `/ml-pipeline-orchestration`, `/model-observability`. The training, registry, and serving handoff follows `skills/engineering/model-registry/references/ARTIFACT_CONTRACT.md`.
+
+LLM delivery: `/ml-solution-design`, `/llm-data-preparation`, then `/llm-fine-tuning` or `/llm-rag` (or both), `/llm-evaluation`, `/llm-deployment`, `/llm-agent-orchestration` and `/llm-guardrails`, `/llm-observability`, `/llm-cost-optimization`. `/llm-prompt-engineering` applies whenever the prompt is the product. `/llm-distillation` sits beside fine-tuning.
+
+When two skills could fire, use the house or application skill for ordinary software, and the ML skill when the work is a model or an LLM system:
+
+- Application red-green loop: `/tdd`. Model, feature, and data tests: `/ml-testing`.
+- Application pipeline gates: `/ci-cd-and-automation`. Model train, promote, and roll back: `/ml-cicd`.
+- Application telemetry: `/observability-and-instrumentation`. Deployed model health: `/model-monitoring`. Prediction explanations: `/model-observability`. Token and latency tracking: `/llm-observability`.
+- Source-first audit report: `/security-audit`. Hardening an application feature: `/security-and-hardening`. Model threats, privacy, and ML supply chain: `/ml-security`. LLM input and output filters: `/llm-guardrails`.
+- Application launch checklist: `/shipping-and-launch`. Serving a model: `/model-serving`. An LLM runtime: `/llm-deployment`.
+- A spec from a thread you already had: `/to-spec` (tell the user to run it). ML requirements and architecture: `/ml-solution-design`.
+- Measuring an application bottleneck: `/performance-optimization`. GPU and infra cost: `/ml-cost-optimization`. Token and routing cost: `/llm-cost-optimization`.
+- Documents agents read: `/writing-for-agents`. Prompts for an LLM product: `/llm-prompt-engineering`.
+- Product LLM agents (tools, graphs, multi-agent): `/llm-agent-orchestration`. The router for this repo stays `/ask-matt`. `/using-agent-skills` is the vendored phase list and only the user runs it.
+
 ## Precondition
 
 **`/setup-matt-pocock-skills`**: run before your first engineering flow to configure the issue tracker, triage labels, and doc layout the other skills assume. Custom issue trackers also work.

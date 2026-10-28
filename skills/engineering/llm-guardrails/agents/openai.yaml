@@ -1,0 +1,3 @@
+interface:
+  display_name: "LLM Guardrails"
+  short_description: "Filter LLM inputs and outputs"

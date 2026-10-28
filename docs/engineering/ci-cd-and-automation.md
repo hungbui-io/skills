@@ -21,6 +21,6 @@ The leading word is **gate**. Name the command that must pass, where it runs, an
 
 This is a **reach-for-it-anytime standalone** when the work is the pipeline itself.
 
-Its neighbour is [shipping-and-launch](https://aihero.dev/skills-shipping-and-launch), because a rollout plan assumes the pipeline can already stop a bad build.
+Its neighbour is [shipping-and-launch](https://aihero.dev/skills-shipping-and-launch), because a rollout plan assumes the pipeline can already stop a bad build. CI for model training, promotion, and rollback is [ml-cicd](https://aihero.dev/skills-ml-cicd).
 
 When you are unsure which skill fits, [ask-matt](https://aihero.dev/skills-ask-matt) routes you.

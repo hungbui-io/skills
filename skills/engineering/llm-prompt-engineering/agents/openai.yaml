@@ -1,0 +1,3 @@
+interface:
+  display_name: "LLM Prompt Engineering"
+  short_description: "Prompts for an LLM product"
