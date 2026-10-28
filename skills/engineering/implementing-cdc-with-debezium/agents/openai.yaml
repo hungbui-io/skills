@@ -1,0 +1,3 @@
+interface:
+  display_name: "Implementing CDC with Debezium"
+  short_description: "Debezium change streams and deletes"

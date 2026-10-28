@@ -1,0 +1,3 @@
+interface:
+  display_name: "Handling Schema Evolution"
+  short_description: "Additive schema changes for readers"

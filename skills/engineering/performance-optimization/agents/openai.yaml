@@ -1,0 +1,3 @@
+interface:
+  display_name: "Performance Optimization"
+  short_description: "Measure a bottleneck, then guard it"

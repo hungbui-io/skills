@@ -1,0 +1,3 @@
+interface:
+  display_name: "Building Ingestion Pipelines"
+  short_description: "Incremental extract and load"

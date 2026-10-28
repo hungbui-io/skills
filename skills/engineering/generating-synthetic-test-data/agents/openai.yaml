@@ -1,0 +1,3 @@
+interface:
+  display_name: "Generating Synthetic Test Data"
+  short_description: "Seeded rows for pipeline tests"

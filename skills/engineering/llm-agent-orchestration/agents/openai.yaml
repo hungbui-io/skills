@@ -1,0 +1,3 @@
+interface:
+  display_name: "LLM Agent Orchestration"
+  short_description: "Tools, graphs, and product agents"

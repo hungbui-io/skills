@@ -86,7 +86,7 @@ test("the scientific set is promoted once and leaves out the excluded skills", (
   assert.equal(names.length, 155);
   const plugin = JSON.parse(read(".claude-plugin/plugin.json"));
   assert.deepEqual(plugin.skills.slice().sort(), promotedSkillDirs());
-  assert.equal(plugin.skills.length, 183);
+  assert.equal(plugin.skills.length, 251);
   assert.equal(plugin.keywords.includes("science"), true);
   assert.match(plugin.description, /scientific skill set/);
 
@@ -121,7 +121,7 @@ test("the scientific set is promoted once and leaves out the excluded skills", (
     if (COLLISIONS[name]) assert.match(skill, /House boundary:/);
   }
 
-  assert.match(read(".agents/install-block.md"), /exactly the promoted set \(183 skills\)/);
+  assert.match(read(".agents/install-block.md"), /exactly the promoted set \(251 skills\)/);
   assert.match(read(".claude-plugin/marketplace.json"), /scientific skill set/);
   const changeset = read(".changeset/scientific-agent-skills.md");
   assert.match(changeset, /155 skills/);
@@ -166,9 +166,9 @@ test("ask-matt routes scientific work separately from application work", () => {
     assert.equal(section.toLowerCase().includes(phrase.toLowerCase()), false, phrase);
   }
   const docs = read("docs/engineering/ask-matt.md");
-  assert.match(docs, /There are six kinds of route/);
+  assert.match(docs, /There are nine kinds of route/);
   assert.match(docs, /The scientific set/);
-  assert.match(docs, /Sixteen of the plugin's one-hundred-eighty-three skills/);
+  assert.match(docs, /Sixteen of the plugin's two-hundred-fifty-one skills/);
   assert.equal(docs.includes("MLOps") || docs.includes("mlops"), false);
 });
 

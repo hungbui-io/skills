@@ -1,0 +1,3 @@
+interface:
+  display_name: "Engineering Databricks Pipelines"
+  short_description: "Delta, Auto Loader, Unity Catalog"

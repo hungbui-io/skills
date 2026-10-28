@@ -1,0 +1,3 @@
+interface:
+  display_name: "Git Workflow and Versioning"
+  short_description: "Atomic commits, branches, semver"

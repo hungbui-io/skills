@@ -1,0 +1,3 @@
+interface:
+  display_name: "ML CI/CD"
+  short_description: "Promote and roll back models"

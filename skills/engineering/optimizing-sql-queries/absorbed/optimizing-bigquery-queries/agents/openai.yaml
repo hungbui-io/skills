@@ -1,0 +1,3 @@
+interface:
+  display_name: "Optimizing BigQuery Queries"
+  short_description: "Cut BigQuery bytes and full scans"

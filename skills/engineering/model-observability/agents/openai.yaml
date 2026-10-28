@@ -1,0 +1,3 @@
+interface:
+  display_name: "Model Observability"
+  short_description: "Explain and log predictions"

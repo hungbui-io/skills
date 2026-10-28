@@ -1,0 +1,3 @@
+interface:
+  display_name: "Modeling Dimensional Data"
+  short_description: "Grain, star schema, and history"

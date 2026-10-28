@@ -1,0 +1,3 @@
+interface:
+  display_name: "Building Dagster Assets"
+  short_description: "Dagster assets, partitions, checks"

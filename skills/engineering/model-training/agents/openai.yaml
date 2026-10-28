@@ -1,0 +1,3 @@
+interface:
+  display_name: "Model Training"
+  short_description: "Reproducible model training"

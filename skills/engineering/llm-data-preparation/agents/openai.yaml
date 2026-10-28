@@ -1,0 +1,3 @@
+interface:
+  display_name: "LLM Data Preparation"
+  short_description: "Clean a corpus for train or RAG"

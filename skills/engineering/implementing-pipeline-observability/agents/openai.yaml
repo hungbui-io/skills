@@ -1,0 +1,3 @@
+interface:
+  display_name: "Implementing Pipeline Observability"
+  short_description: "Pipeline freshness alerts and SLAs"

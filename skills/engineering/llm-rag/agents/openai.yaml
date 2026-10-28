@@ -1,0 +1,3 @@
+interface:
+  display_name: "LLM RAG"
+  short_description: "Retrieve passages and cite them"
