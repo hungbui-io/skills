@@ -1,3 +1,0 @@
-interface:
-  display_name: "Spec-Driven Development"
-  short_description: "Gated spec before any code"

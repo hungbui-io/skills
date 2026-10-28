@@ -95,28 +95,19 @@ Off the main flow entirely.
 
 ## Vendored lifecycle
 
-A second engineering set is vendored from [agent-skills](https://github.com/addyosmani/agent-skills) (MIT). `/ask-matt` stays the router. `/using-agent-skills` is that set's phase list, and only the human runs it. It does not run at session start.
+A second engineering set is vendored from [agent-skills](https://github.com/addyosmani/agent-skills) (MIT). `/ask-matt` stays the router. Skills that repeated a house job are not in this set. The daily red-green loop is `/tdd`. The interview is `/grill-with-docs` in a repo and `/grill-me` outside one. A standards-and-spec diff review is `/code-review`. One hard bug is `/diagnosing-bugs`. A spec from the current thread is `/to-spec`. Tracer-bullet tickets are `/to-tickets`. Driving a ticket is `/implement`. Domain ADRs and the glossary are `/domain-modeling`.
 
-When two skills could fire, use the house skill. Use the vendored skill when the user asked for it, or when the house set has no twin.
+When two skills could fire, use the house skill. Use the vendored skill for the job the house set does not cover.
 
-- Daily red-green loop: `/tdd`. `/test-driven-development` is the vendored variant (stack discovery, pyramid, DAMP) and only the human invokes it.
-- Interview: `/grill-with-docs` in a repo, `/grill-me` outside one. `/interview-me` is a one-question interview for an underspecified ask. It is user-invoked, and it does not answer to "grill me".
-- Diff review against standards and spec: `/code-review`. `/code-review-and-quality` is a five-axis quality pass (correctness, readability, architecture, security, performance).
-- One hard bug or performance regression: `/diagnosing-bugs`. `/debugging-and-error-recovery` is the stop-the-line checklist for a fresh break. `/performance-optimization` measures a bottleneck (Core Web Vitals, N+1, bundles) and guards the fix.
-- Spec from a thread you already had, with no second interview: `/to-spec`. `/spec-driven-development` writes a gated spec from a vague idea, including a capability map.
-- Tracer-bullet tickets with blocking edges: `/to-tickets`. `/planning-and-task-breakdown` writes a plan document and a dependency graph.
-- Drive a ticket through `/tdd` and `/code-review`: `/implement`. `/incremental-implementation` is the slicing discipline (keep each step compilable, feature flags).
-- Glossary and domain ADRs: `/domain-modeling`. `/documentation-and-adrs` writes a general ADR or API docs.
+- One known performance regression: `/diagnosing-bugs`. `/performance-optimization` measures a bottleneck (Core Web Vitals, N+1, bundles) and guards the fix.
 - Cited reading that does not change code: `/research`. `/source-driven-development` implements from official docs and cites them.
 - Full audit report, no edits to the target: `/security-audit`. `/security-and-hardening` hardens code while you build it.
 - Deepening survey of a codebase: `/improve-codebase-architecture`. `/code-simplification` is a local clarity refactor with no behavior change.
 - Post-session environment fixes: `/retro`. `/context-engineering` packs the context for the task in front of you. It does not run at session start.
-- Product ideation into a one-pager: `/idea-refine`. The house interview is still grill.
 - Pull request body: `/pr`. `/shipping-and-launch` is the pre-launch checklist, flags, staged rollout, and rollback. `/git-workflow-and-versioning` is commits, branches, and semver.
+- Module shape: `/codebase-design`. `/api-and-interface-design` is the caller contract: resources, errors, and compatibility.
 
-The rest have no house twin. Call the Skill tool with the name, one skill per call: `api-and-interface-design`, `browser-testing-with-devtools`, `ci-cd-and-automation`, `constraint-driven-development`, `deprecation-and-migration`, `doubt-driven-development`, `frontend-ui-engineering`, `observability-and-instrumentation`.
-
-`using-agent-skills`, `interview-me`, and `test-driven-development` are user-invoked. Tell the user to run them. Do not call the Skill tool for them.
+The rest have no house twin. Call the Skill tool with the name, one skill per call: `browser-testing-with-devtools`, `ci-cd-and-automation`, `constraint-driven-development`, `deprecation-and-migration`, `doubt-driven-development`, `frontend-ui-engineering`, `observability-and-instrumentation`.
 
 ## Precondition
 

@@ -1,3 +1,5 @@
+> **Archived.** Removed in the duplicate-skill pass. The house skill stays: [grill-with-docs](https://aihero.dev/skills-grill-with-docs).
+
 ## What it does
 
 `interview-me` asks one question at a time until an underspecified ask is sharp enough to build.

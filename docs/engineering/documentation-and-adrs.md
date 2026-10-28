@@ -1,3 +1,5 @@
+> **Archived.** Removed in the duplicate-skill pass. The house skill stays: [domain-modeling](https://aihero.dev/skills-domain-modeling).
+
 ## What it does
 
 `documentation-and-adrs` records a decision, or the docs for a public API, so a later reader can see why the code looks like this.

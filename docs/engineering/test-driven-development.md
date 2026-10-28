@@ -1,3 +1,5 @@
+> **Archived.** Removed in the duplicate-skill pass. The house skill stays: [tdd](https://aihero.dev/skills-tdd).
+
 ## What it does
 
 `test-driven-development` is the vendored red-green loop: discover the stack, write a failing test, make it pass, and refactor. Bugs use the prove-it pattern. Tests prefer DAMP over clever helpers.
