@@ -1,0 +1,3 @@
+interface:
+  display_name: "Implementing Data CI/CD"
+  short_description: "Lint, test, and promote data changes"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Designing Data Contracts"
+  short_description: "Producer and consumer contracts"

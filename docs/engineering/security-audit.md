@@ -77,4 +77,4 @@ No. Inside this skill, `research` is a read-only subagent role (reconnaissance, 
 
 [code-review](https://aihero.dev/skills-code-review) is the neighbour people confuse it with, because both are reviews. That skill checks a diff against the repo's standards and the originating spec. This one hunts trust-boundary failures, including across a whole repo, and it will not score a checklist miss as a vulnerability. [diagnosing-bugs](https://aihero.dev/skills-diagnosing-bugs) is the other neighbour: one known bug, a tight feedback loop, then a fix. A confirmed finding you decide to fix can re-enter the main flow at [to-spec](https://aihero.dev/skills-to-spec) or [implement](https://aihero.dev/skills-implement).
 
-[ask-matt](https://aihero.dev/skills-ask-matt) is the map when you are unsure which of those the situation wants.
+Classifying and masking PII in a data pipeline is [masking-pii-data](https://aihero.dev/skills-masking-pii-data). [ask-matt](https://aihero.dev/skills-ask-matt) is the map when you are unsure which of those the situation wants.

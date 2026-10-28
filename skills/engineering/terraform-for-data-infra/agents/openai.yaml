@@ -1,0 +1,3 @@
+interface:
+  display_name: "Terraform for Data Infra"
+  short_description: "Terraform for warehouses and buckets"

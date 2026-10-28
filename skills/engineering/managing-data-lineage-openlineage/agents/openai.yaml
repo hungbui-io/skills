@@ -1,0 +1,3 @@
+interface:
+  display_name: "Managing Data Lineage with OpenLineage"
+  short_description: "Lineage for impact and backfills"

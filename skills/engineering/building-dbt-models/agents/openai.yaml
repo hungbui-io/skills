@@ -1,0 +1,3 @@
+interface:
+  display_name: "Building dbt Models"
+  short_description: "dbt models and incremental logic"

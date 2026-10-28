@@ -1,0 +1,3 @@
+interface:
+  display_name: "Optimizing Parquet Storage"
+  short_description: "Parquet file size and layout"

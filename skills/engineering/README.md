@@ -33,3 +33,39 @@ Model- or user-reachable (rich trigger phrasing so the model can reach for them)
 - **[code-review](./code-review/SKILL.md)**: Two-axis review of the diff since a fixed point: **Standards** (does it follow the repo's coding standards, plus a Fowler smell baseline?) and **Spec** (does it faithfully implement the originating issue/spec?), run as parallel sub-agents.
 - **[pr](./pr/SKILL.md)**: The shape a pull request body should take: a summary as the smallest visual that makes the change clear, before/after evidence that it works, and a merge-danger call (one-way or two-way door, plus blast radius).
 - **[wizard](./wizard/SKILL.md)**: Generate an interactive bash wizard that walks a human through steps only they can perform: provisioning infrastructure, setting up credentials or CI secrets, walking an unfamiliar third-party dashboard, or running a one-off migration or cutover.
+- **[authoring-airflow-dags](./authoring-airflow-dags/SKILL.md)**: Write Airflow DAGs with retries, schedules, and tasks that are safe to re-run.
+- **[building-dagster-assets](./building-dagster-assets/SKILL.md)**: Build Dagster assets with partitions, resources, and asset checks.
+- **[building-dbt-models](./building-dbt-models/SKILL.md)**: Build dbt models with a declared grain and incremental logic that is safe to re-run.
+- **[building-feature-pipelines](./building-feature-pipelines/SKILL.md)**: Build warehouse feature tables with point-in-time joins and one definition for offline and online reads.
+- **[building-iceberg-tables](./building-iceberg-tables/SKILL.md)**: Create and maintain Iceberg tables: partitioning, compaction, and time travel.
+- **[building-ingestion-pipelines](./building-ingestion-pipelines/SKILL.md)**: Extract from databases, APIs, and files with incremental loads, watermarks, and pagination.
+- **[building-kafka-consumers](./building-kafka-consumers/SKILL.md)**: Write Kafka consumers and producers with offsets, consumer groups, and a dead-letter path.
+- **[debugging-airflow-pipelines](./debugging-airflow-pipelines/SKILL.md)**: Diagnose a failed or stuck Airflow task. One known application bug stays diagnosing-bugs.
+- **[debugging-data-pipelines](./debugging-data-pipelines/SKILL.md)**: Trace wrong, missing, or duplicated data to the first bad stage, then plan a safe backfill. One known application bug stays diagnosing-bugs.
+- **[debugging-dbt-runs](./debugging-dbt-runs/SKILL.md)**: Diagnose a failing or stale dbt run. One known application bug stays diagnosing-bugs.
+- **[designing-backfills-and-replays](./designing-backfills-and-replays/SKILL.md)**: Reprocess a historical window without doubling rows or rewriting the wrong dates.
+- **[designing-data-contracts](./designing-data-contracts/SKILL.md)**: Define what a producer promises downstream, and fail a change that would break that promise.
+- **[designing-medallion-architecture](./designing-medallion-architecture/SKILL.md)**: Organize a lakehouse into bronze, silver, and gold, with a rule for what each layer may contain.
+- **[documenting-dbt-models](./documenting-dbt-models/SKILL.md)**: Write dbt model and column descriptions and exposures. Documents that agents read stay writing-for-agents.
+- **[engineering-databricks-pipelines](./engineering-databricks-pipelines/SKILL.md)**: Build Delta and Auto Loader pipelines and register them in Unity Catalog.
+- **[generating-synthetic-test-data](./generating-synthetic-test-data/SKILL.md)**: Generate seeded test rows with edge cases and referential integrity.
+- **[handling-schema-evolution](./handling-schema-evolution/SKILL.md)**: Add, rename, or retype a column so existing readers keep working.
+- **[implementing-cdc-with-debezium](./implementing-cdc-with-debezium/SKILL.md)**: Replicate an OLTP database with Debezium, including deletes.
+- **[implementing-data-cicd](./implementing-data-cicd/SKILL.md)**: Lint, compile, and test a data change, then promote it across environments.
+- **[implementing-data-quality-checks](./implementing-data-quality-checks/SKILL.md)**: Block bad data on freshness, volume, schema, and integrity. Application red-green stays tdd.
+- **[implementing-pipeline-observability](./implementing-pipeline-observability/SKILL.md)**: Alert on pipeline freshness and volume before a stakeholder finds the gap.
+- **[managing-data-lineage-openlineage](./managing-data-lineage-openlineage/SKILL.md)**: Capture cross-tool lineage so an incident or a backfill has a scope.
+- **[masking-pii-data](./masking-pii-data/SKILL.md)**: Classify PII and choose masking, hashing, tokenization, or encryption. A source-first audit report stays security-audit.
+- **[migrating-legacy-etl](./migrating-legacy-etl/SKILL.md)**: Move legacy ETL or an on-prem warehouse onto dbt, Spark, or a cloud warehouse.
+- **[modeling-dimensional-data](./modeling-dimensional-data/SKILL.md)**: Design a star schema, declare the grain, and track history. Glossary work stays domain-modeling.
+- **[optimizing-bigquery-queries](./optimizing-bigquery-queries/SKILL.md)**: Cut BigQuery bytes billed by partitioning, clustering, and stopping full scans. An application performance regression stays diagnosing-bugs.
+- **[optimizing-parquet-storage](./optimizing-parquet-storage/SKILL.md)**: Fix small files, row-group size, and compression so scans stay cheap. An application performance regression stays diagnosing-bugs.
+- **[optimizing-pyspark-jobs](./optimizing-pyspark-jobs/SKILL.md)**: Reduce Spark spills, skew, and shuffles. An application performance regression stays diagnosing-bugs.
+- **[optimizing-snowflake-workloads](./optimizing-snowflake-workloads/SKILL.md)**: Right-size Snowflake warehouses and stop needless scans. An application performance regression stays diagnosing-bugs.
+- **[optimizing-sql-queries](./optimizing-sql-queries/SKILL.md)**: Read the query plan and cut the scan. An application performance regression stays diagnosing-bugs.
+- **[orchestrating-prefect-flows](./orchestrating-prefect-flows/SKILL.md)**: Write Prefect flows with retries, caching, and a schedule.
+- **[processing-streaming-data](./processing-streaming-data/SKILL.md)**: Handle delivery semantics, windows, and late data in a stream.
+- **[reviewing-data-pipeline-code](./reviewing-data-pipeline-code/SKILL.md)**: Review a data change for grain, idempotency, cost, tests, and PII. Standards-and-spec review of an application diff stays code-review.
+- **[terraform-for-data-infra](./terraform-for-data-infra/SKILL.md)**: Provision warehouses, buckets, and orchestration with Terraform. Steps only a human can click stay wizard.
+- **[testing-dbt-projects](./testing-dbt-projects/SKILL.md)**: Add dbt tests and source freshness so a bad model fails in CI. Application red-green stays tdd.
+- **[writing-idempotent-transformations](./writing-idempotent-transformations/SKILL.md)**: Write loads that produce the same rows when they run again.

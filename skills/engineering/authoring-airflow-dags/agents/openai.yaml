@@ -1,0 +1,3 @@
+interface:
+  display_name: "Authoring Airflow DAGs"
+  short_description: "Production Airflow DAGs and retries"

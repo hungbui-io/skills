@@ -1,0 +1,3 @@
+interface:
+  display_name: "Optimizing Snowflake Workloads"
+  short_description: "Warehouse size and Snowflake cost"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Testing dbt Projects"
+  short_description: "dbt tests and source freshness"
