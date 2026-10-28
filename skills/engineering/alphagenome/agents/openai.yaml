@@ -1,0 +1,3 @@
+interface:
+  display_name: "Alphagenome"
+  short_description: "Looks up precomputed AlphaGenome Atlas effects for any"

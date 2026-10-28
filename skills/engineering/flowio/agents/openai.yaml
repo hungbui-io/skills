@@ -1,0 +1,3 @@
+interface:
+  display_name: "Flowio"
+  short_description: "Reads, inspects, and writes Flow Cytometry Standard (FCS)"

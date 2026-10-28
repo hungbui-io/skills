@@ -1,0 +1,3 @@
+interface:
+  display_name: "Omero Integration"
+  short_description: "Inspects and automates microscopy data workflows against"

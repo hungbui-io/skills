@@ -1,0 +1,3 @@
+interface:
+  display_name: "Relion"
+  short_description: "Validates and executes RELION single-particle cryo-EM"

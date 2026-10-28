@@ -1,0 +1,3 @@
+interface:
+  display_name: "Bioservices"
+  short_description: "Provides a Python interface to bioinformatics services"

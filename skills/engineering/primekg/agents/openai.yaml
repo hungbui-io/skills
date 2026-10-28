@@ -1,0 +1,3 @@
+interface:
+  display_name: "Primekg"
+  short_description: "Queries a pinned Precision Medicine Knowledge Graph"

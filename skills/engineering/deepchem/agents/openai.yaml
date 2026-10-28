@@ -1,0 +1,3 @@
+interface:
+  display_name: "Deepchem"
+  short_description: "Builds molecular property prediction and MoleculeNet"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Pennylane"
+  short_description: "Builds and differentiates PennyLane quantum circuits"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Depmap"
+  short_description: "Retrieves and analyzes Cancer Dependency Map (DepMap)"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Dnanexus Integration"
+  short_description: "Builds and operates reproducible genomics workloads on"

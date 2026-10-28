@@ -1,0 +1,3 @@
+interface:
+  display_name: "Scvelo"
+  short_description: "Performs RNA velocity analysis with scVelo from spliced and"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Mageck"
+  short_description: "Analyzes pooled CRISPR screen FASTQ reads and guide-count"

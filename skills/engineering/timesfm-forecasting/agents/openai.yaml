@@ -1,0 +1,3 @@
+interface:
+  display_name: "Timesfm Forecasting"
+  short_description: "Performs zero-shot time-series forecasting with Google's"

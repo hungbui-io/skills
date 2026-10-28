@@ -1,0 +1,3 @@
+interface:
+  display_name: "Lab Hardware CAD"
+  short_description: "Designs custom laboratory hardware as parametric build123d"

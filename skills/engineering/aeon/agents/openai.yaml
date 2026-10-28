@@ -1,0 +1,3 @@
+interface:
+  display_name: "Aeon"
+  short_description: "This skill should be used for time series machine learning"

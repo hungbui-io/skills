@@ -1,0 +1,3 @@
+interface:
+  display_name: "Imaging Data Commons"
+  short_description: "Queries and downloads public cancer imaging data from NCI"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Pyzotero"
+  short_description: "Manages Zotero reference libraries using the pyzotero"

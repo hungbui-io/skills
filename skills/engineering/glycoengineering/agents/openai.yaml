@@ -1,0 +1,3 @@
+interface:
+  display_name: "Glycoengineering"
+  short_description: "Analyzes and engineers protein glycosylation by scanning"

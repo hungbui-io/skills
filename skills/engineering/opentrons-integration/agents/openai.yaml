@@ -1,0 +1,3 @@
+interface:
+  display_name: "Opentrons Integration"
+  short_description: "Authors, reviews, migrates, simulates, and troubleshoots"

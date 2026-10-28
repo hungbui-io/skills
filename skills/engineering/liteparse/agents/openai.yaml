@@ -1,0 +1,3 @@
+interface:
+  display_name: "Liteparse"
+  short_description: "Local document and PDF parsing that returns spatial text"

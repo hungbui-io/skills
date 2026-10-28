@@ -1,0 +1,3 @@
+interface:
+  display_name: "UMAP Learn"
+  short_description: "Applies UMAP-learn to nonlinear dimensionality reduction"

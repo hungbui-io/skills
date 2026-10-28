@@ -1,0 +1,3 @@
+interface:
+  display_name: "Qiskit"
+  short_description: "Builds, simulates, transpiles, and executes quantum"

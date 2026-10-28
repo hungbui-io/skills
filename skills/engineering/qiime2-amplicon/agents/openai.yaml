@@ -1,0 +1,3 @@
+interface:
+  display_name: "QIIME 2 Amplicon"
+  short_description: "Processes paired-end 16S amplicon reads into QIIME 2 ASVs"

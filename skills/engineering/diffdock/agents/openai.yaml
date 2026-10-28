@@ -1,0 +1,3 @@
+interface:
+  display_name: "Diffdock"
+  short_description: "Predicts protein-small-molecule binding poses with DiffDock"

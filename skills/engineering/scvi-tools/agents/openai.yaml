@@ -1,0 +1,3 @@
+interface:
+  display_name: "Scvi Tools"
+  short_description: "Fits probabilistic models for single-cell omics, including"

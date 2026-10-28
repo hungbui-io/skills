@@ -1,0 +1,3 @@
+interface:
+  display_name: "Pathml"
+  short_description: "Supports local computational pathology research with"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Zarr Python"
+  short_description: "Stores and queries chunked N-D scientific arrays with"

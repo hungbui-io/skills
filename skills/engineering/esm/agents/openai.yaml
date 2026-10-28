@@ -1,0 +1,3 @@
+interface:
+  display_name: "ESM"
+  short_description: "Uses the Biohub esm Python SDK for ESM3 protein generation"

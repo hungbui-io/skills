@@ -1,0 +1,3 @@
+interface:
+  display_name: "nmrglue"
+  short_description: "Processes calibrated one-dimensional complex NMR"

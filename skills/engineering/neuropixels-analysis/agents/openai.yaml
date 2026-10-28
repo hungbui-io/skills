@@ -1,0 +1,3 @@
+interface:
+  display_name: "Neuropixels Analysis"
+  short_description: "Analyzes Neuropixels extracellular recordings end-to-end"

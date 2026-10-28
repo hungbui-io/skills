@@ -1,0 +1,3 @@
+interface:
+  display_name: "Deeptools"
+  short_description: "NGS analysis toolkit. BAM to bigWig conversion, QC"

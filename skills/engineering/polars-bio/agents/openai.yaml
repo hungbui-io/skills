@@ -1,0 +1,3 @@
+interface:
+  display_name: "Polars Bio"
+  short_description: "Performs genomic interval overlap, nearest, merge"

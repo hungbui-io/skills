@@ -1,0 +1,3 @@
+interface:
+  display_name: "Pytdc"
+  short_description: "Provides Therapeutics Data Commons workflows through PyTDC"

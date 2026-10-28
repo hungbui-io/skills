@@ -1,0 +1,3 @@
+interface:
+  display_name: "Clinical Reports"
+  short_description: "Creates safety-bounded draft structures and runs local"

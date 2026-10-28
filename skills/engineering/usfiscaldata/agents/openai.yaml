@@ -1,0 +1,3 @@
+interface:
+  display_name: "Usfiscaldata"
+  short_description: "Queries the U.S. Treasury Fiscal Data REST API for federal"

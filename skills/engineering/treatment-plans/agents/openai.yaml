@@ -1,0 +1,3 @@
+interface:
+  display_name: "Treatment Plans"
+  short_description: "Formats and structurally validates local treatment-plan"

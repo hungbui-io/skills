@@ -1,0 +1,3 @@
+interface:
+  display_name: "Tellurium"
+  short_description: "Simulates biochemical kinetic models from SBML or Antimony"

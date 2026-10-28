@@ -1,0 +1,3 @@
+interface:
+  display_name: "Genomic Intelligence"
+  short_description: "Predicts regulatory features, gene structure, and"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "BIDS"
+  short_description: "Organizes, queries, validates, and converts Brain Imaging"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Vaex"
+  short_description: "Processes large tabular scientific datasets with Vaex"

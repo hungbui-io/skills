@@ -1,0 +1,3 @@
+interface:
+  display_name: "Pydeseq2"
+  short_description: "Performs bulk RNA-seq differential expression analysis with"

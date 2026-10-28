@@ -1,0 +1,3 @@
+interface:
+  display_name: "Hugging Science"
+  short_description: "Discovers and evaluates scientific datasets, models"

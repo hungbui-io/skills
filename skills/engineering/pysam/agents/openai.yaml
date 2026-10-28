@@ -1,0 +1,3 @@
+interface:
+  display_name: "pysam"
+  short_description: "Provides Python/HTSlib workflows for genomic files"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Scientific Schematics"
+  short_description: "Generates scientific diagram drafts using Nano Banana 2 AI"

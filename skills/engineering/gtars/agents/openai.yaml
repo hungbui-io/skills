@@ -1,0 +1,3 @@
+interface:
+  display_name: "Gtars"
+  short_description: "Supports Gtars for local genomic interval models and set"

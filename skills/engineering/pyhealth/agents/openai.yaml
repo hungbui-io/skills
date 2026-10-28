@@ -1,0 +1,3 @@
+interface:
+  display_name: "Pyhealth"
+  short_description: "Builds and validates PyHealth clinical machine-learning"

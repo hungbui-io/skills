@@ -1,0 +1,3 @@
+interface:
+  display_name: "Gget"
+  short_description: "Queries 20+ bioinformatics resources through CLI/Python"

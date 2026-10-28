@@ -1,0 +1,3 @@
+interface:
+  display_name: "pyOpenMS"
+  short_description: "Processes mass spectrometry data with pyOpenMS. Supports"

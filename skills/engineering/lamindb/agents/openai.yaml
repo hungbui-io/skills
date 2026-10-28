@@ -1,0 +1,3 @@
+interface:
+  display_name: "Lamindb"
+  short_description: "Manages biological datasets and models with LaminDB"

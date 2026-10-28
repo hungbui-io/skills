@@ -1,0 +1,3 @@
+interface:
+  display_name: "Biopython"
+  short_description: "Provides Biopython workflows for sequence manipulation"

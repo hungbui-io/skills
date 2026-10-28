@@ -1,0 +1,3 @@
+interface:
+  display_name: "Arbor"
+  short_description: "Applies Arbor Hypothesis Tree Refinement to research"

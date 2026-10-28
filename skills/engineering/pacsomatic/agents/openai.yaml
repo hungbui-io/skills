@@ -1,0 +1,3 @@
+interface:
+  display_name: "Pacsomatic"
+  short_description: "Prepares and launches nf-core/pacsomatic matched"

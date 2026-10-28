@@ -1,0 +1,3 @@
+interface:
+  display_name: "Paperclip"
+  short_description: "Searches and reads biomedical papers, FDA/PMDA/EMA"

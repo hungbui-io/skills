@@ -1,0 +1,3 @@
+interface:
+  display_name: "scikit-survival"
+  short_description: "Builds, evaluates, and audits right-censored or"
