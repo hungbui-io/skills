@@ -325,4 +325,4 @@ See [references/REFERENCE.md](references/REFERENCE.md) for test comparisons and 
 ## Related skills
 
 **Upstream:** `model-monitoring` (feature/prediction distributions and performance metrics) · **Downstream:** `model-training` (retraining trigger: this closes the lifecycle loop)
-**See also:** `ml-pipeline-orchestration` to automate the retraining loop · `data-validation` for schema-level checks upstream of drift
+**See also:** `ml-pipeline-orchestration` to automate the retraining loop · `implementing-data-quality-checks` for schema-level checks upstream of drift

@@ -111,7 +111,7 @@ Version: 0.x (draft) | Author: | Date: | Reviewers:
 ## 5. Stage-to-Skill Mapping
 | Stage | Repo skill | Tooling |
 |-------|-----------|---------|
-| Ingest | data-ingestion | Glue |
+| Ingest | building-ingestion-pipelines | Glue |
 | ...   | ...       | ...     |
 
 ## 6. Cost Estimate

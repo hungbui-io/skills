@@ -1,3 +1,5 @@
+> **Archived.** Removed in the duplicate-skill pass. The house skill stays: [diagnosing-bugs](https://aihero.dev/skills-diagnosing-bugs).
+
 ## What it does
 
 `debugging-and-error-recovery` stops the line on a fresh break: reproduce it, bisect, reduce, fix the root cause, add a guard, and verify.

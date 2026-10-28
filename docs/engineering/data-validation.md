@@ -1,3 +1,5 @@
+> **Archived.** Removed in the duplicate-skill pass. The replacement is [implementing-data-quality-checks](https://aihero.dev/skills-implementing-data-quality-checks).
+
 ## What it does
 
 `data-validation` stops a training batch that fails a schema, range, or distribution check.

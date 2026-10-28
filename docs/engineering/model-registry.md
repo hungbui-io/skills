@@ -8,7 +8,7 @@ Serving loads the artifact the contract describes. A checkpoint with no version,
 
 Type `/model-registry`, or the [agent](https://www.aihero.dev/ai-coding-dictionary/agent) reaches for it when a task fits.
 
-Reach for this when a training run has an artifact worth keeping. Deploying that version is [ml-cicd](https://aihero.dev/skills-ml-cicd) and [model-serving](https://aihero.dev/skills-model-serving).
+Reach for this when a training run has an artifact worth keeping. Deploying that version is [implementing-data-cicd](https://aihero.dev/skills-implementing-data-cicd) and [model-serving](https://aihero.dev/skills-model-serving).
 
 ## The artifact contract
 

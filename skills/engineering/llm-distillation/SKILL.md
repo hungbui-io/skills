@@ -307,4 +307,4 @@ See [references/REFERENCE.md](references/REFERENCE.md) for teacher/license compa
 ## Related skills
 
 **Upstream:** `llm-data-preparation` (seed prompts, dedup machinery) · **Downstream:** `llm-fine-tuning` (trains the student on this skill's JSONL), then `llm-evaluation` (student-vs-teacher gates)
-**See also:** `llm-cost-optimization`: distillation is itself a cost lever (replace frontier calls with the student) · `llm-deployment` for serving the distilled student
+**See also:** `llm-cost-optimization`: distillation is itself a cost lever (replace frontier calls with the student) · `model-serving` for serving the distilled student

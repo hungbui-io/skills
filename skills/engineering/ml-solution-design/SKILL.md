@@ -73,7 +73,7 @@ Decide from the latency SLO and how fresh inputs must be, not from what sounds i
 | Cost profile | Cheapest (spot, scale-to-zero) | Always-on endpoints | Always-on consumers |
 | Complexity | Low | Medium | High |
 | Examples | Churn scores, demand forecast, nightly recommendations | Fraud check at checkout, search ranking, chatbot | Anomaly detection on sensor/clickstream |
-| Repo skills involved | ml-pipeline-orchestration, model-serving (batch transform) | model-serving, model-monitoring | data-ingestion (streaming), model-serving |
+| Repo skills involved | ml-pipeline-orchestration, model-serving (batch transform) | model-serving, model-monitoring | building-ingestion-pipelines (streaming), model-serving |
 
 Decision rules:
 - If a prediction computed last night still drives the same business action, choose **batch**. Roughly 70-80% of first ML use cases in an enterprise are fine as batch.
@@ -105,7 +105,7 @@ Decision rules:
 
 | Component | Buy/managed option | Build/OSS option | Default recommendation |
 |-----------|-------------------|------------------|------------------------|
-| Feature store | SageMaker Feature Store, Tecton | Feast on Redis/DynamoDB | Skip entirely until you have >2 models sharing features (see feature-store skill) |
+| Feature store | SageMaker Feature Store, Tecton | Feast on Redis/DynamoDB | Skip entirely until you have >2 models sharing features (see building-feature-pipelines) |
 | Model registry | SageMaker Model Registry | MLflow Model Registry (3.x, alias-based) | MLflow if self-hosted anything; SageMaker registry if all-in AWS (see model-registry skill) |
 | Experiment tracking | SageMaker MLflow (managed) | Self-hosted MLflow, W&B | Managed MLflow: tracking servers are annoying to operate (see ml-experiment-tracking) |
 | Orchestration | SageMaker Pipelines, Step Functions | Airflow, Dagster, Argo | Match to team: existing Airflow → keep it (see ml-pipeline-orchestration) |
@@ -140,11 +140,11 @@ Each stage names the repo skill that implements it.
 ```
  sources (RDS/S3/APIs)
         |
- [data-ingestion]          Glue / Kinesis -> S3 data lake
+ [building-ingestion-pipelines]   Glue / Kinesis -> S3 data lake
         |
- [data-validation]         Great Expectations checks in pipeline
+ [implementing-data-quality-checks]  Great Expectations checks in pipeline
         |
- [feature-engineering]     SageMaker Processing / Glue jobs
+ [building-feature-pipelines]  SageMaker Processing / Glue jobs
         |
  [model-training]          SageMaker ModelTrainer (SDK v3)
         |
@@ -162,13 +162,13 @@ Each stage names the repo skill that implements it.
 ```
  sources
         |
- [data-ingestion]          Kafka / Airbyte -> object store (S3/MinIO)
+ [building-ingestion-pipelines]   Kafka / Airbyte -> object store (S3/MinIO)
         |
- [data-validation]         Great Expectations / pandera in DAGs
+ [implementing-data-quality-checks]  Great Expectations / pandera in DAGs
         |
- [feature-engineering]     Spark / dbt;  [feature-store] Feast (only if shared)
+ [building-feature-pipelines]  Spark / dbt; Feast only if features are shared
         |
- [ml-pipeline-orchestration]  Airflow / Argo Workflows drives:
+ [ml-pipeline-orchestration]  Kubeflow, ZenML, or Argo drives:
         |
  [model-training]          K8s GPU jobs;  [ml-experiment-tracking] MLflow
         |
@@ -184,11 +184,11 @@ Each stage names the repo skill that implements it.
 ```
  documents/text                          tabular features
         |                                       |
- [llm-rag] or [llm-fine-tuning]          [feature-engineering]
+ [llm-rag] or [llm-fine-tuning]          [building-feature-pipelines]
         |                                       |
  [llm-evaluation]  eval harness          [model-training] -> [model-registry]
         |                                       |
- [llm-deployment]  Bedrock / vLLM        [model-serving]
+ [model-serving]   Bedrock / vLLM        [model-serving]
         |                                       |
  [llm-guardrails]  I/O filtering                |
         |                                       |
@@ -197,7 +197,7 @@ Each stage names the repo skill that implements it.
                                    [model-monitoring] both paths
 ```
 
-LLM path ordering: llm-rag / llm-fine-tuning → llm-evaluation → llm-deployment →
+LLM path ordering: llm-rag / llm-fine-tuning → llm-evaluation → model-serving →
 llm-guardrails → llm-observability. Never deploy an LLM feature without the evaluation
 and guardrails stages: they are the LLM equivalents of test suites and input validation.
 
@@ -248,5 +248,5 @@ assumptions, and the architecture doc / risk register / acceptance-criteria temp
 
 ## Related skills
 
-**Upstream:** none: lifecycle entry point (business requirements come in here) · **Downstream:** `data-ingestion` (approved architecture, data-source inventory); for LLM projects, `llm-data-preparation`
+**Upstream:** none: lifecycle entry point (business requirements come in here) · **Downstream:** `building-ingestion-pipelines` (approved architecture, data-source inventory); for LLM projects, `llm-data-preparation`
 **See also:** `ml-cost-optimization` for budget sizing at design time · `ml-security` for compliance constraints up front · `ml-pipeline-orchestration` when the design calls for automated pipelines

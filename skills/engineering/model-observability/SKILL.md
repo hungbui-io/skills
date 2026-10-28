@@ -1,7 +1,7 @@
 ---
 name: model-observability
 description: >
-  Implement ML observability for production systems. Covers prediction logging, model explainability (SHAP, LIME,
+  SHAP explainers and plots are part of this skill. Implement ML observability for production systems. Covers prediction logging, model explainability (SHAP, LIME,
   Integrated Gradients, Anchors, counterfactuals), feature attribution, OpenTelemetry integration for ML services,
   distributed tracing across pipeline components, structured logging, debugging mispredictions, slice-based analysis
   by cohort/segment, fairness and bias detection, model interpretability dashboards, root cause analysis, data
@@ -25,6 +25,15 @@ metadata:
 Vendored from [MLOps-agent-skills](https://github.com/timwukp/MLOps-agent-skills) (Apache-2.0). See [CREDITS.md](CREDITS.md). Upstream commit `6426013a15ee0e431dbb81938deac2f6e25c0941`.
 
 House boundary: application telemetry is observability-and-instrumentation. This skill explains model predictions and logs them.
+
+## Which procedure
+
+SHAP explainers and plots are part of this skill.
+
+| Request | Procedure |
+| --- | --- |
+| Prediction logs, tracing, and slice analysis | This file, from the overview downward |
+| SHAP explainers, maskers, and plots | [shap](absorbed/shap/SKILL.md) |
 
 ## Overview
 

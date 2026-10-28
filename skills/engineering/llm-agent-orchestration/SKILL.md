@@ -7,7 +7,7 @@ description: >
   agent evaluation and testing, human-in-the-loop patterns, agent observability, production agent deployment,
   and agent safety guardrails. Use when building LLM agents, implementing tool use, orchestrating multi-agent
   systems, or deploying agents to production.
-  House boundary: the router for this repo is ask-matt. The vendored phase list is using-agent-skills, and only the user runs it. This skill builds LLM product agents (tools, graphs, multi-agent). Do not run it at session start.
+  House boundary: the router for this repo is ask-matt. This skill builds LLM product agents (tools, graphs, multi-agent). Do not run it at session start.
 license: Apache-2.0
 metadata:
   author: llmops-skills
@@ -24,7 +24,7 @@ metadata:
 
 Vendored from [MLOps-agent-skills](https://github.com/timwukp/MLOps-agent-skills) (Apache-2.0). See [CREDITS.md](CREDITS.md). Upstream commit `6426013a15ee0e431dbb81938deac2f6e25c0941`.
 
-House boundary: the router for this repo is ask-matt. The vendored phase list is using-agent-skills, and only the user runs it. This skill builds LLM product agents (tools, graphs, multi-agent). Do not run it at session start.
+House boundary: the router for this repo is ask-matt. This skill builds LLM product agents (tools, graphs, multi-agent). Do not run it at session start.
 
 ## Overview
 
@@ -361,5 +361,5 @@ See [references/REFERENCE.md](references/REFERENCE.md) for framework comparisons
 
 ## Related skills
 
-**Upstream:** `llm-deployment` (the model endpoint agents call: this skill is the application layer on top) · **Downstream:** `llm-observability` (agent/tool traces) and `llm-guardrails` (tool-use safety)
+**Upstream:** `model-serving` (the model endpoint agents call: this skill is the application layer on top) · **Downstream:** `llm-observability` (agent/tool traces) and `llm-guardrails` (tool-use safety)
 **See also:** `llm-prompt-engineering` for system prompts and tool descriptions · `llm-evaluation` for end-to-end agent evals

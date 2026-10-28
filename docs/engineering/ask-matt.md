@@ -16,7 +16,7 @@ You invoke this by typing `/ask-matt`; the agent won't reach for it on its own.
 | A long session and a decision about the [context](https://www.aihero.dev/ai-coding-dictionary/context) | The ordered tree over the five options at a phase boundary |
 | A skill you have already picked | Nothing useful. Invoke that skill directly. |
 | A security question, or an audit of code you are allowed to review | [security-audit](https://aihero.dev/skills-security-audit). Guidance for a question. A full audit only when you ask for the audit or the report. Not [code-review](https://aihero.dev/skills-code-review), and not [diagnosing-bugs](https://aihero.dev/skills-diagnosing-bugs) |
-| You want the vendored phase list, or two of those skills look the same | The house skill when one exists. The phase list is [using-agent-skills](https://aihero.dev/skills-using-agent-skills), which you type yourself |
+| Two engineering skills look the same | The house skill. A vendored skill remains only when the house set has no twin |
 
 ## Prerequisites
 
@@ -32,7 +32,7 @@ The skill's leading word is **flow**, a path *through* the skills rather than a 
 - **On-ramps**, for a situation that generates work and then merges onto the main flow: incoming bug reports, something broken, or an effort too foggy and too large to hold in one session.
 - **Codebase health**, upkeep rather than feature work. [improve-codebase-architecture](https://aihero.dev/skills-improve-codebase-architecture) surveys the code for deepening opportunities, and each one it finds re-enters the main flow as an idea.
 - **Standalones**, which sit off every flow and which you use on their own: the prototype, the questionnaire, the research run, and [security-audit](https://aihero.dev/skills-security-audit).
-- **The vendored lifecycle**, a phase list copied into this set. The router still picks the house skill when both could apply. The phase list itself is [using-agent-skills](https://aihero.dev/skills-using-agent-skills), which you type yourself.
+- **The vendored lifecycle**, the engineering jobs this set still adds. The router picks the house skill when both could apply.
 - **The ML and LLM lifecycle**, two delivery chains for models and LLM systems. The router still picks the application skill when the work is ordinary software. The chains are [ml-solution-design](https://aihero.dev/skills-ml-solution-design) through serving and monitoring, and [llm-data-preparation](https://aihero.dev/skills-llm-data-preparation) through deployment and cost.
 - **A vocabulary layer underneath**, the two references the other skills pull in when the words rather than the process are the problem.
 
@@ -58,7 +58,7 @@ People keep asking for one in the README. This skill is that list. A static tabl
 
 **It told me half the skills aren't installed.**
 
-This is a known bug, and it is not fixed. Most of the skills the router routes you through set `disable-model-invocation: true`, which means the harness leaves them out of the skill list it injects into the agent's context. The agent reads that list as exhaustive and reports them missing. In one reported session, it declared the whole spec-and-tickets flow absent and rerouted to bare `/grilling` and `/tdd`. Nineteen of the plugin's eighty-one skills carry the flag, so this is the common case rather than an edge. They are installed. Type the slash command anyway, or check `.claude-plugin/plugin.json`, which is the authority on what is present.
+This is a known bug, and it is not fixed. Most of the skills the router routes you through set `disable-model-invocation: true`, which means the harness leaves them out of the skill list it injects into the agent's context. The agent reads that list as exhaustive and reports them missing. In one reported session, it declared the whole spec-and-tickets flow absent and rerouted to bare `/grilling` and `/tdd`. Sixteen of the plugin's sixty-five skills carry the flag, so this is the common case rather than an edge. They are installed. Type the slash command anyway, or check `.claude-plugin/plugin.json`, which is the authority on what is present.
 
 **It described a skill's behaviour, and the skill doesn't do that.**
 

@@ -1,7 +1,7 @@
 ---
 name: model-serving
 description: >
-  Deploy and serve ML models in production. Covers REST API serving (FastAPI, Flask), gRPC, BentoML, NVIDIA Triton,
+  LLM runtimes and Modal GPU jobs are part of this skill. Deploy and serve ML models in production. Covers REST API serving (FastAPI, Flask), gRPC, BentoML, NVIDIA Triton,
   TorchServe, TF Serving, Seldon Core, KServe on Kubernetes, batch inference (Spark, Ray, Dask), model optimization
   for serving (ONNX Runtime, TensorRT, quantization, pruning), A/B testing, canary and blue-green deployments,
   shadow deployments, request batching, auto-scaling, containerization with Docker, health checks, input validation,
@@ -25,6 +25,16 @@ metadata:
 Vendored from [MLOps-agent-skills](https://github.com/timwukp/MLOps-agent-skills) (Apache-2.0). See [CREDITS.md](CREDITS.md). Upstream commit `6426013a15ee0e431dbb81938deac2f6e25c0941`.
 
 House boundary: an application launch checklist is shipping-and-launch. This skill serves a model.
+
+## Which procedure
+
+LLM runtimes and Modal GPU jobs are part of this skill.
+
+| Request | Procedure |
+| --- | --- |
+| REST, batch, Triton, TorchServe, and KServe | This file, from the overview downward |
+| vLLM, TGI, quantization, and KV cache | [llm-deployment](absorbed/llm-deployment/SKILL.md) |
+| Modal serverless GPU | [modal](absorbed/modal/SKILL.md) |
 
 ## Overview
 
@@ -358,5 +368,5 @@ See [references/REFERENCE.md](references/REFERENCE.md) for framework comparisons
 
 ## Related skills
 
-**Upstream:** `ml-cicd` (deploy pipeline) delivering a `model-registry` artifact packaged per `skills/engineering/model-registry/references/ARTIFACT_CONTRACT.md` · **Downstream:** `model-monitoring` (prediction logs, latency and error metrics)
-**See also:** `feature-store` for online feature lookups at request time · `llm-deployment` for LLM-specific serving stacks
+**Upstream:** `implementing-data-cicd` (deploy pipeline) delivering a `model-registry` artifact packaged per `skills/engineering/model-registry/references/ARTIFACT_CONTRACT.md` · **Downstream:** `model-monitoring` (prediction logs, latency and error metrics)
+**See also:** `building-feature-pipelines` for online feature lookups at request time · `model-serving` for LLM-specific serving stacks

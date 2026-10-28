@@ -1,7 +1,7 @@
 ---
 name: llm-fine-tuning
 description: >
-  Fine-tune large language models with parameter-efficient methods. Covers full fine-tuning, LoRA, QLoRA, PEFT,
+  Hugging Face Transformers loading, pipelines, and Trainer fine-tuning are part of this skill. Fine-tune large language models with parameter-efficient methods. Covers full fine-tuning, LoRA, QLoRA, PEFT,
   adapter-based tuning, prefix tuning, prompt tuning, instruction tuning, RLHF (PPO, DPO), SFT (supervised
   fine-tuning), HuggingFace TRL and PEFT libraries, Unsloth, Axolotl, dataset preparation (Alpaca, ShareGPT,
   chat formats), training data quality, evaluation during fine-tuning, hyperparameter selection, memory optimization,
@@ -22,6 +22,15 @@ metadata:
 # LLM Fine-Tuning
 
 Vendored from [MLOps-agent-skills](https://github.com/timwukp/MLOps-agent-skills) (Apache-2.0). See [CREDITS.md](CREDITS.md). Upstream commit `6426013a15ee0e431dbb81938deac2f6e25c0941`.
+
+## Which procedure
+
+Hugging Face Transformers loading, pipelines, and Trainer fine-tuning are part of this skill.
+
+| Request | Procedure |
+| --- | --- |
+| LoRA, QLoRA, RLHF, and DPO | This file, from the overview downward |
+| AutoModel, pipelines, tokenizers, and Trainer | [transformers](absorbed/transformers/SKILL.md) |
 
 ## Overview
 
@@ -334,4 +343,4 @@ See [references/REFERENCE.md](references/REFERENCE.md) for method comparisons an
 ## Related skills
 
 **Upstream:** `llm-data-preparation` (curated SFT/preference datasets) · **Downstream:** `llm-evaluation` (tuned checkpoint or adapter to evaluate)
-**See also:** `model-registry`: register adapters/checkpoints like any model artifact · `ml-cost-optimization` for GPU sizing · `llm-deployment` once evaluation clears
+**See also:** `model-registry`: register adapters/checkpoints like any model artifact · `ml-cost-optimization` for GPU sizing · `model-serving` once evaluation clears

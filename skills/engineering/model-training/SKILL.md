@@ -1,8 +1,9 @@
 ---
 name: model-training
 description: >
-  Design and run ML model training pipelines with PyTorch, TensorFlow, scikit-learn, XGBoost, LightGBM, and
-  HuggingFace. Covers hyperparameter tuning (Optuna, Ray Tune, Bayesian optimization), distributed training
+  scikit-learn estimators and Lightning trainers are part of this skill. LLM fine-tuning is llm-fine-tuning.
+  Design and run ML model training pipelines with PyTorch, TensorFlow, XGBoost, and LightGBM.
+  Covers hyperparameter tuning (Optuna, Ray Tune, Bayesian optimization), distributed training
   (DDP, DeepSpeed, FSDP, Horovod), mixed precision training (AMP, bf16), learning rate scheduling, early stopping,
   checkpointing, cross-validation, GPU memory optimization (gradient accumulation, gradient checkpointing),
   reproducibility, and config-driven training pipeline design. Use when training models, tuning hyperparameters,
@@ -22,6 +23,16 @@ metadata:
 # Model Training
 
 Vendored from [MLOps-agent-skills](https://github.com/timwukp/MLOps-agent-skills) (Apache-2.0). See [CREDITS.md](CREDITS.md). Upstream commit `6426013a15ee0e431dbb81938deac2f6e25c0941`.
+
+## Which procedure
+
+scikit-learn estimators and Lightning trainers are part of this skill. Hugging Face Trainer fine-tuning is llm-fine-tuning.
+
+| Request | Procedure |
+| --- | --- |
+| Training pipeline, tuning, and distributed runs | This file, from the overview downward |
+| scikit-learn estimators, pipelines, and metrics | [scikit-learn](absorbed/scikit-learn/SKILL.md) |
+| LightningModule and Trainer | [pytorch-lightning](absorbed/pytorch-lightning/SKILL.md) |
 
 ## Overview
 
@@ -365,5 +376,5 @@ See [references/REFERENCE.md](references/REFERENCE.md) for framework comparisons
 
 ## Related skills
 
-**Upstream:** `feature-engineering` / `feature-store` (training-ready data) · **Downstream:** `model-registry`: package the artifact per the contract at `skills/engineering/model-registry/references/ARTIFACT_CONTRACT.md`
+**Upstream:** `building-feature-pipelines` / `building-feature-pipelines` (training-ready data) · **Downstream:** `model-registry`: package the artifact per the contract at `skills/engineering/model-registry/references/ARTIFACT_CONTRACT.md`
 **See also:** `ml-experiment-tracking` runs in parallel with every training job · `ml-cost-optimization` for GPU choice, spot, and mixed precision · retraining triggers arrive from `model-drift-detection`

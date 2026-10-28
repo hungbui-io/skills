@@ -1,3 +1,5 @@
+> **Archived.** Removed in the duplicate-skill pass. The house skill stays: [to-tickets](https://aihero.dev/skills-to-tickets).
+
 ## What it does
 
 `planning-and-task-breakdown` turns a [spec](https://www.aihero.dev/ai-coding-dictionary/spec) into an ordered plan: a dependency graph and vertical slices, saved as a plan document.

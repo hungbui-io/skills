@@ -1,3 +1,5 @@
+> **Archived.** Removed in the duplicate-skill pass. The replacement is [building-ingestion-pipelines](https://aihero.dev/skills-building-ingestion-pipelines).
+
 ## What it does
 
 `data-ingestion` lands raw data in a versioned store a later training job can reload.

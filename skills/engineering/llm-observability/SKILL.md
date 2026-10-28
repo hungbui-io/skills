@@ -339,5 +339,5 @@ See [references/REFERENCE.md](references/REFERENCE.md) for platform comparisons 
 
 ## Related skills
 
-**Upstream:** `llm-deployment` + `llm-guardrails` (traces, token counts, violation events) · **Downstream:** `llm-cost-optimization` (usage telemetry that drives routing/caching) and `llm-evaluation` (production samples for regression evals)
+**Upstream:** `model-serving` + `llm-guardrails` (traces, token counts, violation events) · **Downstream:** `llm-cost-optimization` (usage telemetry that drives routing/caching) and `llm-evaluation` (production samples for regression evals)
 **See also:** `model-observability` for the classic-ML counterpart

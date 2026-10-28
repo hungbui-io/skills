@@ -1,3 +1,5 @@
+> **Archived.** Removed in the duplicate-skill pass. The house skill stays: [code-review](https://aihero.dev/skills-code-review).
+
 ## What it does
 
 `code-review-and-quality` reads a change across five axes: correctness, readability, architecture, security, and performance.

@@ -1,3 +1,5 @@
+> **Archived.** Removed in the duplicate-skill pass. The house skill stays: [ask-matt](https://aihero.dev/skills-ask-matt).
+
 ## What it does
 
 `using-agent-skills` is the phase map for the vendored engineering lifecycle: from an underspecified ask, through a spec, a plan, a build, and a launch.

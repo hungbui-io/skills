@@ -2,7 +2,7 @@
 
 `model-observability` explains a prediction and logs the features that produced it.
 
-Application telemetry tells you a request was slow. This skill tells you which features pushed a particular prediction.
+Application telemetry tells you a request was slow. This skill tells you which features pushed a particular prediction. SHAP explainers and plots are part of this skill.
 
 ## When to reach for it
 

@@ -1,3 +1,5 @@
+> **Archived.** Removed in the duplicate-skill pass. The replacement is [building-feature-pipelines](https://aihero.dev/skills-building-feature-pipelines).
+
 ## What it does
 
 `feature-store` serves one feature definition to training and to online inference.

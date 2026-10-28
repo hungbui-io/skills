@@ -71,9 +71,9 @@ LLM_SELFHOSTED_ADDER = (750, 4000, "1 GPU node g5.xlarge-g5.12xlarge for vLLM")
 # ---------------------------------------------------------------------------
 
 CLASSICAL_SKILL_MAP = [
-    ("ingest", "data-ingestion"),
-    ("validate", "data-validation"),
-    ("features", "feature-engineering"),
+    ("ingest", "building-ingestion-pipelines"),
+    ("validate", "implementing-data-quality-checks"),
+    ("features", "building-feature-pipelines"),
     ("train", "model-training"),
     ("track", "ml-experiment-tracking"),
     ("test", "ml-testing"),
@@ -88,7 +88,7 @@ LLM_SKILL_MAP = [
     ("grounding", "llm-rag"),
     ("adaptation (optional)", "llm-fine-tuning"),
     ("evaluation", "llm-evaluation"),
-    ("deployment", "llm-deployment"),
+    ("deployment", "model-serving"),
     ("guardrails", "llm-guardrails"),
     ("observability", "llm-observability"),
     ("cost", "llm-cost-optimization"),

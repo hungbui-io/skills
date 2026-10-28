@@ -1,3 +1,0 @@
-interface:
-  display_name: "Data Validation"
-  short_description: "Gate training data quality"

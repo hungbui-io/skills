@@ -4,6 +4,8 @@
 
 A run that cannot be repeated from its config, split, and seed is a demo. The artifact that leaves training is the one the registry contract describes.
 
+scikit-learn estimators and Lightning trainers are part of this skill. Hugging Face Trainer fine-tuning is [llm-fine-tuning](https://aihero.dev/skills-llm-fine-tuning).
+
 ## When to reach for it
 
 Type `/model-training`, or the [agent](https://www.aihero.dev/ai-coding-dictionary/agent) reaches for it when a task fits.

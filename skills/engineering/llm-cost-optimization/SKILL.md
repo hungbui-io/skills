@@ -403,5 +403,5 @@ See [references/REFERENCE.md](references/REFERENCE.md) for pricing comparisons a
 
 ## Related skills
 
-**Upstream:** `llm-observability` (token, latency, and spend telemetry) · **Downstream:** routing/caching/compression changes feed back into `llm-deployment` and `llm-prompt-engineering`
+**Upstream:** `llm-observability` (token, latency, and spend telemetry) · **Downstream:** routing/caching/compression changes feed back into `model-serving` and `llm-prompt-engineering`
 **See also:** `ml-cost-optimization` for GPU-level levers when self-hosting

@@ -1,3 +1,5 @@
+> **Archived.** Removed in the duplicate-skill pass. The house skill stays: [to-spec](https://aihero.dev/skills-to-spec).
+
 ## What it does
 
 `spec-driven-development` writes a gated [spec](https://www.aihero.dev/ai-coding-dictionary/spec) from a vague idea before any code, including a capability map when one request is really several.

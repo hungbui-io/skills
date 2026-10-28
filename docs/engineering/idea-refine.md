@@ -1,3 +1,5 @@
+> **Archived.** Removed in the duplicate-skill pass. The house skill stays: [grill-with-docs](https://aihero.dev/skills-grill-with-docs).
+
 ## What it does
 
 `idea-refine` takes a vague product idea, opens it up, and closes it into one direction with a one-pager.

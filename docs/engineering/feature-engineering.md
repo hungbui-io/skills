@@ -1,3 +1,5 @@
+> **Archived.** Removed in the duplicate-skill pass. The replacement is [building-feature-pipelines](https://aihero.dev/skills-building-feature-pipelines).
+
 ## What it does
 
 `feature-engineering` turns validated rows into the columns a model trains on.

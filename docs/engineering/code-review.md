@@ -17,7 +17,6 @@ Type `/code-review`, or the agent reaches for it automatically when you ask to r
 | The whole codebase has drifted, not one diff | [improve-codebase-architecture](https://aihero.dev/skills-improve-codebase-architecture) |
 | Something is broken and you do not know why | [diagnosing-bugs](https://aihero.dev/skills-diagnosing-bugs) |
 | A security review of the codebase or a change, not standards and spec | [security-audit](https://aihero.dev/skills-security-audit) |
-| A five-axis quality pass (correctness, readability, architecture, security, performance) | [code-review-and-quality](https://aihero.dev/skills-code-review-and-quality) |
 
 You must supply the fixed point. If you do not, the skill asks for one rather than guessing. Before it spawns anything, it checks that the ref resolves and that the diff is not empty, so a mistyped branch name fails in front of you instead of inside two sub-agents.
 

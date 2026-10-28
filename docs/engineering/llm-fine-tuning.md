@@ -2,7 +2,7 @@
 
 `llm-fine-tuning` fine-tunes an LLM from a config, an eval set, and a checkpoint policy.
 
-A checkpoint you cannot tie back to the data split and the eval is not a candidate for deployment. Stop on the eval, not on the training loss alone.
+A checkpoint you cannot tie back to the data split and the eval is not a candidate for deployment. Stop on the eval, not on the training loss alone. Hugging Face Transformers loading, pipelines, and Trainer fine-tuning are part of this skill.
 
 ## When to reach for it
 

@@ -13,54 +13,30 @@ const vendored = [
   "api-and-interface-design",
   "browser-testing-with-devtools",
   "ci-cd-and-automation",
-  "code-review-and-quality",
   "code-simplification",
   "constraint-driven-development",
   "context-engineering",
-  "debugging-and-error-recovery",
   "deprecation-and-migration",
-  "documentation-and-adrs",
   "doubt-driven-development",
   "frontend-ui-engineering",
   "git-workflow-and-versioning",
-  "idea-refine",
-  "incremental-implementation",
-  "interview-me",
   "observability-and-instrumentation",
   "performance-optimization",
-  "planning-and-task-breakdown",
   "security-and-hardening",
   "shipping-and-launch",
   "source-driven-development",
-  "spec-driven-development",
-  "test-driven-development",
-  "using-agent-skills",
 ];
 
-const userInvoked = new Set([
-  "interview-me",
-  "test-driven-development",
-  "using-agent-skills",
-]);
+const userInvoked = new Set();
 
 const collisions = {
-  "code-review-and-quality": "skills-code-review",
   "code-simplification": "skills-improve-codebase-architecture",
   "context-engineering": "skills-retro",
-  "debugging-and-error-recovery": "skills-diagnosing-bugs",
-  "documentation-and-adrs": "skills-domain-modeling",
   "git-workflow-and-versioning": "skills-pr",
-  "idea-refine": "skills-grill-with-docs",
-  "incremental-implementation": "skills-implement",
-  "interview-me": "skills-grill-with-docs",
   "performance-optimization": "skills-diagnosing-bugs",
-  "planning-and-task-breakdown": "skills-to-tickets",
   "security-and-hardening": "skills-security-audit",
   "shipping-and-launch": "skills-pr",
   "source-driven-development": "skills-research",
-  "spec-driven-development": "skills-to-spec",
-  "test-driven-development": "skills-tdd",
-  "using-agent-skills": "skills-ask-matt",
   "api-and-interface-design": "skills-codebase-design",
 };
 
@@ -108,13 +84,13 @@ test("the vendored lifecycle is promoted once and the reference folder is not a 
     }
   }
   assert.deepEqual(plugin.skills.slice().sort(), promoted.sort());
-  assert.equal(plugin.skills.length, 81);
+  assert.equal(plugin.skills.length, 65);
   for (const name of vendored) {
     assert.equal(plugin.skills.filter((entry) => entry === `./skills/engineering/${name}`).length, 1, name);
   }
   assert.equal(plugin.skills.includes("./skills/engineering/agent-skills-references"), false);
   assert.equal(fs.existsSync(path.join(referencesDir, "SKILL.md")), false);
-  assert.match(read(".agents/install-block.md"), /exactly the promoted set \(81 skills\)/);
+  assert.match(read(".agents/install-block.md"), /exactly the promoted set \(65 skills\)/);
   assert.match(plugin.description, /vendored engineering lifecycle/);
 });
 
@@ -155,16 +131,8 @@ test("invocation flags keep the three overlaps user-invoked", () => {
     assert.match(meta, /url:\s*"https:\/\/github\.com\/addyosmani\/agent-skills"/);
   }
 
-  const interview = frontmatter(read("skills/engineering/interview-me/SKILL.md"));
-  assert.doesNotMatch(interview, /grill me/);
-  const tests = frontmatter(read("skills/engineering/test-driven-development/SKILL.md"));
-  assert.doesNotMatch(tests, /implementing any logic/);
-  const router = frontmatter(read("skills/engineering/using-agent-skills/SKILL.md"));
-  assert.doesNotMatch(router, /starting a session/);
   const context = frontmatter(read("skills/engineering/context-engineering/SKILL.md"));
   assert.doesNotMatch(context, /starting a new session/);
-  const review = frontmatter(read("skills/engineering/code-review-and-quality/SKILL.md"));
-  assert.doesNotMatch(review, /before merging any change/);
   const git = frontmatter(read("skills/engineering/git-workflow-and-versioning/SKILL.md"));
   assert.doesNotMatch(git, /making any code change/);
 });
@@ -179,22 +147,6 @@ test("attribution, shared references, and operative calls survived the move", ()
     assert.match(credits, new RegExp(upstream));
     assert.match(credits, /https:\/\/github\.com\/addyosmani\/agent-skills/);
   }
-
-  const spec = read("skills/engineering/spec-driven-development/SKILL.md");
-  assert.match(spec, /Call the Skill tool with "incremental-implementation"/);
-  assert.match(spec, /Call the Skill tool with "context-engineering"/);
-  assert.match(spec, /do not call the Skill tool for it/);
-  assert.doesNotMatch(spec, /skills\/incremental-implementation\/SKILL\.md/);
-  assert.doesNotMatch(spec, /skills\/test-driven-development\/SKILL\.md/);
-
-  const idea = read("skills/engineering/idea-refine/SKILL.md");
-  assert.match(idea, /bash skills\/engineering\/idea-refine\/scripts\/idea-refine\.sh/);
-  assert.doesNotMatch(idea, /bash skills\/idea-refine\//);
-  assert.equal(fs.existsSync(path.join(engineering, "idea-refine", "scripts", "idea-refine.sh")), true);
-
-  const map = read("skills/engineering/using-agent-skills/SKILL.md");
-  assert.match(map, /one skill per call/);
-  assert.match(map, /Do not run this map at the start of a session/);
 
   const hardening = read("skills/engineering/security-and-hardening/SKILL.md");
   assert.match(hardening, /Do not start a full audit from here/);
@@ -220,28 +172,27 @@ test("vendored prose has no em-dash or en-dash and relative links resolve", () =
   }
   assert.equal(dash.test(read(".changeset/agent-skills-lifecycle.md")), false);
   const router = read("skills/engineering/ask-matt/SKILL.md");
-  const section = sliceBetween(router, "## Vendored lifecycle", "## Precondition");
+  const section = sliceBetween(router, "## Vendored lifecycle", "## ML and LLM lifecycle");
   assert.equal(dash.test(section), false);
 });
 
 test("ask-matt names the house skill when a vendored twin exists", () => {
   const router = read("skills/engineering/ask-matt/SKILL.md");
-  const section = sliceBetween(router, "## Vendored lifecycle", "## Precondition");
+  const section = sliceBetween(router, "## Vendored lifecycle", "## ML and LLM lifecycle");
   for (const pair of [
-    ["/tdd", "/test-driven-development"],
-    ["/code-review", "/code-review-and-quality"],
-    ["/diagnosing-bugs", "/debugging-and-error-recovery"],
+    ["/diagnosing-bugs", "/performance-optimization"],
+    ["/research", "/source-driven-development"],
     ["/security-audit", "/security-and-hardening"],
-    ["/grill-with-docs", "/interview-me"],
-    ["/to-spec", "/spec-driven-development"],
-    ["/to-tickets", "/planning-and-task-breakdown"],
-    ["/implement", "/incremental-implementation"],
+    ["/improve-codebase-architecture", "/code-simplification"],
+    ["/pr", "/shipping-and-launch"],
+    ["/codebase-design", "/api-and-interface-design"],
   ]) {
     for (const name of pair) assert.match(section, new RegExp(name.replace("/", "\\/")));
   }
-  assert.match(section, /Tell the user to run them/);
-  assert.match(section, /Do not call the Skill tool for them/);
-  assert.match(read("docs/engineering/ask-matt.md"), /skills-using-agent-skills/);
+  for (const gone of ["test-driven-development", "using-agent-skills", "interview-me", "code-review-and-quality"]) {
+    assert.equal(section.includes(gone), false, gone);
+  }
+  assert.match(section, /Call the Skill tool with the name, one skill per call/);
 });
 
 test("each vendored skill has a docs page on the published-page contract", () => {

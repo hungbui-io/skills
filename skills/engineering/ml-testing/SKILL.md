@@ -298,5 +298,5 @@ See [references/REFERENCE.md](references/REFERENCE.md) for testing strategies by
 
 ## Related skills
 
-**Upstream:** `model-training` (candidate models) and `data-validation` (data contracts to enforce) · **Downstream:** `ml-cicd` (these tests are the gates that block or allow promotion)
+**Upstream:** `model-training` (candidate models) and `implementing-data-quality-checks` (data contracts to enforce) · **Downstream:** `implementing-data-cicd` (these tests are the gates that block or allow promotion)
 **See also:** `llm-evaluation` for the LLM equivalent · `model-monitoring` for post-deploy verification

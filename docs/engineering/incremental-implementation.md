@@ -1,3 +1,5 @@
+> **Archived.** Removed in the duplicate-skill pass. The house skill stays: [implement](https://aihero.dev/skills-implement).
+
 ## What it does
 
 `incremental-implementation` cuts a change into thin slices that each stay compilable and checkable.

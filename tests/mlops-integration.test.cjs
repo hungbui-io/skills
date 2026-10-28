@@ -9,14 +9,9 @@ const engineering = path.join(repoRoot, "skills", "engineering");
 const dash = /[\u2014\u2013]/;
 
 const skills = [
-  "data-ingestion",
-  "data-validation",
-  "feature-engineering",
-  "feature-store",
   "llm-agent-orchestration",
   "llm-cost-optimization",
   "llm-data-preparation",
-  "llm-deployment",
   "llm-distillation",
   "llm-evaluation",
   "llm-fine-tuning",
@@ -24,7 +19,6 @@ const skills = [
   "llm-observability",
   "llm-prompt-engineering",
   "llm-rag",
-  "ml-cicd",
   "ml-cost-optimization",
   "ml-experiment-tracking",
   "ml-pipeline-orchestration",
@@ -42,15 +36,13 @@ const skills = [
 const collisions = {
   "ml-security": "skills-security-audit",
   "ml-testing": "skills-tdd",
-  "ml-cicd": "skills-ci-cd-and-automation",
   "model-monitoring": "skills-observability-and-instrumentation",
   "model-observability": "skills-observability-and-instrumentation",
   "llm-observability": "skills-observability-and-instrumentation",
   "llm-guardrails": "skills-security-and-hardening",
   "model-serving": "skills-shipping-and-launch",
-  "llm-deployment": "skills-shipping-and-launch",
   "ml-solution-design": "skills-to-spec",
-  "llm-agent-orchestration": "skills-using-agent-skills",
+  "llm-agent-orchestration": "skills-ask-matt",
   "llm-prompt-engineering": "skills-writing-for-agents",
   "ml-cost-optimization": "skills-performance-optimization",
   "llm-cost-optimization": "skills-performance-optimization",
@@ -101,11 +93,11 @@ test("the ML and LLM lifecycle is promoted once and stays model-invoked", () => 
     }
   }
   assert.deepEqual(plugin.skills.slice().sort(), promoted.sort());
-  assert.equal(plugin.skills.length, 81);
+  assert.equal(plugin.skills.length, 65);
   for (const name of skills) {
     assert.equal(plugin.skills.filter((entry) => entry === `./skills/engineering/${name}`).length, 1, name);
   }
-  assert.match(read(".agents/install-block.md"), /exactly the promoted set \(81 skills\)/);
+  assert.match(read(".agents/install-block.md"), /exactly the promoted set \(65 skills\)/);
   assert.match(plugin.description, /ML and LLM lifecycle/);
   assert.equal(plugin.keywords.includes("mlops"), true);
 
@@ -176,7 +168,7 @@ test("ask-matt routes ordinary software to the house skill and model work to thi
     ["/security-audit", "/ml-security"],
     ["/observability-and-instrumentation", "/model-monitoring"],
     ["/shipping-and-launch", "/model-serving"],
-    ["/ci-cd-and-automation", "/ml-cicd"],
+    ["/ci-cd-and-automation", "/implementing-data-cicd"],
     ["/performance-optimization", "/ml-cost-optimization"],
     ["/writing-for-agents", "/llm-prompt-engineering"],
   ]) {
@@ -187,7 +179,7 @@ test("ask-matt routes ordinary software to the house skill and model work to thi
   assert.match(section, /skills\/engineering\/model-registry\/references\/ARTIFACT_CONTRACT\.md/);
   const docs = read("docs/engineering/ask-matt.md");
   assert.match(docs, /seven kinds of route/);
-  assert.match(docs, /eighty-one/);
+  assert.match(docs, /sixty-five/);
   assert.match(docs, /skills-ml-solution-design/);
   assert.match(docs, /skills-llm-data-preparation/);
 });

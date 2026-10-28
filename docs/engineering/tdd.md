@@ -17,7 +17,6 @@ Reach for it when there is a concrete behaviour to build, with an input and an o
 | The question is really the shape of the interface, not the tests | [codebase-design](https://aihero.dev/skills-codebase-design) |
 | You have a [spec](https://www.aihero.dev/ai-coding-dictionary/spec) or [tickets](https://www.aihero.dev/ai-coding-dictionary/ticket) and want the whole build run for you | [implement](https://aihero.dev/skills-implement), which drives `tdd` per ticket |
 | Config, wiring, glue, type annotations, straight CRUD delegation | Nothing here fits well; see the open gap below |
-| You want the vendored red-green variant (stack discovery, pyramid, DAMP) | [test-driven-development](https://aihero.dev/skills-test-driven-development), which you type yourself |
 
 That last row is a real gap. The skill decides *where* the seams go, but nothing in it decides *whether* a change is worth the loop at all. If you run it on a change with no independent source of truth to assert against, you get a test that restates the implementation. That is the tautological anti-pattern the skill warns about, reached from the other direction. It is [issue #746](https://github.com/mattpocock/skills/issues/746), and it is open. Until it closes, you make that call yourself, or write the rule into your `CLAUDE.md`.
 

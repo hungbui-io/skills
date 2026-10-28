@@ -505,5 +505,5 @@ See [references/REFERENCE.md](references/REFERENCE.md) for OWASP ML Top 10 detai
 
 ## Related skills
 
-**Cross-cutting:** applies at every stage: data poisoning (`data-ingestion`), artifact integrity (`model-registry`), endpoint hardening (`model-serving`)
+**Cross-cutting:** applies at every stage: data poisoning (`building-ingestion-pipelines`), artifact integrity (`model-registry`), endpoint hardening (`model-serving`)
 **See also:** `llm-guardrails` for LLM-specific defenses · `ml-solution-design` for compliance intake

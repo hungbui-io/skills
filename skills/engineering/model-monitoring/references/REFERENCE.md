@@ -263,7 +263,7 @@ Client-side 400s → notify the upstream team; do not "fix" by loosening input v
 volume anomaly +/- 30% = Medium.
 
 **Triage**
-1. Quantify: run `monitor_model.py` (or the data-validation skill's `validate_data.py`)
+1. Quantify: run `monitor_model.py` (or the checks in implementing-data-quality-checks)
    on the current window: which columns, what violation type, and since when?
 2. Check the ingestion layer: upstream schema migration, late-arriving partition, source
    outage, or a new client version sending different payloads.

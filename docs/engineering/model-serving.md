@@ -2,7 +2,7 @@
 
 `model-serving` serves a model behind an API with a health check and a rollback.
 
-An application launch checklist is a different skill. This one loads a registry artifact and answers prediction requests.
+An application launch checklist is a different skill. This one loads a registry artifact and answers prediction requests. LLM runtimes and Modal GPU jobs are part of this skill.
 
 ## When to reach for it
 

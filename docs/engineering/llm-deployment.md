@@ -1,3 +1,5 @@
+> **Archived.** Removed in the duplicate-skill pass. The replacement is [model-serving](https://aihero.dev/skills-model-serving).
+
 ## What it does
 
 `llm-deployment` deploys an LLM runtime with a health check and a rollback.

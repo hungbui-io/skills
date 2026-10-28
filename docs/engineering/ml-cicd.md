@@ -1,3 +1,5 @@
+> **Archived.** Removed in the duplicate-skill pass. The replacement is [implementing-data-cicd](https://aihero.dev/skills-implementing-data-cicd).
+
 ## What it does
 
 `ml-cicd` trains on a change, then promotes or rolls back a model across environments.

@@ -15,7 +15,7 @@ Vendored from Addy Osmani's [agent-skills](https://github.com/addyosmani/agent-s
 
 ## Overview
 
-Other skills in this pack describe what good looks like. `code-review-and-quality` gives you five axes. `test-driven-development` gives you a cycle. `security-and-hardening` gives you a threat list. All of that lives in prose the agent reads and may or may not follow, and none of it survives the end of the session.
+Other skills in this pack describe what good looks like. `code-review` gives you five axes. `tdd` gives you a cycle. `security-and-hardening` gives you a threat list. All of that lives in prose the agent reads and may or may not follow, and none of it survives the end of the session.
 
 This skill produces something different: a written record of **this project's** bar, with numbers, that outlives the conversation and can be checked mechanically.
 
@@ -38,7 +38,7 @@ Apply this skill when:
 
 - The project already has a `CONSTRAINTS.md` and the user isn't changing it: read it and follow it instead
 - One-off scripts, spikes, throwaway prototypes
-- The user wants a code review right now (`code-review-and-quality`) or a CI pipeline built (`ci-cd-and-automation`)
+- The user wants a code review right now (`code-review`) or a CI pipeline built (`ci-cd-and-automation`)
 - Pre-product-market-fit code with a two-week expected lifetime: the floor below is still worth it, the rest isn't
 
 ## Loading Constraints
@@ -64,7 +64,7 @@ Report what you found in two lines, then ask only what's left.
 
 ### Step 2: Four questions, each with a default
 
-Follow the one-question-at-a-time discipline from `interview-me`, with one change: every question here has a default, so "I don't know" is a complete answer that still produces a working config.
+Follow the one-question-at-a-time discipline from `grill-with-docs`, with one change: every question here has a default, so "I don't know" is a complete answer that still produces a working config.
 
 ```
 Q1: Beyond the floor, which of these do you want enforced?
@@ -311,9 +311,9 @@ The skill was applied correctly when:
 
 ## See Also
 
-- `interview-me`: the one-question-at-a-time discipline this skill's intake borrows
-- `code-review-and-quality`: how to review; this skill decides what the review enforces
+- `grill-with-docs`: the one-question-at-a-time discipline this skill's intake borrows
+- `code-review`: how to review; this skill decides what the review enforces
 - `ci-cd-and-automation`: building the pipeline these constraints run in
-- `test-driven-development`: the suite that coverage and mutation constraints measure
+- `tdd`: the suite that coverage and mutation constraints measure
 - `security-and-hardening`: what the security dimension should contain
 - `performance-optimization`: where the performance numbers come from

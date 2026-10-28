@@ -1,12 +1,10 @@
 ---
 name: ml-pipeline-orchestration
 description: >
-  Automate end-to-end ML workflows with Apache Airflow DAGs, Kubeflow Pipelines, Prefect flows, Dagster ops and
-  assets, ZenML, and Argo Workflows. Covers pipeline scheduling (cron, event-driven, data-driven triggers), task
-  dependency management, fan-out/fan-in patterns, parameter passing via XComs and artifacts, retry and error
-  handling, pipeline monitoring and alerting, conditional branching, caching, artifact reuse, pipeline versioning,
-  reproducibility, and CI/CD integration. Use when building or scheduling ML pipelines, wiring training/evaluation/
-  deployment steps into a DAG, choosing or migrating between orchestrators, or debugging pipeline failures and retries.
+  Automate model train, eval, and deploy graphs with Kubeflow Pipelines, ZenML, and Argo Workflows.
+  Warehouse Airflow DAGs are authoring-airflow-dags, Dagster assets are building-dagster-assets, and Prefect
+  flows are orchestrating-prefect-flows. Covers scheduling, task dependencies, fan-out and fan-in, retries,
+  caching, and artifact reuse for those three engines. Use when the graph is Kubeflow, ZenML, or Argo.
 license: Apache-2.0
 metadata:
   author: mlops-skills
@@ -22,9 +20,18 @@ metadata:
 
 Vendored from [MLOps-agent-skills](https://github.com/timwukp/MLOps-agent-skills) (Apache-2.0). See [CREDITS.md](CREDITS.md). Upstream commit `6426013a15ee0e431dbb81938deac2f6e25c0941`.
 
-Guide to designing, building, scheduling, and operating ML pipelines across major orchestration frameworks. Covers platform-agnostic patterns and framework-specific implementations for Apache Airflow, Kubeflow Pipelines, Prefect, Dagster, and ZenML.
+This skill owns Kubeflow Pipelines, ZenML, and Argo Workflows for a model train, eval, and deploy graph. Warehouse Airflow, Dagster, and Prefect are a different job.
 
-For framework-specific deep dives (Kubeflow, Prefect, Dagster, ZenML), parameter passing, caching, environment management, templates, CI/CD, and migration guides, see `references/REFERENCE.md`.
+## Which procedure
+
+| Request | Procedure |
+| --- | --- |
+| Kubeflow, ZenML, or Argo | This file, then [the reference](references/REFERENCE.md) |
+| Airflow DAG | authoring-airflow-dags |
+| Dagster asset | building-dagster-assets |
+| Prefect flow | orchestrating-prefect-flows |
+
+Platform-agnostic scheduling and retry patterns below still apply to Kubeflow, ZenML, and Argo. Framework notes for those three engines are in `references/REFERENCE.md`.
 
 ---
 
@@ -57,6 +64,8 @@ Data Ingestion -> Data Validation -> Feature Engineering -> Data Splitting
 ---
 
 ## 2. Apache Airflow for ML
+
+Do not author a warehouse Airflow DAG from this skill. That job is authoring-airflow-dags. Prefect is orchestrating-prefect-flows. Dagster is building-dagster-assets. This skill's engines are Kubeflow, ZenML, and Argo.
 
 ### 2.1 Core Concepts
 
@@ -495,6 +504,6 @@ Verify metric names against your Airflow version before shipping alerts:
 
 ## Related skills
 
-**Cross-cutting:** automates the whole MLOps chain: `data-ingestion` → `data-validation` → `feature-engineering` → `model-training` → `model-registry` as DAG steps
-**Upstream:** `ml-solution-design` (pipeline architecture decision) · **Downstream:** `ml-cicd` (pipeline definitions are themselves versioned and deployed via CI)
+**Cross-cutting:** automates the whole MLOps chain: `building-ingestion-pipelines` → `implementing-data-quality-checks` → `building-feature-pipelines` → `model-training` → `model-registry` as DAG steps
+**Upstream:** `ml-solution-design` (pipeline architecture decision) · **Downstream:** `implementing-data-cicd` (pipeline definitions are themselves versioned and deployed via CI)
 **See also:** `ml-experiment-tracking` for logging from inside pipeline runs
