@@ -1,0 +1,3 @@
+interface:
+  display_name: "Folklore Variant Evidence"
+  short_description: "Retrieves ClinGen gene-disease validity assertions for a"

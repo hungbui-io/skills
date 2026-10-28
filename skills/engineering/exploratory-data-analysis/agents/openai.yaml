@@ -1,0 +1,3 @@
+interface:
+  display_name: "Exploratory Data Analysis"
+  short_description: "Performs bounded, local exploratory analysis of explicitly"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Datalad"
+  short_description: "Retrieves, versions, and publishes scientific datasets with"

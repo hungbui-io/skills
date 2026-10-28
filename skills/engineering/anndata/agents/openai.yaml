@@ -1,0 +1,3 @@
+interface:
+  display_name: "Anndata"
+  short_description: "Handles annotated matrices in single-cell analysis, .h5ad"

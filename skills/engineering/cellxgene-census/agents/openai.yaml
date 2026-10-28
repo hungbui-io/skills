@@ -1,0 +1,3 @@
+interface:
+  display_name: "CELLxGENE Census"
+  short_description: "Queries the CZ CELLxGENE Census programmatically for"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Pathogen Variant Surveillance"
+  short_description: "Queries public GenSpectrum LAPIS data for pathogen genomic"

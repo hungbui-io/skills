@@ -1,0 +1,3 @@
+interface:
+  display_name: "Molfeat"
+  short_description: "Featurizes small molecules with Molfeat for QSAR/QSPR"

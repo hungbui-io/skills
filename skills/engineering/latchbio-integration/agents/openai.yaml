@@ -1,0 +1,3 @@
+interface:
+  display_name: "Latchbio Integration"
+  short_description: "Builds, registers, debugs, and operates bioinformatics"

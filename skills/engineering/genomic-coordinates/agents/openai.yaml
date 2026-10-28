@@ -1,0 +1,3 @@
+interface:
+  display_name: "Genomic Coordinates"
+  short_description: "Converts genomic intervals between coordinate conventions"

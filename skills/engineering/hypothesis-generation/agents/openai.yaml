@@ -1,0 +1,3 @@
+interface:
+  display_name: "Hypothesis Generation"
+  short_description: "Formulates evidence-bounded scientific questions, candidate"

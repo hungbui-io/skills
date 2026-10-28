@@ -1,0 +1,3 @@
+interface:
+  display_name: "Geomaster"
+  short_description: "Supports geospatial research workflows for remote sensing"

@@ -26,7 +26,7 @@ The tracker-dependent routes (triage, `to-spec`, `to-tickets`, `implement`) assu
 
 ## Flows, not skills
 
-The skill's leading word is **flow**, a path *through* the skills rather than a single skill. When you name your situation, the router places you at a step on a flow. That is a different answer from "here is the skill that matches your keywords". There are eight kinds of route, and the skill itself describes them in full:
+The skill's leading word is **flow**, a path *through* the skills rather than a single skill. When you name your situation, the router places you at a step on a flow. That is a different answer from "here is the skill that matches your keywords". There are nine kinds of route, and the skill itself describes them in full:
 
 - **The main flow**, idea to ship. Grill, spec, tickets, implement (one ticket at a time, or the whole task graph in parallel with [implement-spec](https://aihero.dev/skills-implement-spec)), review, then [retro](https://aihero.dev/skills-retro), which feeds what the build taught back into the agent's environment. It has two branches. One is a prototype detour, for when a question needs runnable code to settle it. The other is the spec-and-tickets split, which is only worth its cost when the build spans more than one session.
 - **On-ramps**, for a situation that generates work and then merges onto the main flow: incoming bug reports, something broken, or an effort too foggy and too large to hold in one session.
@@ -35,6 +35,7 @@ The skill's leading word is **flow**, a path *through* the skills rather than a 
 - **The vendored lifecycle**, the engineering jobs this set still adds. The router picks the house skill when both could apply.
 - **The ML and LLM lifecycle**, two delivery chains for models and LLM systems. The router still picks the application skill when the work is ordinary software. The chains are [ml-solution-design](https://aihero.dev/skills-ml-solution-design) through serving and monitoring, and [llm-data-preparation](https://aihero.dev/skills-llm-data-preparation) through deployment and cost.
 - **The data engineering set**, tables, pipelines, warehouses, and streams. The router still picks the application skill when the work is ordinary software. The build path starts at [modeling-dimensional-data](https://aihero.dev/skills-modeling-dimensional-data) or [designing-medallion-architecture](https://aihero.dev/skills-designing-medallion-architecture), then ingestion, transforms, tests, and orchestration.
+- **The scientific set**, literature, statistics, genomics, chemistry, imaging, and lab data. The router still picks the application skill when the work is ordinary software. A scientific literature review starts at [literature-review](https://aihero.dev/skills-literature-review). A manuscript starts at [scientific-writing](https://aihero.dev/skills-scientific-writing).
 - **A vocabulary layer underneath**, the two references the other skills pull in when the words rather than the process are the problem.
 
 ## The phase boundary
@@ -59,7 +60,7 @@ People keep asking for one in the README. This skill is that list. A static tabl
 
 **It told me half the skills aren't installed.**
 
-This is a known bug, and it is not fixed. Most of the skills the router routes you through set `disable-model-invocation: true`, which means the harness leaves them out of the skill list it injects into the agent's context. The agent reads that list as exhaustive and reports them missing. In one reported session, it declared the whole spec-and-tickets flow absent and rerouted to bare `/grilling` and `/tdd`. Sixteen of the plugin's ninety-six skills carry the flag, so this is the common case rather than an edge. They are installed. Type the slash command anyway, or check `.claude-plugin/plugin.json`, which is the authority on what is present.
+This is a known bug, and it is not fixed. Most of the skills the router routes you through set `disable-model-invocation: true`, which means the harness leaves them out of the skill list it injects into the agent's context. The agent reads that list as exhaustive and reports them missing. In one reported session, it declared the whole spec-and-tickets flow absent and rerouted to bare `/grilling` and `/tdd`. Sixteen of the plugin's two-hundred-fifty-one skills carry the flag, so this is the common case rather than an edge. They are installed. Type the slash command anyway, or check `.claude-plugin/plugin.json`, which is the authority on what is present.
 
 **It described a skill's behaviour, and the skill doesn't do that.**
 

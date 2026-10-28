@@ -1,0 +1,3 @@
+interface:
+  display_name: "Pycalphad"
+  short_description: "Computes finite-temperature CALPHAD equilibria, phase"

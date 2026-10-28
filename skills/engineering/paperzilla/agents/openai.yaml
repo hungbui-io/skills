@@ -1,0 +1,3 @@
+interface:
+  display_name: "Paperzilla"
+  short_description: "Reads projects, searches project feeds, and retrieves"

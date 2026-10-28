@@ -1,0 +1,3 @@
+interface:
+  display_name: "Pymc"
+  short_description: "Builds and checks Bayesian models with PyMC, including"

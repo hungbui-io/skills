@@ -1,0 +1,3 @@
+interface:
+  display_name: "Qutip"
+  short_description: "Simulate and audit closed and open quantum-system models"

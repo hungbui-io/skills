@@ -1,0 +1,3 @@
+interface:
+  display_name: "Histolab"
+  short_description: "Extracts and preprocesses whole-slide histology image tiles"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Protocolsio Integration"
+  short_description: "Reads, validates, and safely exports protocols.io data with"

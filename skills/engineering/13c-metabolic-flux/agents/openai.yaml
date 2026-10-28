@@ -1,0 +1,3 @@
+interface:
+  display_name: "13C Metabolic Flux"
+  short_description: "Estimates intracellular metabolic fluxes from steady-state"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Cellprofiler"
+  short_description: "Runs reproducible CellProfiler microscopy pipelines for"

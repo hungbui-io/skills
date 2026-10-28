@@ -1,0 +1,3 @@
+interface:
+  display_name: "Marine Carbonate Chemistry"
+  short_description: "Solves seawater carbonate chemistry with PyCO2SYS for"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Cobrapy"
+  short_description: "Performs constraint-based metabolic modeling with COBRApy"

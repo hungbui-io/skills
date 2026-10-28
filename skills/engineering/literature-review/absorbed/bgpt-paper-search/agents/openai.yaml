@@ -1,0 +1,3 @@
+interface:
+  display_name: "Bgpt Paper Search"
+  short_description: "Searches BGPT scientific papers by topic or DOI and"

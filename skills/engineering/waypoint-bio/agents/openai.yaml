@@ -1,0 +1,3 @@
+interface:
+  display_name: "Waypoint Bio"
+  short_description: "Supports work with Outpost Bio's open microbiome foundation"

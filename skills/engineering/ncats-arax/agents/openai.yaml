@@ -1,0 +1,3 @@
+interface:
+  display_name: "Ncats Arax"
+  short_description: "Queries the NCATS Translator ARAX production API for"

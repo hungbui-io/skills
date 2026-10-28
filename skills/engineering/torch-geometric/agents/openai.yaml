@@ -1,0 +1,3 @@
+interface:
+  display_name: "Torch Geometric"
+  short_description: "Supports PyTorch Geometric (PyG) graph neural networks"

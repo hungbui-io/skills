@@ -1,0 +1,3 @@
+interface:
+  display_name: "Medchem"
+  short_description: "Applies medicinal chemistry filters for compound triage"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "scikit-bio"
+  short_description: "Biological data toolkit. Sequence analysis, alignments"

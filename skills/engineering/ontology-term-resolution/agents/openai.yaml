@@ -1,0 +1,3 @@
+interface:
+  display_name: "Ontology Term Resolution"
+  short_description: "Resolves free-text scientific labels to ontology term IDs"

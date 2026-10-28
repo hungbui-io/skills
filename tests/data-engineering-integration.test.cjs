@@ -111,7 +111,7 @@ test("the data engineering set is promoted once and stays off the other lifecycl
   const plugin = JSON.parse(read(".claude-plugin/plugin.json"));
   const listed = plugin.skills.slice().sort();
   assert.deepEqual(listed, promotedSkillDirs());
-  assert.equal(plugin.skills.length, 96);
+  assert.equal(plugin.skills.length, 251);
   assert.equal(plugin.keywords.includes("data-engineering"), true);
   assert.match(plugin.description, /data engineering set/);
 
@@ -153,7 +153,7 @@ test("the data engineering set is promoted once and stays off the other lifecycl
   const cdc = read("skills/engineering/implementing-cdc-with-debezium/agents/openai.yaml");
   assert.match(cdc, /display_name:\s*"Implementing CDC with Debezium"/);
 
-  assert.match(read(".agents/install-block.md"), /exactly the promoted set \(96 skills\)/);
+  assert.match(read(".agents/install-block.md"), /exactly the promoted set \(251 skills\)/);
   assert.match(read(".claude-plugin/marketplace.json"), /data engineering set/);
   const changeset = read(".changeset/data-engineering-skills.md");
   assert.match(changeset, /31 skills/);
@@ -198,9 +198,9 @@ test("ask-matt routes data work separately from application work", () => {
   }
 
   const docs = read("docs/engineering/ask-matt.md");
-  assert.match(docs, /There are eight kinds of route/);
+  assert.match(docs, /There are nine kinds of route/);
   assert.match(docs, /The data engineering set/);
-  assert.match(docs, /Sixteen of the plugin's ninety-six skills/);
+  assert.match(docs, /Sixteen of the plugin's two-hundred-fifty-one skills/);
   assert.match(docs, /skills-modeling-dimensional-data/);
   assert.match(docs, /skills-designing-medallion-architecture/);
   for (const phrase of ["MLOps", "mlops"]) {

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Arboreto"
+  short_description: "Infers candidate gene regulatory networks from bulk or"

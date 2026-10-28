@@ -1,0 +1,3 @@
+interface:
+  display_name: "Pydicom"
+  short_description: "Reads, inspects, writes, transforms, and preflights local"

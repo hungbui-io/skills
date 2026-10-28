@@ -1,0 +1,3 @@
+interface:
+  display_name: "NWB Conversion"
+  short_description: "Converts neuroscience acquisition data to Neurodata Without"

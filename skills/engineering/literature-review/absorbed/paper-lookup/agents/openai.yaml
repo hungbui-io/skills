@@ -1,0 +1,3 @@
+interface:
+  display_name: "Paper Lookup"
+  short_description: "Searches 18 scholarly APIs for papers, preprints"

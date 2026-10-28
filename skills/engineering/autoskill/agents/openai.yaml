@@ -1,0 +1,3 @@
+interface:
+  display_name: "Autoskill"
+  short_description: "Analyzes user-requested Screenpipe history windows to"

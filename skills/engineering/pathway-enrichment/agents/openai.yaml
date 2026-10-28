@@ -1,0 +1,3 @@
+interface:
+  display_name: "Pathway Enrichment"
+  short_description: "Performs pathway and gene-set enrichment analysis on gene"

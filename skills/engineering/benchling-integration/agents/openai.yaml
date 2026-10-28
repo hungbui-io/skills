@@ -1,0 +1,3 @@
+interface:
+  display_name: "Benchling Integration"
+  short_description: "Benchling Python SDK and REST API integration for registry"

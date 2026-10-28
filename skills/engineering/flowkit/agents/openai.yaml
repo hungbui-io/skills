@@ -1,0 +1,3 @@
+interface:
+  display_name: "Flowkit"
+  short_description: "Analyzes flow cytometry data with FlowKit, including"

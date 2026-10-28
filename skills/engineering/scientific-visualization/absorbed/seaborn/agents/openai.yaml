@@ -1,0 +1,3 @@
+interface:
+  display_name: "Seaborn"
+  short_description: "Creates Seaborn statistical visualizations with pandas"

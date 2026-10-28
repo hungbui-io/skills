@@ -1,0 +1,3 @@
+interface:
+  display_name: "Nextflow"
+  short_description: "Builds, runs, and debugs Nextflow DSL2 pipelines and"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Pybamm"
+  short_description: "Simulates lithium-ion battery charge, discharge and rest"

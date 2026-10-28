@@ -1,0 +1,3 @@
+interface:
+  display_name: "Statistical Power"
+  short_description: "Calculates sample sizes and statistical power for study"

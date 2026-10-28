@@ -1,0 +1,3 @@
+interface:
+  display_name: "Statsmodels"
+  short_description: "Fits and diagnoses Python statistical models including OLS"

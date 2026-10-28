@@ -1,0 +1,3 @@
+interface:
+  display_name: "Pymoo"
+  short_description: "Solves and validates single-, multi-, and many-objective"

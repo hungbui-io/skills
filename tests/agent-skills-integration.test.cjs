@@ -84,13 +84,13 @@ test("the vendored lifecycle is promoted once and the reference folder is not a 
     }
   }
   assert.deepEqual(plugin.skills.slice().sort(), promoted.sort());
-  assert.equal(plugin.skills.length, 96);
+  assert.equal(plugin.skills.length, 251);
   for (const name of vendored) {
     assert.equal(plugin.skills.filter((entry) => entry === `./skills/engineering/${name}`).length, 1, name);
   }
   assert.equal(plugin.skills.includes("./skills/engineering/agent-skills-references"), false);
   assert.equal(fs.existsSync(path.join(referencesDir, "SKILL.md")), false);
-  assert.match(read(".agents/install-block.md"), /exactly the promoted set \(96 skills\)/);
+  assert.match(read(".agents/install-block.md"), /exactly the promoted set \(251 skills\)/);
   assert.match(plugin.description, /vendored engineering lifecycle/);
 });
 

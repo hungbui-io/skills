@@ -1,0 +1,3 @@
+interface:
+  display_name: "Neurokit2"
+  short_description: "Builds and audits reproducible NeuroKit2 research workflows"

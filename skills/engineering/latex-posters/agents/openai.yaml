@@ -1,0 +1,3 @@
+interface:
+  display_name: "Latex Posters"
+  short_description: "Creates research posters in LaTeX using beamerposter"

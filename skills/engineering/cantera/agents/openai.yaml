@@ -1,0 +1,3 @@
+interface:
+  display_name: "Cantera"
+  short_description: "Runs Cantera homogeneous chemical reactors and evaluates"

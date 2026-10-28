@@ -1,0 +1,3 @@
+interface:
+  display_name: "Markdown Mermaid Writing"
+  short_description: "Writes scientific Markdown documentation and Mermaid"

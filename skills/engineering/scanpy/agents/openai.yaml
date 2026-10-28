@@ -1,0 +1,3 @@
+interface:
+  display_name: "Scanpy"
+  short_description: "Performs Scanpy single-cell RNA-seq QC, normalization, HVG"

@@ -148,6 +148,32 @@ A new pipeline, in the usual order: `/designing-medallion-architecture` or `/mod
 
 Lakehouse storage: `/building-iceberg-tables`, `/optimizing-parquet-storage`, `/handling-schema-evolution`. Safe history rewrites: `/designing-backfills-and-replays`. Lineage: `/managing-data-lineage-openlineage`. A legacy warehouse move: `/migrating-legacy-etl`. Seeded test rows: `/generating-synthetic-test-data`. Warehouse feature tables: `/building-feature-pipelines`.
 
+## Scientific skills
+
+A scientific set is vendored from [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) (MIT). `/ask-matt` stays the router. These skills are model-invoked. Call the Skill tool with one name per call. This set is for scientific workflows: literature, statistics, genomics, chemistry, imaging, and lab data.
+
+When two skills could fire, use the house skill for ordinary software, and the scientific skill when the work is a scientific workflow:
+
+- A primary-source note for a software or API question: `/research`. A scientific literature search, citation check, or manuscript evidence packet: `/literature-review`.
+- Documents agents read: `/writing-for-agents`. A scientific manuscript: `/scientific-writing`. Venue formatting: `/venue-templates`. Scientific Markdown: `/markdown-mermaid-writing`.
+- A standards-and-spec review of an application diff: `/code-review`. A manuscript review: `/peer-review`.
+- The shape of a software module: `/codebase-design`. A study before data is collected: `/experimental-design`.
+- Interviewing a person about a plan in a working directory: tell the user to run `/grill-with-docs`. Evidence-bounded scientific hypotheses: `/hypothesis-generation`. Early scientific ideation: `/scientific-brainstorming`.
+
+Cloud-lab ordering for nucleic acid synthesis and protein expression is not in this set. Computational skills stay. A physical robot run stays behind the operator gate already written in the lab-automation skills. Library model training, prediction explanations, and GPU serving are not in this set.
+
+- **Literature and citations:** `/exa-search`, `/literature-review`, `/paperclip`, `/paperzilla`, `/parallel-web`, `/scholar-evaluation`
+- **Scientific writing and figures:** `/clinical-reports`, `/generate-image`, `/infographics`, `/latex-posters`, `/markdown-mermaid-writing`, `/market-research-reports`, `/peer-review`, `/pptx-posters`, `/research-grants`, `/scientific-schematics`, `/scientific-slides`, `/scientific-visualization`, `/scientific-writing`, `/treatment-plans`, `/venue-templates`
+- **Study design and statistics:** `/analytical-method-validation`, `/arbor`, `/autoskill`, `/consciousness-council`, `/dhdna-profiler`, `/experimental-design`, `/exploratory-data-analysis`, `/hypogenic`, `/hypothesis-generation`, `/iso-standards-readiness`, `/pkpd-modeling`, `/pymc`, `/relsa-severity-assessment`, `/scientific-brainstorming`, `/scientific-critical-thinking`, `/simpy`, `/statistical-analysis`, `/statistical-power`, `/statsmodels`, `/uncertainty-and-units`
+- **Genomics and sequencing:** `/alphagenome`, `/biopython`, `/bioservices`, `/bulk-rnaseq`, `/deeptools`, `/dnanexus-integration`, `/folklore-variant-evidence`, `/geniml`, `/genomic-coordinates`, `/genomic-intelligence`, `/gget`, `/gtars`, `/latchbio-integration`, `/mageck`, `/nextflow`, `/onekgpd`, `/pacsomatic`, `/pathogen-variant-surveillance`, `/phylogenetics`, `/polars-bio`, `/primer-design`, `/pysam`, `/qiime2-amplicon`, `/scikit-bio`, `/tiledbvcf`
+- **Single-cell and transcriptomics:** `/anndata`, `/arboreto`, `/cellxgene-census`, `/depmap`, `/lamindb`, `/pathway-enrichment`, `/pydeseq2`, `/scanpy`, `/scvelo`, `/scvi-tools`, `/waypoint-bio`
+- **Chemistry and structural biology:** `/13c-metabolic-flux`, `/cobrapy`, `/deepchem`, `/diffdock`, `/esm`, `/glycoengineering`, `/matchms`, `/medchem`, `/molecular-dynamics`, `/nmrglue`, `/pyopenms`, `/pytdc`, `/rdkit`, `/rowan`, `/tamarind`, `/tellurium`, `/torchdrug`
+- **Materials, physics, and models:** `/astropy`, `/cantera`, `/fluidsim`, `/geopandas`, `/geomaster`, `/marine-carbonate-chemistry`, `/openpiv`, `/pybamm`, `/pycalphad`, `/pymatgen`, `/qiskit`, `/qutip`, `/relion`
+- **Imaging and clinical research records:** `/bids`, `/cellprofiler`, `/clinical-decision-support`, `/flowio`, `/flowkit`, `/histolab`, `/imaging-data-commons`, `/neurokit2`, `/neuropixels-analysis`, `/nwb-conversion`, `/omero-integration`, `/pathml`, `/pydicom`, `/pyhealth`, `/scikit-survival`
+- **Lab data systems:** `/benchling-integration`, `/datalad`, `/fictiv`, `/lab-hardware-cad`, `/labarchive-integration`, `/lab-liquid-handling`, `/protocolsio-integration`
+- **Machine learning and scientific computing:** `/aeon`, `/dask`, `/get-available-resources`, `/hugging-science`, `/liteparse`, `/markitdown`, `/matlab`, `/networkx`, `/open-notebook`, `/optimize-for-gpu`, `/pi-agent`, `/polars`, `/pufferlib`, `/pymoo`, `/stable-baselines3`, `/sympy`, `/torch-geometric`, `/umap-learn`, `/vaex`, `/zarr-python`
+- **Lookups:** `/database-lookup`, `/ncats-arax`, `/ontology-term-resolution`, `/primekg`, `/pyzotero`, `/usfiscaldata`
+
 ## Precondition
 
 **`/setup-matt-pocock-skills`**: run before your first engineering flow to configure the issue tracker, triage labels, and doc layout the other skills assume. Custom issue trackers also work.

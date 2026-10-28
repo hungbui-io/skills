@@ -1,0 +1,3 @@
+interface:
+  display_name: "Pi Agent"
+  short_description: "Builds with and operates Pi, the minimal terminal coding"

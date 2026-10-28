@@ -1,0 +1,3 @@
+interface:
+  display_name: "Bulk Rnaseq"
+  short_description: "Prepares bulk RNA-seq FASTQ, Salmon, STAR or featureCounts"

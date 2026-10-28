@@ -1,0 +1,3 @@
+interface:
+  display_name: "Parallel Web"
+  short_description: "Uses Parallel CLI for web search, URL extraction, deep"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Get Available Resources"
+  short_description: "Detects host inventory and effective CPU, memory, disk"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Torchdrug"
+  short_description: "Builds and troubleshoots TorchDrug 0.2.1 workflows for"
