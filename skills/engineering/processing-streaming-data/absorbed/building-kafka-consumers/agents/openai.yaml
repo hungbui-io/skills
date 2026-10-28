@@ -1,0 +1,3 @@
+interface:
+  display_name: "Building Kafka Consumers"
+  short_description: "Kafka offsets, groups, dead-letter"

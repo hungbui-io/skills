@@ -129,6 +129,25 @@ When two skills could fire, use the house or application skill for ordinary soft
 - Documents agents read: `/writing-for-agents`. Prompts for an LLM product: `/llm-prompt-engineering`.
 - Product LLM agents (tools, graphs, multi-agent): `/llm-agent-orchestration`. The router for this repo stays `/ask-matt`.
 
+## Data engineering
+
+A data engineering set is vendored from [awesome-data-engineering-skills](https://github.com/Unknown-333/awesome-data-engineering-skills) (Apache-2.0). `/ask-matt` stays the router. These skills are model-invoked. Call the Skill tool with one name per call. This set is for tables, pipelines, warehouses, and streams.
+
+When two skills could fire, use the house skill for ordinary software, and the data skill when the work is a dataset or a pipeline:
+
+- Application diff review: `/code-review`. A data pipeline change (grain, idempotency, incremental logic, cost, PII): `/reviewing-data-pipeline-code`.
+- One known application bug: `/diagnosing-bugs`. Wrong, missing, or duplicated data: `/debugging-data-pipelines`. A failing dbt run: `/debugging-dbt-runs`. A stuck Airflow task: `/debugging-airflow-pipelines`.
+- Application red-green loop: `/tdd`. Dataset checks, including dbt tests and source freshness: `/implementing-data-quality-checks`.
+- Source-first audit report: `/security-audit`. Classifying and masking PII in a pipeline: `/masking-pii-data`.
+- Glossary and domain terms: `/domain-modeling`. Star schema, grain, and slowly changing dimensions: `/modeling-dimensional-data`.
+- Documents agents read: `/writing-for-agents`. dbt model and column docs: `/documenting-dbt-models`.
+- Steps only a human can click: `/wizard`. Terraform for warehouses, buckets, and orchestration: `/terraform-for-data-infra`.
+- One known application performance regression: `/diagnosing-bugs`. Slow or expensive SQL, including Snowflake, BigQuery, and Spark: `/optimizing-sql-queries`. Parquet layout: `/optimizing-parquet-storage`.
+
+A new pipeline, in the usual order: `/designing-medallion-architecture` or `/modeling-dimensional-data`, then `/building-ingestion-pipelines` (or `/implementing-cdc-with-debezium` and `/processing-streaming-data`), then `/writing-idempotent-transformations` and `/building-dbt-models` (or `/engineering-databricks-pipelines`), then `/implementing-data-quality-checks` and `/designing-data-contracts`, then orchestration with `/authoring-airflow-dags`, `/building-dagster-assets`, or `/orchestrating-prefect-flows`, then `/implementing-data-cicd` and `/implementing-pipeline-observability`.
+
+Lakehouse storage: `/building-iceberg-tables`, `/optimizing-parquet-storage`, `/handling-schema-evolution`. Safe history rewrites: `/designing-backfills-and-replays`. Lineage: `/managing-data-lineage-openlineage`. A legacy warehouse move: `/migrating-legacy-etl`. Seeded test rows: `/generating-synthetic-test-data`. Warehouse feature tables: `/building-feature-pipelines`.
+
 ## Precondition
 
 **`/setup-matt-pocock-skills`**: run before your first engineering flow to configure the issue tracker, triage labels, and doc layout the other skills assume. Custom issue trackers also work.

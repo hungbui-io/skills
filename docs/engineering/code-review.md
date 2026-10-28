@@ -100,4 +100,4 @@ No. It diffs `<fixed-point>...HEAD`. The three-dot form measures from the merge-
 - [improve-codebase-architecture](https://aihero.dev/skills-improve-codebase-architecture) is the whole-codebase counterpart, because this skill only looks at one diff.
 - [security-audit](https://aihero.dev/skills-security-audit) is the security review. This skill checks standards and spec. It does not hunt trust-boundary failures.
 
-[ask-matt](https://aihero.dev/skills-ask-matt) routes across the whole set when you are unsure which skill the situation wants.
+A data pipeline change (grain, idempotency, cost, and PII) is [reviewing-data-pipeline-code](https://aihero.dev/skills-reviewing-data-pipeline-code). [ask-matt](https://aihero.dev/skills-ask-matt) routes across the whole set when you are unsure which skill the situation wants.

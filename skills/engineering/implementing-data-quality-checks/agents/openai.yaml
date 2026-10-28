@@ -1,0 +1,3 @@
+interface:
+  display_name: "Implementing Data Quality Checks"
+  short_description: "Freshness, volume, and schema checks"

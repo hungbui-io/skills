@@ -93,11 +93,11 @@ test("the ML and LLM lifecycle is promoted once and stays model-invoked", () => 
     }
   }
   assert.deepEqual(plugin.skills.slice().sort(), promoted.sort());
-  assert.equal(plugin.skills.length, 65);
+  assert.equal(plugin.skills.length, 96);
   for (const name of skills) {
     assert.equal(plugin.skills.filter((entry) => entry === `./skills/engineering/${name}`).length, 1, name);
   }
-  assert.match(read(".agents/install-block.md"), /exactly the promoted set \(65 skills\)/);
+  assert.match(read(".agents/install-block.md"), /exactly the promoted set \(96 skills\)/);
   assert.match(plugin.description, /ML and LLM lifecycle/);
   assert.equal(plugin.keywords.includes("mlops"), true);
 
@@ -178,8 +178,8 @@ test("ask-matt routes ordinary software to the house skill and model work to thi
   assert.match(section, /only the user runs it/);
   assert.match(section, /skills\/engineering\/model-registry\/references\/ARTIFACT_CONTRACT\.md/);
   const docs = read("docs/engineering/ask-matt.md");
-  assert.match(docs, /seven kinds of route/);
-  assert.match(docs, /sixty-five/);
+  assert.match(docs, /eight kinds of route/);
+  assert.match(docs, /ninety-six/);
   assert.match(docs, /skills-ml-solution-design/);
   assert.match(docs, /skills-llm-data-preparation/);
 });

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Migrating Legacy ETL"
+  short_description: "Move legacy ETL onto dbt or Spark"

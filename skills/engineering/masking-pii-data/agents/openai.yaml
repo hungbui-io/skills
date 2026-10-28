@@ -1,0 +1,3 @@
+interface:
+  display_name: "Masking PII Data"
+  short_description: "Mask, tokenize, or hash PII"

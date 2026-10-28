@@ -1,0 +1,3 @@
+interface:
+  display_name: "Optimizing SQL Queries"
+  short_description: "Read the plan, then cut the scan"
