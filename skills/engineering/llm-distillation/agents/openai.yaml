@@ -1,0 +1,3 @@
+interface:
+  display_name: "LLM Distillation"
+  short_description: "Train a student from a teacher"

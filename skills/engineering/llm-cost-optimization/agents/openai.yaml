@@ -1,0 +1,3 @@
+interface:
+  display_name: "LLM Cost Optimization"
+  short_description: "Token, routing, and cache cost"

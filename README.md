@@ -228,6 +228,7 @@ Skills I use daily for code work.
 - **[wayfinder](./skills/engineering/wayfinder/SKILL.md)**: Plan a huge chunk of work, more than one agent session can hold, as a shared map of decision tickets on the issue tracker, and resolve them one at a time until the way to the destination is clear.
 - **[retro](./skills/engineering/retro/SKILL.md)**: Suggest improvements to the coding agent's environment (navigation, automated checks, coding standards, steering files, tooling) after a session, most severe first.
 
+
 **Model-invoked**
 
 - **[prototype](./skills/engineering/prototype/SKILL.md)**: Build a throwaway prototype to answer a design question, either a single shareable HTML file for state/logic questions, or several radically different UI variations toggleable from one route.
@@ -271,6 +272,44 @@ Skills I use daily for code work.
 - **[reviewing-data-pipeline-code](./skills/engineering/reviewing-data-pipeline-code/SKILL.md)**: Review a data change for grain, idempotency, cost, tests, and PII. Standards-and-spec review of an application diff stays code-review.
 - **[terraform-for-data-infra](./skills/engineering/terraform-for-data-infra/SKILL.md)**: Provision warehouses, buckets, and orchestration with Terraform. Steps only a human can click stay wizard.
 - **[writing-idempotent-transformations](./skills/engineering/writing-idempotent-transformations/SKILL.md)**: Write loads that produce the same rows when they run again.
+
+- **[api-and-interface-design](./skills/engineering/api-and-interface-design/SKILL.md)**: Design the contract callers may rely on: resources, errors, compatibility, and the line between frontend and backend.
+- **[browser-testing-with-devtools](./skills/engineering/browser-testing-with-devtools/SKILL.md)**: Check UI in a real browser through Chrome DevTools: DOM, console, network, performance, and a screenshot.
+- **[ci-cd-and-automation](./skills/engineering/ci-cd-and-automation/SKILL.md)**: Put quality gates and a deploy strategy in the pipeline so a red check can block a ship.
+- **[code-simplification](./skills/engineering/code-simplification/SKILL.md)**: Local clarity refactor that preserves behavior. A codebase-wide deepening survey stays improve-codebase-architecture.
+- **[constraint-driven-development](./skills/engineering/constraint-driven-development/SKILL.md)**: Interview a quality bar into CONSTRAINTS.md and reject a diff that quietly lowers it.
+- **[context-engineering](./skills/engineering/context-engineering/SKILL.md)**: Pack the context for the task in front of you. It does not run at the start of every session. Post-session environment fixes stay retro.
+- **[deprecation-and-migration](./skills/engineering/deprecation-and-migration/SKILL.md)**: Sunset an API or migrate a schema by expanding first and contracting only after callers have moved.
+- **[doubt-driven-development](./skills/engineering/doubt-driven-development/SKILL.md)**: Fresh-context adversarial review that tries to disprove a decision before it stands. The reviewer does not see your reasoning.
+- **[frontend-ui-engineering](./skills/engineering/frontend-ui-engineering/SKILL.md)**: Build accessible, responsive UI that belongs to the product, including keyboard, contrast, and a layout that is not a generic template.
+- **[git-workflow-and-versioning](./skills/engineering/git-workflow-and-versioning/SKILL.md)**: Atomic commits, branching, conflict splits, and semantic versioning. The pull request body stays pr.
+- **[observability-and-instrumentation](./skills/engineering/observability-and-instrumentation/SKILL.md)**: Write the on-call question first, then add the log, metric, trace, or alert that can answer it.
+- **[performance-optimization](./skills/engineering/performance-optimization/SKILL.md)**: Measure a bottleneck, fix it, and leave a guard. One known performance regression stays diagnosing-bugs.
+- **[security-and-hardening](./skills/engineering/security-and-hardening/SKILL.md)**: Harden a feature while you build it: trust boundaries, OWASP, and an always/ask/never list. A full audit report stays security-audit.
+- **[shipping-and-launch](./skills/engineering/shipping-and-launch/SKILL.md)**: Pre-launch checklist, feature flags, staged rollout, and a rollback. The pull request body stays pr.
+- **[source-driven-development](./skills/engineering/source-driven-development/SKILL.md)**: Implement from the official docs and cite the page. A cited note that does not change code stays research.
+- **[llm-agent-orchestration](./skills/engineering/llm-agent-orchestration/SKILL.md)**: Build a product agent with tools, a graph, and a stop condition. The router for this repo stays ask-matt.
+- **[llm-cost-optimization](./skills/engineering/llm-cost-optimization/SKILL.md)**: Cut token, routing, and cache cost for LLM calls. Measuring an application bottleneck stays performance-optimization.
+- **[llm-data-preparation](./skills/engineering/llm-data-preparation/SKILL.md)**: Clean, dedupe, and split a text corpus for fine-tuning or retrieval.
+- **[llm-distillation](./skills/engineering/llm-distillation/SKILL.md)**: Train a smaller student model to match a larger teacher's outputs on a fixed eval set.
+- **[llm-evaluation](./skills/engineering/llm-evaluation/SKILL.md)**: Score LLM outputs with a fixed set, retrieval metrics, and a judge. Application red-green stays tdd.
+- **[llm-fine-tuning](./skills/engineering/llm-fine-tuning/SKILL.md)**: Fine-tune an LLM from a config, an eval set, and a checkpoint policy.
+- **[llm-guardrails](./skills/engineering/llm-guardrails/SKILL.md)**: Filter LLM inputs and outputs for private data, toxicity, and jailbreaks. Hardening an application feature stays security-and-hardening.
+- **[llm-observability](./skills/engineering/llm-observability/SKILL.md)**: Track token use, latency, and feedback on LLM calls. Application logs, metrics, and traces stay observability-and-instrumentation.
+- **[llm-prompt-engineering](./skills/engineering/llm-prompt-engineering/SKILL.md)**: Design and version the prompts an LLM product sends. Documents that agents read stay writing-for-agents.
+- **[llm-rag](./skills/engineering/llm-rag/SKILL.md)**: Retrieve grounded passages and cite the ones the answer used.
+- **[ml-cost-optimization](./skills/engineering/ml-cost-optimization/SKILL.md)**: Cut GPU and infrastructure cost for training and serving. Measuring an application bottleneck stays performance-optimization.
+- **[ml-experiment-tracking](./skills/engineering/ml-experiment-tracking/SKILL.md)**: Record params, metrics, and artifacts so two training runs can be compared.
+- **[ml-pipeline-orchestration](./skills/engineering/ml-pipeline-orchestration/SKILL.md)**: Schedule train, validate, and promote as one pipeline with retries and a failure alert.
+- **[ml-security](./skills/engineering/ml-security/SKILL.md)**: Threat-model a model: adversarial inputs, poisoning, privacy, and the ML supply chain. A source-first audit report stays security-audit.
+- **[ml-solution-design](./skills/engineering/ml-solution-design/SKILL.md)**: Turn an ML problem into requirements and a reference architecture. A spec from an existing thread stays to-spec.
+- **[ml-testing](./skills/engineering/ml-testing/SKILL.md)**: Test data, features, and model behavior, then gate promotion on them. The daily red-green loop stays tdd.
+- **[model-drift-detection](./skills/engineering/model-drift-detection/SKILL.md)**: Detect input or prediction drift and send a retrain trigger back to training.
+- **[model-monitoring](./skills/engineering/model-monitoring/SKILL.md)**: Alert when a deployed model's performance or traffic leaves its band. Application telemetry stays observability-and-instrumentation.
+- **[model-observability](./skills/engineering/model-observability/SKILL.md)**: Explain a prediction and log the features that produced it. Application telemetry stays observability-and-instrumentation.
+- **[model-registry](./skills/engineering/model-registry/SKILL.md)**: Register a versioned model artifact and the contract a server needs to load it.
+- **[model-serving](./skills/engineering/model-serving/SKILL.md)**: Serve a model behind an API with a health check and a rollback. An application launch checklist stays shipping-and-launch.
+- **[model-training](./skills/engineering/model-training/SKILL.md)**: Train a model from a pinned config, split, and seed, and package the artifact for the registry.
 
 ### Productivity
 

@@ -1,0 +1,3 @@
+interface:
+  display_name: "ML Pipeline Orchestration"
+  short_description: "Schedule the ML pipeline"
