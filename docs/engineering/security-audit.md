@@ -16,6 +16,7 @@ Type `/security-audit`, or the [agent](https://www.aihero.dev/ai-coding-dictiona
 | One known bug or performance regression, and you want the cause | [diagnosing-bugs](https://aihero.dev/skills-diagnosing-bugs) |
 | A raw report from someone else, not yet confirmed | [triage](https://aihero.dev/skills-triage) first |
 | A fact in someone else's docs or spec, not a flaw in this repo | [research](https://aihero.dev/skills-research) |
+| Hardening a feature while you build it | [security-and-hardening](https://aihero.dev/skills-security-and-hardening) |
 
 If the request could be either mode, the skill asks one question before it creates files.
 

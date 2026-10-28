@@ -14,13 +14,14 @@ Reach for it on the hard ones: a bug you can't solve at first look, an intermitt
 | --- | --- |
 | A specific defect you can describe as a symptom | This skill |
 | A slow endpoint or a timing regression with a known before-and-after | This skill. It has a performance branch (measure a baseline, then bisect) |
-| "Where are the bottlenecks in this codebase?", no specific symptom | Not this skill. It diagnoses one known failure, it does not audit |
+| "Where are the bottlenecks in this codebase?", no specific symptom | [performance-optimization](https://aihero.dev/skills-performance-optimization). This skill diagnoses one known failure |
 | A raw bug report from someone else, not yet confirmed or written up | [triage](https://aihero.dev/skills-triage) first |
 | Throwaway code to answer a design question, not chase a defect | [prototype](https://aihero.dev/skills-prototype) |
 | Building a planned behaviour test-first | [tdd](https://aihero.dev/skills-tdd) |
 | Asking what would have prevented the bug, once it is fixed | [retro](https://aihero.dev/skills-retro), run in the same session |
 | No good seam exists to lock the bug down | [improve-codebase-architecture](https://aihero.dev/skills-improve-codebase-architecture), which you start yourself |
 | A security review of a codebase, with no single known bug | [security-audit](https://aihero.dev/skills-security-audit) |
+| A fresh red build, before you have a minimised repro | [debugging-and-error-recovery](https://aihero.dev/skills-debugging-and-error-recovery) |
 
 ## The tight loop is the skill
 
